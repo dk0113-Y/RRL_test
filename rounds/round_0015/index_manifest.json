@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "round_id": "round_0015",
+  "task_type": "experiment_analysis",
+  "stable_context_files": [
+    "docs/project_context.md",
+    "docs/automation_scope.md",
+    "docs/tuning_policy.md"
+  ],
+  "round_files": [
+    "rounds/round_0015/gpt_decision.json",
+    "rounds/round_0015/codex_request.md",
+    "rounds/round_0015/codex_report.md",
+    "rounds/round_0015/round_state.json",
+    "rounds/round_0015/gpt_input.md",
+    "rounds/round_0015/round_summary.json"
+  ],
+  "expected_output_file": "next_gpt_decision.json",
+  "notes": "Interpret this as baseline restoration plus one new probe axis. The actionable search variable for the next run is turn_penalty; revert revisit_penalty only because round_0013 showed that 0.14 is a negative branch with no coverage benefit. Keep entry_k, steps, sleep_sec, and seed fixed for interpretability. Source trigger package received in the uploaded round notice. :contentReference[oaicite:0]{index=0}"
+}
