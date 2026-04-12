@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "round_id": "round_0021",
+  "status": "success",
+  "source_round_id": "round_0001",
+  "run_dir": "outputs/sched_turn003_revisit010_entry8_20260412_194230",
+  "parameter_changes": [
+    {
+      "name": "multiple",
+      "old": 0,
+      "new": 0,
+      "reason": "Moving consistently towards synthetic optimum"
+    }
+  ],
+  "compare_targets": [],
+  "core_questions": [],
+  "recommended_next_step": "UNSET",
+  "confidence_or_caveat": "UNSET",
+  "updated_at": "2026-04-12T19:42:33+08:00"
+}

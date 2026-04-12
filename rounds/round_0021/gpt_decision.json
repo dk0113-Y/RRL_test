@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "round_id": "round_0021",
+  "decision_status": "run_next_round",
+  "target_program": "fake_train.py",
+  "run_args": {
+    "turn_penalty": 0.03,
+    "revisit_penalty": 0.1,
+    "entry_k": 8,
+    "steps": 24,
+    "sleep_sec": 0.01,
+    "seed": 7
+  },
+  "parameter_changes": [
+    {
+      "name": "multiple",
+      "old_value": 0,
+      "new_value": 0,
+      "delta": 0,
+      "reason": "Moving consistently towards synthetic optimum"
+    }
+  ],
+  "codex_analysis_focus": {
+    "compare_targets": [],
+    "required_logs": [],
+    "required_plots": [],
+    "questions": [],
+    "expected_output_style": "markdown"
+  },
+  "reference_targets": {
+    "best_known_reference": "",
+    "manual_compare_targets": []
+  },
+  "controller_notes": "Synthetic automatic ingest."
+}
