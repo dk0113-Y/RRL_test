@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "project_name": "DRL_automatic",
+  "exchange_repo_url": "https://github.com/dk0113-Y/RRL_test",
+  "branch": "main",
+  "current_round_id": "round_0013",
+  "current_round_manifest": "rounds/round_0013/index_manifest.json",
+  "recommended_entry_docs": [
+    "docs/project_context.md",
+    "docs/automation_scope.md"
+  ],
+  "expected_output_file": "next_gpt_decision.json",
+  "updated_at": "2026-04-12T12:16:59+08:00"
+}
