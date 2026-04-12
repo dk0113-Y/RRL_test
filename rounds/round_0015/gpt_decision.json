@@ -58,5 +58,5 @@
       "outputs/sched_turn003_revisit010_entry8_20260411_193824"
     ]
   },
-  "controller_notes": "Interpret this as baseline restoration plus one new probe axis. The actionable search variable for the next run is turn_penalty; revert revisit_penalty only because round_0013 showed that 0.14 is a negative branch with no coverage benefit. Keep entry_k, steps, sleep_sec, and seed fixed for interpretability. Source trigger package received in the uploaded round notice. :contentReference[oaicite:0]{index=0}"
+  "controller_notes": "Interpret this as baseline restoration plus one new probe axis. The actionable search variable for the next run is turn_penalty; revert revisit_penalty only because round_0013 showed that 0.14 is a negative branch with no coverage benefit. Keep entry_k, steps, sleep_sec, and seed fixed for interpretability. Source trigger package received in the uploaded round notice."
 }

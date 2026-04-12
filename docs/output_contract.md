@@ -1,15 +1,12 @@
 # GPT Decision Output Contract
 
-To ensure the automation pipeline can ingest your decisions, please provide your output as a single, valid JSON object following the schema below.
+To ensure the automation pipeline can ingest your decisions cleanly, you **MUST** provide your output using the single standard format described below.
 
-## 1. Output Format Requirements
+## 1. Required Output Format
 
-1. **Strict JSON**: The output must be a single JSON object. Do not include introductory prose, explanations, or markdown formatting outside the JSON block.
-2. **Schema Compliance**: All required fields must be present.
-3. **Field Types**: Ensure numeric fields are numbers, and lists are arrays.
+Your entire response must be structured exactly as follows:
 
-## 2. Required JSON Structure
-
+DECISION_JSON_BEGIN
 ```json
 {
   "schema_version": "1.0",
@@ -47,13 +44,13 @@ To ensure the automation pipeline can ingest your decisions, please provide your
   "controller_notes": "Summary of experimental intent."
 }
 ```
+DECISION_JSON_END
 
-## 3. Key Notes for GPT
+## 2. Formatting Rules & Prohibitions
 
-- **`round_id`**: You can use a placeholder like `"round_xxxx"`. The ingestion tool will automatically replace it with the correct target round ID.
-- **`decision_status`**: Use `"run_next_round"` to continue the experiment, `"hold"` to pause, or `"stop"` to terminate.
-- **`parameter_changes`**: Every change must be documented with a reason. DO NOT skip this.
-- **`codex_analysis_focus`**:
-    - `compare_targets`: Use `"previous_round_run"` to compare with the last successful round.
-    - `questions`: These will be passed directly to the Codex analyzer. Be specific.
-- **`reference_targets`**: If you want to compare against a specific historical best run, provide its path in `best_known_reference`.
+1. **One Single JSON**: The output must contain one and only one JSON block between the `DECISION_JSON_BEGIN` and `DECISION_JSON_END` markers.
+2. **Top-level Object**: The JSON itself must be a single top-level object (`{...}`).
+3. **No Outer Text**: Do NOT include any introductory prose, explanations, or conclusions outside the markers.
+4. **No Inner Text**: Do NOT include any comments (e.g. `// comment`), trailing commas, or explanatory text inside the JSON code block.
+5. **Clean Strings**: Ensure all text inside the JSON is clean and free of polling markers or citation references (e.g., avoid `:contentReference[...]`).
+6. **Round ID Mapping**: Using `"round_id": "round_xxxx"` is perfectly acceptable and expected, as the ingestion layer will replace it with the correct ID.

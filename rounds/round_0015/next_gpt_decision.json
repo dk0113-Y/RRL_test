@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "round_id": "round_0018",
+  "decision_status": "run_next_round",
+  "target_program": "fake_train.py",
+  "run_args": {
+    "turn_penalty": 0.01,
+    "revisit_penalty": 0.1,
+    "entry_k": 8,
+    "steps": 24,
+    "sleep_sec": 0.35,
+    "seed": 7
+  },
+  "parameter_changes": [
+    {
+      "name": "turn_penalty",
+      "old_value": 0.02,
+      "new_value": 0.01,
+      "delta": -0.01,
+      "reason": "Round_0015 showed a small but consistent reward gain over the 0.03 baseline without any penalty in coverage, success rate, loss, or episode length. Probe one more step downward on the same axis to test whether the improvement continues monotonically or whether 0.02 is already the local optimum."
+    }
+  ],
+  "codex_analysis_focus": {
+    "compare_targets": [
+      "previous_round_run",
+      "best_known_reference"
+    ],
+    "required_logs": [
+      "logs/train_steps.csv",
+      "logs/train_episodes.csv",
+      "logs/eval_metrics.csv",
+      "logs/final_probe.csv"
+    ],
+    "required_plots": [
+      "plots/reward_curve.png",
+      "plots/coverage_curve.png",
+      "plots/success_rate_curve.png",
+      "plots/loss_curve.png"
+    ],
+    "questions": [
+      "Compared with the previous round run (turn_penalty=0.02, revisit_penalty=0.10), does lowering turn_penalty to 0.01 create another consistent reward gain, or do reward, success, coverage, or loss begin to flatten or reverse?",
+      "Compared with the updated best known reference, is the observed delta still mainly a reward-level shift, or does turn_penalty=0.01 start changing episode_length, coverage saturation timing, or success trajectories?",
+      "Compared with the older 0.03 baseline in manual_compare_targets, does 0.01 extend the reward advantage beyond the 0.02 result, or does it show diminishing returns relative to the previous clean baseline step?",
+      "After this run, should turn_penalty be considered resolved at the best value among 0.03, 0.02, and 0.01, so that the next search can move cleanly to entry_k?"
+    ],
+    "expected_output_style": "Write a structured markdown report for GPT using the codex_report.md sections."
+  },
+  "reference_targets": {
+    "best_known_reference": "outputs/sched_turn002_revisit010_entry8_20260412_125100",
+    "manual_compare_targets": [
+      "outputs/sched_turn003_revisit010_entry8_20260411_214522"
+    ]
+  },
+  "controller_notes": "Round_0015 restored the failed revisit branch and established turn_penalty=0.02 as a new provisional best: reward improved, coverage was not delayed, success stayed flat, loss stayed slightly lower, and episode length did not increase. Keep revisit_penalty, entry_k, steps, sleep_sec, and seed fixed, and run one more single-axis neighbor probe at turn_penalty=0.01 to test whether the gain is still reproducible and monotonic before switching the search axis to entry_k."
+}
