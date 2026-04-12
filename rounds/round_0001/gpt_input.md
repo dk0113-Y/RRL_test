@@ -3,7 +3,7 @@
 ## 1. Round metadata
 - Round id: `round_0001`
 - Round state status: `success`
-- Run directory: `outputs/sched_turn004_revisit012_entry6_20260412_204734`
+- Run directory: `outputs/sched_turn004_revisit012_entry6_20260412_222415`
 - Training return code: `0`
 - Bridge status: `not_invoked`
 
@@ -20,15 +20,15 @@ No parameter changes were recorded in `gpt_decision.json`.
 
 ## 3. Codex request summary
 - Required files / focus objects:
-  - `outputs/sched_turn004_revisit012_entry6_20260412_204734/logs/train_steps.csv`
-  - `outputs/sched_turn004_revisit012_entry6_20260412_204734/logs/eval_metrics.csv`
-  - `outputs/sched_turn004_revisit012_entry6_20260412_204734/plots/reward_curve.png`
-  - `outputs/sched_turn004_revisit012_entry6_20260412_204734/plots/coverage_curve.png`
+  - `outputs/sched_turn004_revisit012_entry6_20260412_222415/logs/train_steps.csv`
+  - `outputs/sched_turn004_revisit012_entry6_20260412_222415/logs/eval_metrics.csv`
+  - `outputs/sched_turn004_revisit012_entry6_20260412_222415/plots/reward_curve.png`
+  - `outputs/sched_turn004_revisit012_entry6_20260412_222415/plots/coverage_curve.png`
 - Core questions from codex_request.md:
   1. How far are we from target?
 
 ## 4. Codex report
-- 请只基于当前工作区真实文件，不要假设尚未实现的自动化能力。
+要求后续变更
 
 ## 5. What GPT should decide next
 - Decide whether to continue to another round or stop.

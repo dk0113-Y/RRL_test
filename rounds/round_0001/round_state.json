@@ -6,11 +6,11 @@
   "codex_request_path": "automation_rounds/round_0001/codex_request.md",
   "codex_report_path": "automation_rounds/round_0001/codex_report.md",
   "gpt_input_path": "automation_rounds/round_0001/gpt_input.md",
-  "run_dir": "outputs/sched_turn004_revisit012_entry6_20260412_204734",
+  "run_dir": "outputs/sched_turn004_revisit012_entry6_20260412_222415",
   "training_return_code": 0,
   "bridge_invoked": false,
   "bridge_status": "not_invoked",
   "source_round_id": "",
-  "created_at": "2026-04-12T20:37:51+08:00",
-  "updated_at": "2026-04-12T20:47:58+08:00"
+  "created_at": "2026-04-12T22:24:15+08:00",
+  "updated_at": "2026-04-12T22:25:24+08:00"
 }
