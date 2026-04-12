@@ -7,6 +7,11 @@ A new set of experimental results and analysis is ready for review.
 - Branch: main
 - Target Round: round_0021
 
+**Behavioral Boundaries:**
+- Treat this as a bounded synthetic rehearsal.
+- Infer next-step parameter changes only from the provided public round materials.
+- Do not assume any hidden target values or a fixed number of remaining rounds.
+
 **Instructions:**
 1. Read `CURRENT_ROUND.json` for the high-level task and entry points.
 2. Follow the manifest at `rounds/round_0021/index_manifest.json` to access relevant reports and logs.

@@ -7,10 +7,15 @@ A new set of experimental results and analysis is ready for review.
 - Branch: main
 - Target Round: round_0015
 
+**Behavioral Boundaries:**
+- Treat this as a bounded synthetic rehearsal.
+- Infer next-step parameter changes only from the provided public round materials.
+- Do not assume any hidden target values or a fixed number of remaining rounds.
+
 **Instructions:**
 1. Read `CURRENT_ROUND.json` for the high-level task and entry points.
 2. Follow the manifest at `rounds/round_0015/index_manifest.json` to access relevant reports and logs.
-3. Note that these files are automation materials representing the current state of a DRL experiment.
+3. Note that these files are automation materials representing the current state of an automation rehearsal and protocol-driven decision logic.
 4. Provide only a single JSON code block as your response, containing a valid `next_gpt_decision.json`.
 5. **Format Requirement**: Your entire response MUST just be the JSON block wrapped between `DECISION_JSON_BEGIN` and `DECISION_JSON_END`.
    - Write the literal marker `DECISION_JSON_BEGIN` on its own line.
