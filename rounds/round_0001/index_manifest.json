@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "round_id": "round_0001",
+  "task_type": "experiment_analysis",
+  "stable_context_files": [
+    "docs/project_context.md",
+    "docs/automation_scope.md",
+    "docs/tuning_policy.md"
+  ],
+  "round_files": [
+    "rounds/round_0001/gpt_decision.json",
+    "rounds/round_0001/codex_request.md",
+    "rounds/round_0001/codex_report.md",
+    "rounds/round_0001/round_state.json",
+    "rounds/round_0001/gpt_input.md",
+    "rounds/round_0001/round_summary.json"
+  ],
+  "expected_output_file": "next_gpt_decision.json",
+  "notes": "Replace placeholder compare targets and reasoning before a real round."
+}

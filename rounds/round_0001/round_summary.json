@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "round_id": "round_0001",
+  "status": "prepared",
+  "source_round_id": "",
+  "run_dir": "",
+  "parameter_changes": [
+    {
+      "name": "turn_penalty",
+      "old": 0.02,
+      "new": 0.03,
+      "reason": "Example placeholder: increase slightly and inspect reward / coverage tradeoff."
+    },
+    {
+      "name": "revisit_penalty",
+      "old": 0.08,
+      "new": 0.1,
+      "reason": "Example placeholder: check whether revisit suppression improves coverage saturation."
+    }
+  ],
+  "compare_targets": [
+    "previous_round_run",
+    "best_known_reference"
+  ],
+  "core_questions": [
+    "Which metrics clearly improved, and which ones regressed or plateaued?",
+    "Do the curves suggest the current penalties are too aggressive or too weak?",
+    "What parameter direction should GPT consider for the next round?"
+  ],
+  "recommended_next_step": "保持 `revisit_penalty` 不变，先对 `turn_penalty` 做一次小幅回撤式试探，并且只改一个参数，避免继续放大归因不清的问题。",
+  "confidence_or_caveat": "这份结论只基于当前 run 的真实 CSV / PNG 文件。由于 `previous_round_run` 和 `best_known_reference` 没有提供具体目标，本次无法给出严格的跨 run 对比结论。",
+  "updated_at": "2026-04-12T19:42:02+08:00"
+}

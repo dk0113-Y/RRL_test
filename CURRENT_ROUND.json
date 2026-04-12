@@ -3,12 +3,12 @@
   "project_name": "DRL_automatic",
   "exchange_repo_url": "https://github.com/dk0113-Y/RRL_test",
   "branch": "main",
-  "current_round_id": "round_0015",
-  "current_round_manifest": "rounds/round_0015/index_manifest.json",
+  "current_round_id": "round_0001",
+  "current_round_manifest": "rounds/round_0001/index_manifest.json",
   "recommended_entry_docs": [
     "docs/project_context.md",
     "docs/automation_scope.md"
   ],
   "expected_output_file": "next_gpt_decision.json",
-  "updated_at": "2026-04-12T13:07:17+08:00"
+  "updated_at": "2026-04-12T19:42:02+08:00"
 }
