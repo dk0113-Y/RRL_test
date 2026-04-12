@@ -16,5 +16,5 @@
     "rounds/round_0001/round_summary.json"
   ],
   "expected_output_file": "next_gpt_decision.json",
-  "notes": "Replace placeholder compare targets and reasoning before a real round."
+  "notes": "Initial synthetic starter for rehearsal."
 }

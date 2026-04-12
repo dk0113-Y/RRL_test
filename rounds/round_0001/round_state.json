@@ -1,16 +1,16 @@
 {
   "schema_version": "1.0",
   "round_id": "round_0001",
-  "status": "prepared",
+  "status": "success",
   "decision_file": "automation_rounds/round_0001/gpt_decision.json",
   "codex_request_path": "automation_rounds/round_0001/codex_request.md",
   "codex_report_path": "automation_rounds/round_0001/codex_report.md",
   "gpt_input_path": "automation_rounds/round_0001/gpt_input.md",
-  "run_dir": "",
-  "training_return_code": null,
+  "run_dir": "outputs/sched_turn004_revisit012_entry6_20260412_194226",
+  "training_return_code": 0,
   "bridge_invoked": false,
   "bridge_status": "not_invoked",
   "source_round_id": "",
-  "created_at": "2026-04-11T20:33:20+08:00",
-  "updated_at": "2026-04-12T19:42:02+08:00"
+  "created_at": "2026-04-12T19:42:26+08:00",
+  "updated_at": "2026-04-12T19:42:29+08:00"
 }
