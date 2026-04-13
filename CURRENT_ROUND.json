@@ -3,35 +3,25 @@
   "project_name": "DRL-path-finding formal_train exchange",
   "exchange_repo_url": "https://github.com/dk0113-Y/RRL_test",
   "branch": "main",
-  "current_round_id": "round_0023",
-  "current_round_manifest": "rounds/round_0023/index_manifest.json",
+  "exchange_state": "awaiting_new_round_publish",
+  "current_round_id": null,
+  "current_round_manifest": null,
   "experiment_mode": "formal_train",
   "source_of_truth_repo": "dk0113-Y/DRL-path-finding",
-  "local_execution_repo_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
+  "local_execution_repo_path": null,
   "evaluation_mode": "formal_artifact_review",
-  "decision_zone": "manual_review_required",
+  "decision_zone": "insufficient_evidence",
   "stop_window_state": {
-    "window_basis": "bootstrap_thresholds",
-    "comparability_status": "bootstrap_comparable",
+    "window_basis": "awaiting_new_round_publish",
+    "comparability_status": "insufficient_evidence",
     "plateau_detected": false,
     "hard_stop_triggered": false,
-    "manual_review_required": true,
+    "manual_review_required": false,
     "insufficient_evidence": true,
-    "recommended_action": "pause_for_manual_review",
-    "decision_zone": "manual_review_required",
+    "recommended_action": "analyze_only",
+    "decision_zone": "insufficient_evidence",
     "reasons": [
-      "historical_thresholds_are_bootstrap_only",
-      "net_regression_detected",
-      "comparability_only_bootstrap_confirmed",
-      "runtime_summary_missing",
-      "backfilled_from_historical_run",
-      "train_config_unavailable_in_backfill_context",
-      "timing_summary_unavailable",
-      "total_runtime_unavailable",
-      "complete_train_config_not_recoverable_without_checkpoint_loader",
-      "train_config_unavailable",
-      "bootstrap_thresholds_required",
-      "historical_thresholds_bootstrap_only"
+      "exchange_repo_cleared_waiting_for_new_formal_round"
     ]
   },
   "recommended_entry_docs": [
@@ -54,6 +44,14 @@
     "docs/tuning_policy.md"
   ],
   "expected_output_file": "next_gpt_decision.json",
-  "last_exchange_commit_sha": "90a497c89b0d2e0b5de1af1944107186f1faa938",
-  "updated_at": "2026-04-13T21:14:23+08:00"
+  "exchange_anchor_commit_sha": null,
+  "last_exchange_commit_sha": null,
+  "exchange_anchor_definition": "published_bundle_commit_reachable_from_current_head",
+  "notes": [
+    "This exchange repository is in a clean waiting state.",
+    "Publish a new formal round before expecting any round bundle under rounds/.",
+    "`exchange_anchor_commit_sha` records the published bundle commit, not the later CURRENT_ROUND pointer-update commit.",
+    "`last_exchange_commit_sha` is a deprecated compatibility alias for the same anchor when a round is published."
+  ],
+  "updated_at": "2026-04-13T22:25:04.4623095+08:00"
 }

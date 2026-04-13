@@ -13,8 +13,8 @@ DECISION_JSON_BEGIN
   "decision_status": "pause_for_manual_review",
   "evaluation_mode": "formal_artifact_review",
   "comparability_group": "formal_mainline_v1__example",
-  "baseline_round_id": "round_0022",
-  "baseline_commit_sha": "abc123",
+  "baseline_round_id": null,
+  "baseline_commit_sha": null,
   "decision_zone": "manual_review_required",
   "stop_window_state": {
     "recommended_action": "pause_for_manual_review",
@@ -72,3 +72,9 @@ DECISION_JSON_END
 4. `decision_zone`, `stop_window_state`, `manual_review_reasons`, and `insufficient_evidence_flags` must align with the current round evidence.
 5. If comparability failed or evidence is insufficient, do not output a payload that implies a formal improvement claim.
 6. Do not emit any prose outside the markers and do not insert comments into the JSON.
+
+## Context Note
+
+- `CURRENT_ROUND.json.exchange_anchor_commit_sha` is exchange metadata for readers, not a GPT output field.
+- `CURRENT_ROUND.json.last_exchange_commit_sha` is now only a deprecated compatibility alias for that same anchor commit.
+- If `CURRENT_ROUND.json.exchange_state = "awaiting_new_round_publish"`, there is no active round bundle yet and GPT should stay on docs-only context rather than inventing a round verdict.

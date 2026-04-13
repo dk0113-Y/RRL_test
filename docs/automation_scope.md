@@ -24,6 +24,8 @@ For a formal round:
 4. GPT reads docs, then `CURRENT_ROUND.json`, then the round manifest and structured files
 5. GPT emits one `next_gpt_decision.json` payload
 
+If `CURRENT_ROUND.json.exchange_state = awaiting_new_round_publish`, the exchange repo has been intentionally cleared and there is no active round bundle yet.
+
 ## Boundaries
 
 - Formal promotion, regression, plateau, and stop decisions must be machine-readable.

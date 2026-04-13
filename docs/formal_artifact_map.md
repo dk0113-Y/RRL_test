@@ -54,3 +54,14 @@ This map describes the formal artifact contract emitted by the real training rep
 - `local_execution_repo_path`
   - Local controller execution path
   - Published separately so exchange JSON does not rely on a workstation-specific absolute path as the sole truth identifier
+
+## Exchange Pointer Metadata
+
+- `CURRENT_ROUND.json.exchange_anchor_commit_sha`
+  - The published bundle anchor commit for the active round
+  - This points to the commit that first introduced the round bundle into the exchange repo
+- `CURRENT_ROUND.json.last_exchange_commit_sha`
+  - Deprecated compatibility alias for the same anchor commit
+  - It is not defined as the final HEAD commit that also edits `CURRENT_ROUND.json`
+- `CURRENT_ROUND.json.exchange_state`
+  - `awaiting_new_round_publish` means the exchange repo has been intentionally cleared and no active round bundle should be read yet
