@@ -3,7 +3,7 @@
 ## 1. Round metadata
 - Round id: `round_0001`
 - Round state status: `success`
-- Run directory: `outputs/sched_turn004_revisit012_entry6_20260413_095916`
+- Run directory: `outputs/sched_turn004_revisit012_entry6_20260413_134356`
 - Training return code: `0`
 - Bridge status: `not_invoked`
 
@@ -20,10 +20,10 @@ No parameter changes were recorded in `gpt_decision.json`.
 
 ## 3. Codex request summary
 - Required files / focus objects:
-  - `outputs/sched_turn004_revisit012_entry6_20260413_095916/logs/train_steps.csv`
-  - `outputs/sched_turn004_revisit012_entry6_20260413_095916/logs/eval_metrics.csv`
-  - `outputs/sched_turn004_revisit012_entry6_20260413_095916/plots/reward_curve.png`
-  - `outputs/sched_turn004_revisit012_entry6_20260413_095916/plots/coverage_curve.png`
+  - `outputs/sched_turn004_revisit012_entry6_20260413_134356/logs/train_steps.csv`
+  - `outputs/sched_turn004_revisit012_entry6_20260413_134356/logs/eval_metrics.csv`
+  - `outputs/sched_turn004_revisit012_entry6_20260413_134356/plots/reward_curve.png`
+  - `outputs/sched_turn004_revisit012_entry6_20260413_134356/plots/coverage_curve.png`
 - Core questions from codex_request.md:
   1. How far are we from target?
 
@@ -37,7 +37,7 @@ No parameter changes were recorded in `gpt_decision.json`.
 | Round | `round_0001` |
 | Decision status | `run_next_round` |
 | Target program | `fake_train.py` |
-| Run directory | `outputs/sched_turn004_revisit012_entry6_20260413_095916` |
+| Run directory | `outputs/sched_turn004_revisit012_entry6_20260413_134356` |
 | Logs checked | `logs/train_steps.csv`, `logs/eval_metrics.csv`, `logs/final_probe.csv` |
 | Plots checked | `plots/reward_curve.png`, `plots/coverage_curve.png` |
 | Additional source | `synthetic_truth.json` |
@@ -81,7 +81,7 @@ That combination means the configuration reaches a reasonable high-coverage plat
 
 ## Conclusion
 
-Based only on the real files in `outputs/sched_turn004_revisit012_entry6_20260413_095916`, the run remains meaningfully short of target:
+Based only on the real files in `outputs/sched_turn004_revisit012_entry6_20260413_134356`, the run remains meaningfully short of target:
 
 1. The stored synthetic truth explicitly says target is not reached.
 2. The parameter gaps remain `0.02 / 0.04 / 4` away from the optimum `0.02 / 0.08 / 10`.

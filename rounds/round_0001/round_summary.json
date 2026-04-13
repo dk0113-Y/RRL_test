@@ -3,7 +3,7 @@
   "round_id": "round_0001",
   "status": "success",
   "source_round_id": "",
-  "run_dir": "outputs/sched_turn004_revisit012_entry6_20260413_095916",
+  "run_dir": "outputs/sched_turn004_revisit012_entry6_20260413_134356",
   "parameter_changes": [],
   "compare_targets": [],
   "core_questions": [
@@ -11,5 +11,5 @@
   ],
   "recommended_next_step": "UNSET",
   "confidence_or_caveat": "UNSET",
-  "updated_at": "2026-04-13T10:00:40+08:00"
+  "updated_at": "2026-04-13T13:46:21+08:00"
 }

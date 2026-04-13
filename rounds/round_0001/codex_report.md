@@ -7,7 +7,7 @@
 | Round | `round_0001` |
 | Decision status | `run_next_round` |
 | Target program | `fake_train.py` |
-| Run directory | `outputs/sched_turn004_revisit012_entry6_20260413_095916` |
+| Run directory | `outputs/sched_turn004_revisit012_entry6_20260413_134356` |
 | Logs checked | `logs/train_steps.csv`, `logs/eval_metrics.csv`, `logs/final_probe.csv` |
 | Plots checked | `plots/reward_curve.png`, `plots/coverage_curve.png` |
 | Additional source | `synthetic_truth.json` |
@@ -51,7 +51,7 @@ That combination means the configuration reaches a reasonable high-coverage plat
 
 ## Conclusion
 
-Based only on the real files in `outputs/sched_turn004_revisit012_entry6_20260413_095916`, the run remains meaningfully short of target:
+Based only on the real files in `outputs/sched_turn004_revisit012_entry6_20260413_134356`, the run remains meaningfully short of target:
 
 1. The stored synthetic truth explicitly says target is not reached.
 2. The parameter gaps remain `0.02 / 0.04 / 4` away from the optimum `0.02 / 0.08 / 10`.
