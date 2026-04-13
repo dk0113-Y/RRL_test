@@ -54,6 +54,6 @@
     "docs/tuning_policy.md"
   ],
   "expected_output_file": "next_gpt_decision.json",
-  "last_exchange_commit_sha": "",
+  "last_exchange_commit_sha": "90a497c89b0d2e0b5de1af1944107186f1faa938",
   "updated_at": "2026-04-13T21:14:23+08:00"
 }
