@@ -1,28 +1,29 @@
 {
   "schema_version": "formal_exchange/v2",
   "artifact_type": "round_summary",
-  "round_id": "round_0021",
+  "round_id": "round_0023",
   "generated_at": "2026-04-13T20:19:03+08:00",
   "experiment_mode": "formal_train",
   "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
   "evaluation_mode": "formal_artifact_review",
-  "run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\4.9_30万轮基线",
-  "baseline_round_id": null,
-  "baseline_commit_sha": null,
+  "run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\sched_turn003_revisit010_entry8_20260411_014043",
+  "baseline_round_id": "round_0022",
+  "baseline_commit_sha": "832dee8042424a2009fe2fff2f5137b6efbc15c5",
   "comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
-  "decision_zone": "insufficient_evidence",
+  "decision_zone": "manual_review_required",
   "stop_window_state": {
     "window_basis": "bootstrap_thresholds",
-    "comparability_status": "insufficient_evidence",
+    "comparability_status": "bootstrap_comparable",
     "plateau_detected": false,
     "hard_stop_triggered": false,
     "manual_review_required": true,
     "insufficient_evidence": true,
     "recommended_action": "pause_for_manual_review",
-    "decision_zone": "insufficient_evidence",
+    "decision_zone": "manual_review_required",
     "reasons": [
-      "comparability_inputs_incomplete",
       "historical_thresholds_are_bootstrap_only",
+      "net_regression_detected",
+      "comparability_only_bootstrap_confirmed",
       "runtime_summary_missing",
       "backfilled_from_historical_run",
       "train_config_unavailable_in_backfill_context",
@@ -30,10 +31,12 @@
       "total_runtime_unavailable",
       "complete_train_config_not_recoverable_without_checkpoint_loader",
       "train_config_unavailable",
+      "bootstrap_thresholds_required",
       "historical_thresholds_bootstrap_only"
     ]
   },
   "manual_review_reasons": [
+    "comparability_only_bootstrap_confirmed",
     "runtime_summary_missing"
   ],
   "insufficient_evidence_flags": [
@@ -43,110 +46,111 @@
     "total_runtime_unavailable",
     "complete_train_config_not_recoverable_without_checkpoint_loader",
     "train_config_unavailable",
+    "bootstrap_thresholds_required",
     "historical_thresholds_bootstrap_only"
   ],
   "verdicts": {
-    "primary_metric_verdict": "insufficient_evidence",
-    "secondary_metric_verdict": "insufficient_evidence",
-    "stability_verdict": "insufficient_evidence",
-    "efficiency_verdict": "insufficient_evidence",
-    "overall_round_verdict": "insufficient_evidence"
+    "primary_metric_verdict": "regression",
+    "secondary_metric_verdict": "regression",
+    "stability_verdict": "regression",
+    "efficiency_verdict": "hold",
+    "overall_round_verdict": "regression"
   },
   "primary_metric_summary": {
-    "verdict": "insufficient_evidence",
+    "verdict": "regression",
     "details": {
       "success_rate": {
-        "target": 0.625,
-        "baseline": null,
-        "delta": null,
-        "verdict": "insufficient_evidence"
+        "target": 0.5625,
+        "baseline": 0.875,
+        "delta": -0.3125,
+        "verdict": "regressed"
       },
       "coverage": {
-        "target": 0.8751125335693359,
-        "baseline": null,
-        "delta": null,
-        "verdict": "insufficient_evidence"
+        "target": 0.8923500180244446,
+        "baseline": 0.9108062386512756,
+        "delta": -0.018456220626831055,
+        "verdict": "regressed"
       },
       "reward": {
-        "target": 86.50942993164062,
-        "baseline": null,
-        "delta": null,
-        "verdict": "insufficient_evidence"
+        "target": 88.30387115478516,
+        "baseline": 120.79263305664062,
+        "delta": -32.48876190185547,
+        "verdict": "regressed"
       }
     },
     "counts": {
       "improved": 0,
-      "regressed": 0,
+      "regressed": 3,
       "hold": 0,
-      "insufficient_evidence": 3
+      "insufficient_evidence": 0
     }
   },
   "secondary_metric_summary": {
-    "verdict": "insufficient_evidence",
+    "verdict": "regression",
     "details": {
       "episode_length": {
-        "target": 454.9375,
-        "baseline": null,
-        "delta": null,
-        "verdict": "insufficient_evidence"
+        "target": 479.75,
+        "baseline": 337.6875,
+        "delta": 142.0625,
+        "verdict": "regressed"
       },
       "repeat_visit_ratio": {
-        "target": 0.38662803173065186,
-        "baseline": null,
-        "delta": null,
-        "verdict": "insufficient_evidence"
+        "target": 0.32285091280937195,
+        "baseline": 0.2270648330450058,
+        "delta": 0.09578607976436615,
+        "verdict": "regressed"
       }
     },
     "counts": {
       "improved": 0,
-      "regressed": 0,
+      "regressed": 2,
       "hold": 0,
-      "insufficient_evidence": 2
+      "insufficient_evidence": 0
     }
   },
   "stability_summary": {
-    "verdict": "insufficient_evidence",
+    "verdict": "regression",
     "details": {
       "timeout_flag": {
-        "target": 0.375,
-        "baseline": null,
-        "delta": null,
-        "verdict": "insufficient_evidence"
+        "target": 0.4375,
+        "baseline": 0.125,
+        "delta": 0.3125,
+        "verdict": "regressed"
       },
       "stall_trigger_count": {
-        "target": 213.1875,
-        "baseline": null,
-        "delta": null,
-        "verdict": "insufficient_evidence"
+        "target": 238.4375,
+        "baseline": 111.6875,
+        "delta": 126.75,
+        "verdict": "regressed"
       },
       "zero_info_step_count": {
-        "target": 295.625,
-        "baseline": null,
-        "delta": null,
-        "verdict": "insufficient_evidence"
+        "target": 313.125,
+        "baseline": 172.75,
+        "delta": 140.375,
+        "verdict": "regressed"
       },
       "recent_revisit_count": {
-        "target": 177.0,
-        "baseline": null,
-        "delta": null,
-        "verdict": "insufficient_evidence"
+        "target": 124.375,
+        "baseline": 88.875,
+        "delta": 35.5,
+        "verdict": "regressed"
       }
     },
     "counts": {
       "improved": 0,
-      "regressed": 0,
+      "regressed": 4,
       "hold": 0,
-      "insufficient_evidence": 4
+      "insufficient_evidence": 0
     }
   },
   "efficiency_summary": {
-    "verdict": "insufficient_evidence",
+    "verdict": "hold",
     "details": {
       "env_steps_to_best": {
-        "target": 264000.0,
-        "baseline": null,
-        "delta": null,
-        "verdict": "insufficient_evidence"
+        "target": 288000.0,
+        "baseline": 288000.0,
+        "delta": 0.0,
+        "verdict": "hold"
       },
       "total_runtime_sec": {
         "target": null,
@@ -158,11 +162,11 @@
     "counts": {
       "improved": 0,
       "regressed": 0,
-      "hold": 0,
-      "insufficient_evidence": 2
+      "hold": 1,
+      "insufficient_evidence": 1
     }
   },
-  "comparability_status": "insufficient_evidence",
+  "comparability_status": "bootstrap_comparable",
   "notes": [
     "Formal round verdicts are gated by comparability before any improvement claim is considered valid.",
     "Primary judgement combines best_eval, last_eval, and final_probe with emphasis on final_probe stability and success behavior.",

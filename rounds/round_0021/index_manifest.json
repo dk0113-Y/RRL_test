@@ -1,11 +1,54 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "2.0",
   "round_id": "round_0021",
-  "task_type": "experiment_analysis",
+  "project_name": "DRL-path-finding formal_train exchange",
+  "experiment_mode": "formal_train",
+  "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
+  "evaluation_mode": "formal_artifact_review",
+  "baseline_round_id": null,
+  "baseline_commit_sha": null,
+  "comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
+  "decision_zone": "insufficient_evidence",
+  "stop_window_state": {
+    "window_basis": "bootstrap_thresholds",
+    "comparability_status": "insufficient_evidence",
+    "plateau_detected": false,
+    "hard_stop_triggered": false,
+    "manual_review_required": true,
+    "insufficient_evidence": true,
+    "recommended_action": "pause_for_manual_review",
+    "decision_zone": "insufficient_evidence",
+    "reasons": [
+      "comparability_inputs_incomplete",
+      "historical_thresholds_are_bootstrap_only",
+      "runtime_summary_missing",
+      "backfilled_from_historical_run",
+      "train_config_unavailable_in_backfill_context",
+      "timing_summary_unavailable",
+      "total_runtime_unavailable",
+      "complete_train_config_not_recoverable_without_checkpoint_loader",
+      "train_config_unavailable",
+      "historical_thresholds_bootstrap_only"
+    ]
+  },
   "stable_context_files": [
     "docs/project_context.md",
     "docs/automation_scope.md",
+    "docs/reading_order.md",
+    "docs/current_mainline.md",
+    "docs/evaluation_charter.md",
+    "docs/stopping_policy.md",
+    "docs/output_contract.md",
+    "docs/formal_artifact_map.md",
     "docs/tuning_policy.md"
+  ],
+  "recommended_entry_docs": [
+    "docs/reading_order.md",
+    "docs/project_context.md",
+    "docs/current_mainline.md",
+    "docs/evaluation_charter.md",
+    "docs/stopping_policy.md",
+    "docs/output_contract.md"
   ],
   "round_files": [
     "rounds/round_0021/gpt_decision.json",
@@ -13,8 +56,29 @@
     "rounds/round_0021/codex_report.md",
     "rounds/round_0021/round_state.json",
     "rounds/round_0021/gpt_input.md",
-    "rounds/round_0021/round_summary.json"
+    "rounds/round_0021/metric_snapshot.json",
+    "rounds/round_0021/benchmark_summary.json",
+    "rounds/round_0021/config_snapshot.json",
+    "rounds/round_0021/artifact_index.json",
+    "rounds/round_0021/comparability_report.json",
+    "rounds/round_0021/round_summary.json",
+    "rounds/round_0021/training_summary.txt"
   ],
+  "artifact_hashes": {
+    "gpt_decision.json": "ff157f876de2e5a122204927aa84c3795d7cb1bc2baa03df1d9d0e8a45d524fe",
+    "codex_request.md": "7811dc387a90c9c5e8d4644bbd2080926b2f7709c343b352b6293343ffde250b",
+    "codex_report.md": "db43d86357699d1615b6a39c80dddb642abdf10f0a31879cd68063905fbc84d7",
+    "round_state.json": "49b75f15c8585e0a93ba2497056be80ec52cba4594da173d7af2e94b71a3ae28",
+    "gpt_input.md": "941aac9098998699cdffb9008d2fea4e580157ad141b58c6b267c94f49d40805",
+    "metric_snapshot.json": "04cbd59ad3fd5c26e54ff130b1080324f0c153aae904ce685fbdaa22e7b8a901",
+    "benchmark_summary.json": "dbcb78d5216d0090e1792fff9ae811fab4f14d220e8340145c9c2ab29b3ce4c7",
+    "config_snapshot.json": "43954d8bd1858587e7f4db499f44bac7b209d416ab960c56adc69c0cf26fd4d7",
+    "artifact_index.json": "7b875981f537864dc1a4f615e289cbad277d4b455eee2e6d844f2cfa26d50c78",
+    "comparability_report.json": "7aabb3520df29f2f92b1231dbc720dafe1628ee57ab19645cb86d164fc03d593",
+    "round_summary.json": "f5311f91d0e26fad44c667305b7d79462df1fa6e631bdab69d80fa7f660b17a3",
+    "training_summary.txt": "698c9bd4cbbf22561917cfe71e1d90a20e94493617ef4f909c12eb5fd4592e85"
+  },
   "expected_output_file": "next_gpt_decision.json",
-  "notes": "Synthetic automatic ingest."
+  "notes": "Imported default main baseline round from the formal source-of-truth repo.",
+  "updated_at": "2026-04-13T20:22:22+08:00"
 }

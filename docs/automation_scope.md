@@ -1,27 +1,29 @@
 # Automation Scope
 
-The primary recommended track for automation is currently **Exchange Mode**.
+The system is dual-mode, but the default research track is now `formal_train`.
 
-## Understanding a Round Cycle
+## Modes
 
-A single round iteration in the mainline cycle should be understood as follows:
+- `formal_train`
+  - Source of truth is `../代码1`
+  - Decisions are based on real artifacts and comparability checks
+  - This is the default mode for current research continuity
+- `synthetic_rehearsal`
+  - Retained only for protocol and bridge validation
+  - Synthetic outputs must never be used as formal evidence
 
-1. Local `round` / `scheduler` / training outputs
-2. → `codex_request.md`
-3. → Codex analyzes to produce `codex_report.md`
-4. → `prepare_gpt_input.py` running
-5. → `publish_round_to_exchange.py`
-6. → `RRL_test/outbox/web_index_message_round_xxxx.md`
-7. → `exchange_web_bridge.py`
-8. → `tmp/round_xxxx_gpt_reply.md`
-9. → `tmp/next_real_decision_round_xxxx.json`
-10. → `ingest_exchange_decision.py`
-11. → New round created
-12. → `scheduler.py`
+## Round Lifecycle
 
-## Current Rehearsal Objective
+For a formal round:
 
-The current objective is **"single round promotion / single round closure validation"**. It is **not** a "fully unattended closed-loop".
+1. `../代码1` runs real training and emits formal JSON summaries
+2. `codex_ui_bridge_demo` builds a round bundle and comparability report
+3. The bundle is published here under `rounds/round_xxxx/`
+4. GPT reads docs, then `CURRENT_ROUND.json`, then the round manifest and structured files
+5. GPT emits one `next_gpt_decision.json` payload
 
-- **Operationally Passing:** Execution of the training run, markdown report generation, publishing to the exchange repo, and the bridge cycle creating and ingesting the reply into a new round have been successfully tested in sequence.
-- **Pending Validation:** The continuous, unattended triggering of the full cycle remains under integration test. Do not assume the system is running completely hands-off yet.
+## Boundaries
+
+- Formal promotion, regression, plateau, and stop decisions must be machine-readable.
+- If comparability fails, GPT may analyze the round but must not accumulate a formal improvement claim.
+- If evidence is insufficient, GPT must keep that explicit in the decision payload instead of inventing certainty.

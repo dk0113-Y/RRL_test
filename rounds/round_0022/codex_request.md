@@ -1,20 +1,20 @@
 # Codex Analysis Request
 
 ## 1. Formal Train Context
-- Round id: `round_0021`
+- Round id: `round_0022`
 - Source of truth repo: `C:\Users\Dk\Desktop\SCI\代码1`
-- Target run directory: `C:\Users\Dk\Desktop\SCI\代码1\outputs\4.9_30万轮基线`
-- Baseline run directory: `UNSET`
-- Comparability status: `insufficient_evidence`
-- Decision zone: `insufficient_evidence`
+- Target run directory: `C:\Users\Dk\Desktop\SCI\代码1\outputs\sched_turn005_revisit010_entry8_20260410_234142`
+- Baseline run directory: `C:\Users\Dk\Desktop\SCI\代码1\outputs\4.9_30万轮基线`
+- Comparability status: `not_comparable`
+- Decision zone: `not_comparable`
 
 ## 2. Primary Evidence Files
-- `automation_rounds/round_0021/metric_snapshot.json`
-- `automation_rounds/round_0021/benchmark_summary.json`
-- `automation_rounds/round_0021/config_snapshot.json`
-- `automation_rounds/round_0021/artifact_index.json`
-- `automation_rounds/round_0021/comparability_report.json`
-- `automation_rounds/round_0021/round_summary.json`
+- `automation_rounds/round_0022/metric_snapshot.json`
+- `automation_rounds/round_0022/benchmark_summary.json`
+- `automation_rounds/round_0022/config_snapshot.json`
+- `automation_rounds/round_0022/artifact_index.json`
+- `automation_rounds/round_0022/comparability_report.json`
+- `automation_rounds/round_0022/round_summary.json`
 
 ## 3. Required Judgement Order
 1. Check comparability first. If comparability failed or evidence is insufficient, do not claim formal improvement.
@@ -29,5 +29,5 @@
 4. Which evidence gaps must remain explicit in the next GPT decision payload?
 
 ## 5. Output Requirement
-- Write the analysis report to `automation_rounds/round_0021/codex_report.md`.
+- Write the analysis report to `automation_rounds/round_0022/codex_report.md`.
 - Base every formal conclusion on the structured JSON files above rather than on synthetic rehearsal assumptions.

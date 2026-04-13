@@ -1,26 +1,27 @@
 {
   "schema_version": "2.0",
-  "round_id": "round_0021",
+  "round_id": "round_0023",
   "experiment_mode": "formal_train",
   "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
   "decision_status": "pause_for_manual_review",
   "evaluation_mode": "formal_artifact_review",
   "comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
-  "baseline_round_id": null,
-  "baseline_commit_sha": null,
-  "decision_zone": "insufficient_evidence",
+  "baseline_round_id": "round_0022",
+  "baseline_commit_sha": "832dee8042424a2009fe2fff2f5137b6efbc15c5",
+  "decision_zone": "manual_review_required",
   "stop_window_state": {
     "window_basis": "bootstrap_thresholds",
-    "comparability_status": "insufficient_evidence",
+    "comparability_status": "bootstrap_comparable",
     "plateau_detected": false,
     "hard_stop_triggered": false,
     "manual_review_required": true,
     "insufficient_evidence": true,
     "recommended_action": "pause_for_manual_review",
-    "decision_zone": "insufficient_evidence",
+    "decision_zone": "manual_review_required",
     "reasons": [
-      "comparability_inputs_incomplete",
       "historical_thresholds_are_bootstrap_only",
+      "net_regression_detected",
+      "comparability_only_bootstrap_confirmed",
       "runtime_summary_missing",
       "backfilled_from_historical_run",
       "train_config_unavailable_in_backfill_context",
@@ -28,10 +29,12 @@
       "total_runtime_unavailable",
       "complete_train_config_not_recoverable_without_checkpoint_loader",
       "train_config_unavailable",
+      "bootstrap_thresholds_required",
       "historical_thresholds_bootstrap_only"
     ]
   },
   "manual_review_reasons": [
+    "comparability_only_bootstrap_confirmed",
     "runtime_summary_missing"
   ],
   "insufficient_evidence_flags": [
@@ -41,6 +44,7 @@
     "total_runtime_unavailable",
     "complete_train_config_not_recoverable_without_checkpoint_loader",
     "train_config_unavailable",
+    "bootstrap_thresholds_required",
     "historical_thresholds_bootstrap_only"
   ],
   "target_program": "train_q_agent.py",
@@ -49,13 +53,15 @@
       "--device",
       "cuda"
     ],
-    "run_name": "4.9_30万轮基线",
+    "run_name": "sched_turn003_revisit010_entry8_20260411_014043",
     "output_root": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs",
     "notes": "Imported historical formal run bundle; rerun only after comparability review."
   },
   "parameter_changes": [],
   "codex_analysis_focus": {
-    "compare_targets": [],
+    "compare_targets": [
+      "best_known_reference"
+    ],
     "required_logs": [
       "metric_snapshot.json",
       "benchmark_summary.json",
@@ -73,8 +79,8 @@
     "expected_output_style": "Write a structured Markdown report grounded in the formal JSON artifacts."
   },
   "reference_targets": {
-    "best_known_reference": null,
+    "best_known_reference": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\sched_turn005_revisit010_entry8_20260410_234142",
     "manual_compare_targets": []
   },
-  "controller_notes": "Imported default main baseline round from the formal source-of-truth repo."
+  "controller_notes": "Imported latest formal round for review against the current bootstrap reference run."
 }

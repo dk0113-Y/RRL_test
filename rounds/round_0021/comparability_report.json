@@ -1,0 +1,101 @@
+{
+  "schema_version": "formal_exchange/v2",
+  "artifact_type": "comparability_report",
+  "round_id": "round_0021",
+  "generated_at": "2026-04-13T20:19:03+08:00",
+  "experiment_mode": "formal_train",
+  "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
+  "evaluation_mode": "formal_artifact_review",
+  "target_run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\4.9_30万轮基线",
+  "baseline_round_id": null,
+  "baseline_run_dir": null,
+  "baseline_commit_sha": null,
+  "comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
+  "baseline_comparability_group": null,
+  "comparability_status": "insufficient_evidence",
+  "checks": {
+    "baseline_available": false,
+    "same_comparability_group": false,
+    "same_eval_metrics_header": false,
+    "same_final_probe_header": false,
+    "same_final_env_steps": false,
+    "target_has_full_config_snapshot": false,
+    "baseline_has_full_config_snapshot": false
+  },
+  "metric_comparison": {
+    "final_probe_primary_metrics": {
+      "success_rate": {
+        "target": 0.625,
+        "baseline": null,
+        "delta": null
+      },
+      "coverage": {
+        "target": 0.8751125335693359,
+        "baseline": null,
+        "delta": null
+      },
+      "reward": {
+        "target": 86.50942993164062,
+        "baseline": null,
+        "delta": null
+      }
+    },
+    "final_probe_secondary_metrics": {
+      "episode_length": {
+        "target": 454.9375,
+        "baseline": null,
+        "delta": null
+      },
+      "repeat_visit_ratio": {
+        "target": 0.38662803173065186,
+        "baseline": null,
+        "delta": null
+      }
+    },
+    "final_probe_stability_metrics": {
+      "timeout_flag": {
+        "target": 0.375,
+        "baseline": null,
+        "delta": null
+      },
+      "stall_trigger_count": {
+        "target": 213.1875,
+        "baseline": null,
+        "delta": null
+      },
+      "zero_info_step_count": {
+        "target": 295.625,
+        "baseline": null,
+        "delta": null
+      },
+      "recent_revisit_count": {
+        "target": 177.0,
+        "baseline": null,
+        "delta": null
+      }
+    }
+  },
+  "efficiency_comparison": {
+    "total_runtime_sec": {
+      "target": null,
+      "baseline": null,
+      "delta": null
+    },
+    "env_steps_to_best": {
+      "target": 264000,
+      "baseline": null,
+      "delta": null
+    }
+  },
+  "insufficient_evidence_flags": [
+    "backfilled_from_historical_run",
+    "train_config_unavailable_in_backfill_context",
+    "timing_summary_unavailable",
+    "total_runtime_unavailable",
+    "complete_train_config_not_recoverable_without_checkpoint_loader",
+    "train_config_unavailable"
+  ],
+  "notes": [
+    "Baseline artifacts are missing, so formal comparability cannot be established."
+  ]
+}

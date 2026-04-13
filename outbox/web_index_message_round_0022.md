@@ -1,10 +1,10 @@
-# New Formal Train Round: round_0021
+# New Formal Train Round: round_0022
 
 A new formal_train exchange bundle is ready.
 
 Repository: https://github.com/dk0113-Y/RRL_test
 Branch: main
-Manifest: `rounds/round_0021/index_manifest.json`
+Manifest: `rounds/round_0022/index_manifest.json`
 
 Required reading order:
 1. Read `docs/reading_order.md`
@@ -14,7 +14,7 @@ Required reading order:
 5. Read `docs/stopping_policy.md`
 6. Read `docs/output_contract.md`
 
-After the docs, read `CURRENT_ROUND.json`, then `rounds/round_0021/index_manifest.json`, then the structured round files (`metric_snapshot.json`, `benchmark_summary.json`, `config_snapshot.json`, `artifact_index.json`, `comparability_report.json`, `round_summary.json`).
+After the docs, read `CURRENT_ROUND.json`, then `rounds/round_0022/index_manifest.json`, then the structured round files (`metric_snapshot.json`, `benchmark_summary.json`, `config_snapshot.json`, `artifact_index.json`, `comparability_report.json`, `round_summary.json`).
 
 Formal judgement rules:
 - Treat the real training repository artifacts as the only source of truth.

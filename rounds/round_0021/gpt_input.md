@@ -1,52 +1,45 @@
 # GPT Input Package
 
-## 1. Round metadata
+## 1. Current Round Basics
 - Round id: `round_0021`
+- Experiment mode: `formal_train`
+- Source of truth repo: `C:\Users\Dk\Desktop\SCI\代码1`
 - Round state status: `success`
-- Run directory: `outputs/sched_turn003_revisit010_entry8_20260412_194230`
-- Training return code: `0`
-- Bridge status: `not_invoked`
+- Run directory: `C:\Users\Dk\Desktop\SCI\代码1\outputs\4.9_30万轮基线`
+- Target program: `train_q_agent.py`
 
-## 2. Previous decision summary
-- Decision status: `run_next_round`
-- Target program: `fake_train.py`
-- Parameter changes:
-| Parameter | Old | New | Delta | Reason |
-| --- | --- | --- | --- | --- |
-| `multiple` | `0` | `0` | `0` | Moving consistently towards synthetic optimum |
-- Compare target requests:
-- Raw compare target tokens from decision:
-- Explicit reference targets:
-  - Best known reference: `UNSET`
-  - Manual compare target: UNSET
+## 2. Comparability
+- Comparability status: `insufficient_evidence`
+- Comparability group: `formal_mainline_v1__bf21a9e8fbc5`
+- Baseline round id: `UNSET`
+- Baseline commit sha: `UNSET`
+- Checks: `{'baseline_available': False, 'same_comparability_group': False, 'same_eval_metrics_header': False, 'same_final_probe_header': False, 'same_final_env_steps': False, 'target_has_full_config_snapshot': False, 'baseline_has_full_config_snapshot': False}`
 
-## 3. Codex request summary
-- Required files / focus objects:
-  - No focused files were extracted from codex_request.md.
-- Core questions from codex_request.md:
-  - No numbered questions were extracted from codex_request.md.
+## 3. Metric Verdict Layer
+- Primary verdict: `insufficient_evidence`
+- Secondary verdict: `insufficient_evidence`
+- Stability verdict: `insufficient_evidence`
+- Efficiency verdict: `insufficient_evidence`
+- Overall verdict: `insufficient_evidence`
 
-## 4. Codex report
-## Codex Analysis Report
+## 4. Best Eval / Last Eval / Final Probe
+- best_eval: `{'reward': 37.00354766845703, 'coverage': 0.8192999958992004, 'success_rate': 0.25, 'episode_length': 568.75, 'repeat_visit_ratio': 0.5247381329536438}`
+- last_eval: `{'reward': 3.671288251876831, 'coverage': 0.6947166919708252, 'success_rate': 0.1666666716337204, 'episode_length': 559.75, 'repeat_visit_ratio': 0.6131370067596436}`
+- final_probe: `{'reward': 86.50942993164062, 'coverage': 0.8751125335693359, 'success_rate': 0.625, 'episode_length': 454.9375, 'repeat_visit_ratio': 0.38662803173065186}`
+- benchmark_summary: `runtime=None, env_steps_to_best=264000`
 
-**Observation:** The metrics have shown measurable responses to the current parameters. Upon reviewing `synthetic_truth.json` (simulated analysis), further adjustments are required.
-- `turn_penalty` should decrease towards 0.02.
-- `revisit_penalty` should decrease towards 0.08.
-- `entry_k` should increase towards 10.
+## 5. Stop Window
+- decision_zone: `insufficient_evidence`
+- recommended_action: `pause_for_manual_review`
+- plateau_detected: `False`
+- manual_review_required: `True`
+- reasons: comparability_inputs_incomplete, historical_thresholds_are_bootstrap_only, runtime_summary_missing, backfilled_from_historical_run, train_config_unavailable_in_backfill_context, timing_summary_unavailable, total_runtime_unavailable, complete_train_config_not_recoverable_without_checkpoint_loader, train_config_unavailable, historical_thresholds_bootstrap_only
 
-**Recommended next step:** Adjust the parameters according to the directional gradients above to approach the synthetic optimum.
-**Confidence / caveat:** High confidence based on synthetic gradients.
+## 6. Manual Review / Evidence Gaps
+- manual_review_reasons: runtime_summary_missing
+- insufficient_evidence_flags: backfilled_from_historical_run, train_config_unavailable_in_backfill_context, timing_summary_unavailable, total_runtime_unavailable, complete_train_config_not_recoverable_without_checkpoint_loader, train_config_unavailable, historical_thresholds_bootstrap_only
 
-Detailed logs show the progression toward target benchmarks.
-
-## 5. What GPT should decide next
-- Decide whether to continue to another round or stop.
-- If continuing, specify which parameters should change, in what direction, and by approximately how much.
-- Decide whether the next round needs updated Codex analysis focus or different required logs / plots.
-- Decide whether compare targets should be updated, including any explicit best-known reference.
-
-## 6. Output contract
-- Produce the next full `gpt_decision.json` content for a future round in this repository.
-- Include the next round decision_status, target_program, run_args, parameter_changes, codex_analysis_focus, reference_targets, and controller_notes.
-- Explicitly state the next round Codex analysis focus and compare targets.
-- This GPT input package was generated from `automation_rounds/round_0021/gpt_input.md`.
+## 7. What GPT Should Output
+- Read `docs/reading_order.md`, `docs/current_mainline.md`, `docs/evaluation_charter.md`, and `docs/output_contract.md` before drafting the next decision.
+- Any claim of improvement must remain subordinate to comparability. If comparability failed or evidence is insufficient, do not accumulate a positive formal conclusion.
+- Output a single `next_gpt_decision.json` payload aligned with `docs/output_contract.md` and the dual-mode protocol schema.

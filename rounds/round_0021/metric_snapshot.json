@@ -1,0 +1,391 @@
+{
+  "schema_version": "formal_train_artifacts/v1",
+  "artifact_type": "metric_snapshot",
+  "experiment_mode": "formal_train",
+  "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
+  "run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\4.9_30万轮基线",
+  "generated_at": "2026-04-13T20:18:48+08:00",
+  "recent_train": {
+    "source": "logs/train_steps.csv",
+    "env_steps": 300000,
+    "learner_steps": 37000,
+    "optimizer_monitoring": {
+      "loss": 1.9744837284088135,
+      "q_mean": 3.0234122276306152,
+      "target_q_mean": 3.0064737796783447,
+      "td_abs_mean": 2.357285976409912,
+      "grad_norm": 25.912830352783203,
+      "replay_size": 100000,
+      "epsilon": 0.05
+    },
+    "metrics": {
+      "reward": 84.73856353759766,
+      "coverage": 0.895763099193573,
+      "success_rate": 0.4399999976158142,
+      "episode_length": 505.82000732421875,
+      "repeat_visit_ratio": 0.3717583417892456
+    },
+    "reward_breakdown": {},
+    "reward_events": {},
+    "semantic_monitoring": {
+      "accessible_block_count": 5.07016134262085,
+      "total_accessible_unknown_area": 451.12384033203125,
+      "total_frontier_cluster_count": 11.100398063659668,
+      "mean_block_area": 125.47917938232422,
+      "local_frontier_coverage": 0.024859927594661713,
+      "local_frontier_block_area_mean": 0.4035335183143616
+    },
+    "raw_row": {
+      "env_steps": 300000,
+      "replay_size": 100000,
+      "epsilon": 0.05,
+      "loss": 1.9744837284088135,
+      "q_mean": 3.0234122276306152,
+      "target_q_mean": 3.0064737796783447,
+      "td_abs_mean": 2.357285976409912,
+      "grad_norm": 25.912830352783203,
+      "learner_steps": 37000,
+      "recent_mean_reward": 84.73856353759766,
+      "recent_mean_coverage": 0.895763099193573,
+      "recent_success_rate": 0.4399999976158142,
+      "recent_mean_episode_length": 505.82000732421875,
+      "recent_mean_repeat_visit_ratio": 0.3717583417892456,
+      "recent_accessible_block_count": 5.07016134262085,
+      "recent_total_accessible_unknown_area": 451.12384033203125,
+      "recent_total_frontier_cluster_count": 11.100398063659668,
+      "recent_mean_block_area": 125.47917938232422,
+      "recent_local_frontier_coverage": 0.024859927594661713,
+      "recent_local_frontier_block_area_mean": 0.4035335183143616
+    }
+  },
+  "last_eval": {
+    "source": "logs/eval_metrics.csv",
+    "tag": "final",
+    "env_steps": 300000,
+    "learner_steps": 37000,
+    "episodes": 12,
+    "metrics": {
+      "reward": 3.671288251876831,
+      "coverage": 0.6947166919708252,
+      "success_rate": 0.1666666716337204,
+      "episode_length": 559.75,
+      "repeat_visit_ratio": 0.6131370067596436
+    },
+    "reward_breakdown": {
+      "info_reward_sum": 102.14962005615234,
+      "step_penalty_sum": -11.194999694824219,
+      "recent_revisit_penalty_sum": -39.8599967956543,
+      "stall_penalty_sum": -44.09000015258789,
+      "timeout_penalty_sum": -6.666666507720947,
+      "terminal_bonus_sum": 3.3333332538604736
+    },
+    "reward_events": {
+      "delta_empty_sum": 1016.3333129882812,
+      "delta_obstacle_sum": 213.5,
+      "weighted_info_gain_sum": 34.04987716674805,
+      "recent_revisit_count": 332.1666564941406,
+      "stall_trigger_count": 367.4166564941406,
+      "zero_info_step_count": 437.0833435058594,
+      "timeout_flag": 0.8333333134651184
+    },
+    "semantic_monitoring": {
+      "accessible_block_count": 5.123300075531006,
+      "total_accessible_unknown_area": 403.19873046875,
+      "total_frontier_cluster_count": 9.621479034423828,
+      "mean_block_area": 103.55664825439453,
+      "local_frontier_coverage": 0.03646540269255638,
+      "local_frontier_block_area_mean": 0.42839089035987854
+    },
+    "raw_row": {
+      "tag": "final",
+      "env_steps": 300000,
+      "learner_steps": 37000,
+      "eval_episodes": 12,
+      "eval_mean_reward": 3.671288251876831,
+      "eval_mean_coverage": 0.6947166919708252,
+      "eval_success_rate": 0.1666666716337204,
+      "eval_mean_episode_length": 559.75,
+      "eval_mean_repeat_visit_ratio": 0.6131370067596436,
+      "eval_mean_accessible_block_count": 5.123300075531006,
+      "eval_mean_total_accessible_unknown_area": 403.19873046875,
+      "eval_mean_total_frontier_cluster_count": 9.621479034423828,
+      "eval_mean_mean_block_area": 103.55664825439453,
+      "eval_mean_local_frontier_coverage": 0.03646540269255638,
+      "eval_mean_local_frontier_block_area_mean": 0.42839089035987854,
+      "eval_mean_info_reward_sum": 102.14962005615234,
+      "eval_mean_step_penalty_sum": -11.194999694824219,
+      "eval_mean_recent_revisit_penalty_sum": -39.8599967956543,
+      "eval_mean_stall_penalty_sum": -44.09000015258789,
+      "eval_mean_timeout_penalty_sum": -6.666666507720947,
+      "eval_mean_terminal_bonus_sum": 3.3333332538604736,
+      "eval_mean_delta_empty_sum": 1016.3333129882812,
+      "eval_mean_delta_obstacle_sum": 213.5,
+      "eval_mean_weighted_info_gain_sum": 34.04987716674805,
+      "eval_mean_recent_revisit_count": 332.1666564941406,
+      "eval_mean_stall_trigger_count": 367.4166564941406,
+      "eval_mean_zero_info_step_count": 437.0833435058594,
+      "eval_mean_timeout_flag": 0.8333333134651184
+    }
+  },
+  "best_eval": {
+    "source": "logs/eval_metrics.csv::best_eval",
+    "tag": "periodic",
+    "env_steps": 264000,
+    "learner_steps": 32500,
+    "episodes": 12,
+    "metrics": {
+      "reward": 37.00354766845703,
+      "coverage": 0.8192999958992004,
+      "success_rate": 0.25,
+      "episode_length": 568.75,
+      "repeat_visit_ratio": 0.5247381329536438
+    },
+    "reward_breakdown": {
+      "info_reward_sum": 124.19855499267578,
+      "step_penalty_sum": -11.375,
+      "recent_revisit_penalty_sum": -33.269996643066406,
+      "stall_penalty_sum": -41.54999923706055,
+      "timeout_penalty_sum": -6,
+      "terminal_bonus_sum": 5
+    },
+    "reward_events": {
+      "delta_empty_sum": 1234,
+      "delta_obstacle_sum": 266.4166564941406,
+      "weighted_info_gain_sum": 41.39952087402344,
+      "recent_revisit_count": 277.25,
+      "stall_trigger_count": 346.25,
+      "zero_info_step_count": 421.5,
+      "timeout_flag": 0.75
+    },
+    "semantic_monitoring": {
+      "accessible_block_count": 4.65576696395874,
+      "total_accessible_unknown_area": 435.0714416503906,
+      "total_frontier_cluster_count": 9.858471870422363,
+      "mean_block_area": 124.11095428466797,
+      "local_frontier_coverage": 0.020358650013804436,
+      "local_frontier_block_area_mean": 0.4398503303527832
+    },
+    "raw_row": {
+      "tag": "periodic",
+      "env_steps": 264000,
+      "learner_steps": 32500,
+      "eval_episodes": 12,
+      "eval_mean_reward": 37.00354766845703,
+      "eval_mean_coverage": 0.8192999958992004,
+      "eval_success_rate": 0.25,
+      "eval_mean_episode_length": 568.75,
+      "eval_mean_repeat_visit_ratio": 0.5247381329536438,
+      "eval_mean_accessible_block_count": 4.65576696395874,
+      "eval_mean_total_accessible_unknown_area": 435.0714416503906,
+      "eval_mean_total_frontier_cluster_count": 9.858471870422363,
+      "eval_mean_mean_block_area": 124.11095428466797,
+      "eval_mean_local_frontier_coverage": 0.020358650013804436,
+      "eval_mean_local_frontier_block_area_mean": 0.4398503303527832,
+      "eval_mean_info_reward_sum": 124.19855499267578,
+      "eval_mean_step_penalty_sum": -11.375,
+      "eval_mean_recent_revisit_penalty_sum": -33.269996643066406,
+      "eval_mean_stall_penalty_sum": -41.54999923706055,
+      "eval_mean_timeout_penalty_sum": -6,
+      "eval_mean_terminal_bonus_sum": 5,
+      "eval_mean_delta_empty_sum": 1234,
+      "eval_mean_delta_obstacle_sum": 266.4166564941406,
+      "eval_mean_weighted_info_gain_sum": 41.39952087402344,
+      "eval_mean_recent_revisit_count": 277.25,
+      "eval_mean_stall_trigger_count": 346.25,
+      "eval_mean_zero_info_step_count": 421.5,
+      "eval_mean_timeout_flag": 0.75
+    }
+  },
+  "final_probe": {
+    "source": "logs/final_probe.csv",
+    "tag": "final_probe",
+    "env_steps": 300000,
+    "learner_steps": 37000,
+    "episodes": 16,
+    "metrics": {
+      "reward": 86.50942993164062,
+      "coverage": 0.8751125335693359,
+      "success_rate": 0.625,
+      "episode_length": 454.9375,
+      "repeat_visit_ratio": 0.38662803173065186
+    },
+    "reward_breakdown": {
+      "info_reward_sum": 132.93069458007812,
+      "step_penalty_sum": -9.098750114440918,
+      "recent_revisit_penalty_sum": -21.240001678466797,
+      "stall_penalty_sum": -25.58249855041504,
+      "timeout_penalty_sum": -3,
+      "terminal_bonus_sum": 12.5
+    },
+    "reward_events": {
+      "delta_empty_sum": 1318.375,
+      "delta_obstacle_sum": 294.6875,
+      "weighted_info_gain_sum": 44.31022644042969,
+      "recent_revisit_count": 177,
+      "stall_trigger_count": 213.1875,
+      "zero_info_step_count": 295.625,
+      "timeout_flag": 0.375
+    },
+    "semantic_monitoring": {
+      "accessible_block_count": 4.357793807983398,
+      "total_accessible_unknown_area": 465.558349609375,
+      "total_frontier_cluster_count": 10.071791648864746,
+      "mean_block_area": 137.41452026367188,
+      "local_frontier_coverage": 0.02718082070350647,
+      "local_frontier_block_area_mean": 0.4215354919433594
+    },
+    "raw_row": {
+      "tag": "final_probe",
+      "env_steps": 300000,
+      "learner_steps": 37000,
+      "eval_episodes": 16,
+      "eval_mean_reward": 86.50942993164062,
+      "eval_mean_coverage": 0.8751125335693359,
+      "eval_success_rate": 0.625,
+      "eval_mean_episode_length": 454.9375,
+      "eval_mean_repeat_visit_ratio": 0.38662803173065186,
+      "eval_mean_accessible_block_count": 4.357793807983398,
+      "eval_mean_total_accessible_unknown_area": 465.558349609375,
+      "eval_mean_total_frontier_cluster_count": 10.071791648864746,
+      "eval_mean_mean_block_area": 137.41452026367188,
+      "eval_mean_local_frontier_coverage": 0.02718082070350647,
+      "eval_mean_local_frontier_block_area_mean": 0.4215354919433594,
+      "eval_mean_info_reward_sum": 132.93069458007812,
+      "eval_mean_step_penalty_sum": -9.098750114440918,
+      "eval_mean_recent_revisit_penalty_sum": -21.240001678466797,
+      "eval_mean_stall_penalty_sum": -25.58249855041504,
+      "eval_mean_timeout_penalty_sum": -3,
+      "eval_mean_terminal_bonus_sum": 12.5,
+      "eval_mean_delta_empty_sum": 1318.375,
+      "eval_mean_delta_obstacle_sum": 294.6875,
+      "eval_mean_weighted_info_gain_sum": 44.31022644042969,
+      "eval_mean_recent_revisit_count": 177,
+      "eval_mean_stall_trigger_count": 213.1875,
+      "eval_mean_zero_info_step_count": 295.625,
+      "eval_mean_timeout_flag": 0.375
+    }
+  },
+  "best_checkpoint_source": "checkpoints/best.pt::historical_backfill_success_rate_then_eval_mean_coverage",
+  "best_checkpoint_env_steps": 264000,
+  "last_checkpoint_env_steps": 300000,
+  "final_probe_source": "historical_backfill_unknown_best_or_online_last",
+  "unified_metrics": {
+    "primary_metrics": {
+      "reward": {
+        "direction": "higher_is_better",
+        "recent_train": 84.73856353759766,
+        "last_eval": 3.671288251876831,
+        "best_eval": 37.00354766845703,
+        "final_probe": 86.50942993164062
+      },
+      "coverage": {
+        "direction": "higher_is_better",
+        "recent_train": 0.895763099193573,
+        "last_eval": 0.6947166919708252,
+        "best_eval": 0.8192999958992004,
+        "final_probe": 0.8751125335693359
+      },
+      "success_rate": {
+        "direction": "higher_is_better",
+        "recent_train": 0.4399999976158142,
+        "last_eval": 0.1666666716337204,
+        "best_eval": 0.25,
+        "final_probe": 0.625
+      }
+    },
+    "secondary_metrics": {
+      "episode_length": {
+        "direction": "lower_is_better",
+        "recent_train": 505.82000732421875,
+        "last_eval": 559.75,
+        "best_eval": 568.75,
+        "final_probe": 454.9375
+      },
+      "repeat_visit_ratio": {
+        "direction": "lower_is_better",
+        "recent_train": 0.3717583417892456,
+        "last_eval": 0.6131370067596436,
+        "best_eval": 0.5247381329536438,
+        "final_probe": 0.38662803173065186
+      }
+    },
+    "stability_metrics": {
+      "timeout_flag": {
+        "direction": "lower_is_better",
+        "recent_train": null,
+        "last_eval": null,
+        "best_eval": null,
+        "final_probe": null
+      },
+      "stall_trigger_count": {
+        "direction": "lower_is_better",
+        "recent_train": null,
+        "last_eval": null,
+        "best_eval": null,
+        "final_probe": null
+      },
+      "zero_info_step_count": {
+        "direction": "lower_is_better",
+        "recent_train": null,
+        "last_eval": null,
+        "best_eval": null,
+        "final_probe": null
+      },
+      "recent_revisit_count": {
+        "direction": "lower_is_better",
+        "recent_train": null,
+        "last_eval": null,
+        "best_eval": null,
+        "final_probe": null
+      }
+    },
+    "semantic_monitoring": {
+      "accessible_block_count": {
+        "direction": "context_dependent_monitoring",
+        "recent_train": 5.07016134262085,
+        "last_eval": 5.123300075531006,
+        "best_eval": 4.65576696395874,
+        "final_probe": 4.357793807983398
+      },
+      "local_frontier_block_area_mean": {
+        "direction": "context_dependent_monitoring",
+        "recent_train": 0.4035335183143616,
+        "last_eval": 0.42839089035987854,
+        "best_eval": 0.4398503303527832,
+        "final_probe": 0.4215354919433594
+      },
+      "local_frontier_coverage": {
+        "direction": "context_dependent_monitoring",
+        "recent_train": 0.024859927594661713,
+        "last_eval": 0.03646540269255638,
+        "best_eval": 0.020358650013804436,
+        "final_probe": 0.02718082070350647
+      },
+      "mean_block_area": {
+        "direction": "context_dependent_monitoring",
+        "recent_train": 125.47917938232422,
+        "last_eval": 103.55664825439453,
+        "best_eval": 124.11095428466797,
+        "final_probe": 137.41452026367188
+      },
+      "total_accessible_unknown_area": {
+        "direction": "context_dependent_monitoring",
+        "recent_train": 451.12384033203125,
+        "last_eval": 403.19873046875,
+        "best_eval": 435.0714416503906,
+        "final_probe": 465.558349609375
+      },
+      "total_frontier_cluster_count": {
+        "direction": "context_dependent_monitoring",
+        "recent_train": 11.100398063659668,
+        "last_eval": 9.621479034423828,
+        "best_eval": 9.858471870422363,
+        "final_probe": 10.071791648864746
+      }
+    }
+  },
+  "insufficient_evidence_flags": [
+    "backfilled_from_historical_run",
+    "train_config_unavailable_in_backfill_context"
+  ]
+}

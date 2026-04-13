@@ -1,0 +1,101 @@
+{
+  "schema_version": "formal_exchange/v2",
+  "artifact_type": "comparability_report",
+  "round_id": "round_0022",
+  "generated_at": "2026-04-13T20:19:03+08:00",
+  "experiment_mode": "formal_train",
+  "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
+  "evaluation_mode": "formal_artifact_review",
+  "target_run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\sched_turn005_revisit010_entry8_20260410_234142",
+  "baseline_round_id": "round_0021",
+  "baseline_run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\4.9_30万轮基线",
+  "baseline_commit_sha": "832dee8042424a2009fe2fff2f5137b6efbc15c5",
+  "comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
+  "baseline_comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
+  "comparability_status": "not_comparable",
+  "checks": {
+    "baseline_available": true,
+    "same_comparability_group": true,
+    "same_eval_metrics_header": false,
+    "same_final_probe_header": false,
+    "same_final_env_steps": true,
+    "target_has_full_config_snapshot": false,
+    "baseline_has_full_config_snapshot": false
+  },
+  "metric_comparison": {
+    "final_probe_primary_metrics": {
+      "success_rate": {
+        "target": 0.875,
+        "baseline": 0.625,
+        "delta": 0.25
+      },
+      "coverage": {
+        "target": 0.9108062386512756,
+        "baseline": 0.8751125335693359,
+        "delta": 0.0356937050819397
+      },
+      "reward": {
+        "target": 120.79263305664062,
+        "baseline": 86.50942993164062,
+        "delta": 34.283203125
+      }
+    },
+    "final_probe_secondary_metrics": {
+      "episode_length": {
+        "target": 337.6875,
+        "baseline": 454.9375,
+        "delta": -117.25
+      },
+      "repeat_visit_ratio": {
+        "target": 0.2270648330450058,
+        "baseline": 0.38662803173065186,
+        "delta": -0.15956319868564606
+      }
+    },
+    "final_probe_stability_metrics": {
+      "timeout_flag": {
+        "target": 0.125,
+        "baseline": 0.375,
+        "delta": -0.25
+      },
+      "stall_trigger_count": {
+        "target": 111.6875,
+        "baseline": 213.1875,
+        "delta": -101.5
+      },
+      "zero_info_step_count": {
+        "target": 172.75,
+        "baseline": 295.625,
+        "delta": -122.875
+      },
+      "recent_revisit_count": {
+        "target": 88.875,
+        "baseline": 177.0,
+        "delta": -88.125
+      }
+    }
+  },
+  "efficiency_comparison": {
+    "total_runtime_sec": {
+      "target": null,
+      "baseline": null,
+      "delta": null
+    },
+    "env_steps_to_best": {
+      "target": 288000,
+      "baseline": 264000,
+      "delta": 24000
+    }
+  },
+  "insufficient_evidence_flags": [
+    "backfilled_from_historical_run",
+    "train_config_unavailable_in_backfill_context",
+    "timing_summary_unavailable",
+    "total_runtime_unavailable",
+    "complete_train_config_not_recoverable_without_checkpoint_loader",
+    "train_config_unavailable"
+  ],
+  "notes": [
+    "Observed CSV schemas diverged between target and baseline."
+  ]
+}

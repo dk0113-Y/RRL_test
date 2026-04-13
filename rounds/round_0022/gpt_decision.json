@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
-  "round_id": "round_0021",
+  "round_id": "round_0022",
   "experiment_mode": "formal_train",
   "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
-  "decision_status": "pause_for_manual_review",
+  "decision_status": "analyze_only",
   "evaluation_mode": "formal_artifact_review",
   "comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
-  "baseline_round_id": null,
-  "baseline_commit_sha": null,
-  "decision_zone": "insufficient_evidence",
+  "baseline_round_id": "round_0021",
+  "baseline_commit_sha": "832dee8042424a2009fe2fff2f5137b6efbc15c5",
+  "decision_zone": "not_comparable",
   "stop_window_state": {
     "window_basis": "bootstrap_thresholds",
-    "comparability_status": "insufficient_evidence",
+    "comparability_status": "not_comparable",
     "plateau_detected": false,
     "hard_stop_triggered": false,
-    "manual_review_required": true,
+    "manual_review_required": false,
     "insufficient_evidence": true,
-    "recommended_action": "pause_for_manual_review",
-    "decision_zone": "insufficient_evidence",
+    "recommended_action": "analyze_only",
+    "decision_zone": "not_comparable",
     "reasons": [
-      "comparability_inputs_incomplete",
+      "comparability_failed",
       "historical_thresholds_are_bootstrap_only",
       "runtime_summary_missing",
       "backfilled_from_historical_run",
@@ -49,13 +49,15 @@
       "--device",
       "cuda"
     ],
-    "run_name": "4.9_30万轮基线",
+    "run_name": "sched_turn005_revisit010_entry8_20260410_234142",
     "output_root": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs",
     "notes": "Imported historical formal run bundle; rerun only after comparability review."
   },
   "parameter_changes": [],
   "codex_analysis_focus": {
-    "compare_targets": [],
+    "compare_targets": [
+      "best_known_reference"
+    ],
     "required_logs": [
       "metric_snapshot.json",
       "benchmark_summary.json",
@@ -73,8 +75,8 @@
     "expected_output_style": "Write a structured Markdown report grounded in the formal JSON artifacts."
   },
   "reference_targets": {
-    "best_known_reference": null,
+    "best_known_reference": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\4.9_30万轮基线",
     "manual_compare_targets": []
   },
-  "controller_notes": "Imported default main baseline round from the formal source-of-truth repo."
+  "controller_notes": "Imported formal reference round for the current scheduled subfamily."
 }
