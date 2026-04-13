@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "round_id": "round_0003",
+  "status": "success",
+  "source_round_id": "round_0002",
+  "run_dir": "outputs/sched_turn003_revisit007_entry10_20260413_141937",
+  "parameter_changes": [
+    {
+      "name": "revisit_penalty",
+      "old": 0.09,
+      "new": 0.07,
+      "reason": "Public round materials show revisit_penalty still has a meaningful remaining gap to the reported synthetic optimum of 0.05, and Codex explicitly recommended continued downward movement with stronger emphasis here."
+    },
+    {
+      "name": "entry_k",
+      "old": 8,
+      "new": 10,
+      "reason": "Entry_k remains the largest discrete mismatch versus the reported synthetic optimum of 12. A further +2 step preserves interpretability while continuing the strongest recommended direction."
+    }
+  ],
+  "compare_targets": [
+    "previous_round_run",
+    "best_known_reference"
+  ],
+  "core_questions": [
+    "With turn_penalty held at 0.03, revisit_penalty lowered to 0.07, and entry_k raised to 10, did the synthetic gap shrink further relative to round_0002?",
+    "Compared with the previous round and the current best-known reference, did final and best-checkpoint eval reward, coverage, and success improve or at least remain competitive without a loss regression?",
+    "Did the late-run reward rollover weaken further in train, eval, and final_probe metrics, or did the more aggressive move on revisit_penalty and entry_k introduce new instability?"
+  ],
+  "recommended_next_step": "keep `run_next_round` and continue a conservative move toward the recorded optimum `0.015 / 0.05 / 12`, because this round reduced `error_score` again and improved both final and best-checkpoint eval metrics without a loss regression. The strongest remaining gap is still `entry_k`, with a smaller but still meaningful gap on `revisit_penalty`, so the next GPT decision should continue prioritizing those directions while keeping `turn_penalty` fixed unless new evidence appears.",
+  "confidence_or_caveat": "confidence is high for the measured improvement and weaker rollover because they are directly supported by the inspected files. Parameter attribution remains somewhat limited because `revisit_penalty` and `entry_k` changed together in this round.",
+  "updated_at": "2026-04-13T14:22:32+08:00"
+}
