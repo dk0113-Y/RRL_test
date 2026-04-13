@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "round_id": "round_0004",
+  "task_type": "experiment_analysis",
+  "stable_context_files": [
+    "docs/project_context.md",
+    "docs/automation_scope.md",
+    "docs/tuning_policy.md"
+  ],
+  "round_files": [
+    "rounds/round_0004/gpt_decision.json",
+    "rounds/round_0004/codex_request.md",
+    "rounds/round_0004/codex_report.md",
+    "rounds/round_0004/round_state.json",
+    "rounds/round_0004/gpt_input.md",
+    "rounds/round_0004/round_summary.json"
+  ],
+  "expected_output_file": "next_gpt_decision.json",
+  "notes": "Continue the bounded rehearsal with turn_penalty, steps, sleep_sec, and seed held fixed. Apply the remaining publicly supported moves on revisit_penalty and entry_k so the next round primarily tests whether closing those residual gaps further reduces error_score, possibly changes target_reached, and preserves the current gains in final coverage, success, loss, and milder late-run reward rollover."
+}
