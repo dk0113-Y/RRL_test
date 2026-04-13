@@ -8,21 +8,21 @@
 - Controller notes: Initial synthetic starter for rehearsal.
 
 ## 2. 本轮目标 run
-- Run directory: `outputs/sched_turn004_revisit012_entry6_20260413_094143`
-- Logs directory: `outputs/sched_turn004_revisit012_entry6_20260413_094143/logs`
-- Plots directory: `outputs/sched_turn004_revisit012_entry6_20260413_094143/plots`
-- Checkpoints directory: `outputs/sched_turn004_revisit012_entry6_20260413_094143/checkpoints`
+- Run directory: `outputs/sched_turn004_revisit012_entry6_20260413_095916`
+- Logs directory: `outputs/sched_turn004_revisit012_entry6_20260413_095916/logs`
+- Plots directory: `outputs/sched_turn004_revisit012_entry6_20260413_095916/plots`
+- Checkpoints directory: `outputs/sched_turn004_revisit012_entry6_20260413_095916/checkpoints`
 
 ## 3. 本轮参数变更摘要
 No parameter changes were recorded in `gpt_decision.json`.
 
 ## 4. 需要重点检查的文件
 ### Logs
-- `outputs/sched_turn004_revisit012_entry6_20260413_094143/logs/train_steps.csv`
-- `outputs/sched_turn004_revisit012_entry6_20260413_094143/logs/eval_metrics.csv`
+- `outputs/sched_turn004_revisit012_entry6_20260413_095916/logs/train_steps.csv`
+- `outputs/sched_turn004_revisit012_entry6_20260413_095916/logs/eval_metrics.csv`
 ### Plots
-- `outputs/sched_turn004_revisit012_entry6_20260413_094143/plots/reward_curve.png`
-- `outputs/sched_turn004_revisit012_entry6_20260413_094143/plots/coverage_curve.png`
+- `outputs/sched_turn004_revisit012_entry6_20260413_095916/plots/reward_curve.png`
+- `outputs/sched_turn004_revisit012_entry6_20260413_095916/plots/coverage_curve.png`
 
 ## 5. 需要对比的对象
 
