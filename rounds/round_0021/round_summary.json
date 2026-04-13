@@ -2,13 +2,20 @@
   "schema_version": "formal_exchange/v2",
   "artifact_type": "round_summary",
   "round_id": "round_0021",
-  "generated_at": "2026-04-13T20:19:03+08:00",
+  "generated_at": "2026-04-13T21:13:07+08:00",
   "experiment_mode": "formal_train",
-  "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
+  "source_of_truth_repo": "dk0113-Y/DRL-path-finding",
+  "local_execution_repo_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
   "evaluation_mode": "formal_artifact_review",
-  "run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\4.9_30万轮基线",
+  "run_dir": "outputs/4.9_30万轮基线",
   "baseline_round_id": null,
   "baseline_commit_sha": null,
+  "historical_baseline_summary_path": "historical_baseline_summary.json",
+  "historical_calibration": {
+    "available": true,
+    "insufficient_history_for_calibration": true,
+    "run_count_total": 19
+  },
   "comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
   "decision_zone": "insufficient_evidence",
   "stop_window_state": {

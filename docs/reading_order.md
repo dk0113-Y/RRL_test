@@ -14,6 +14,7 @@ For a fresh GPT chat, use this minimum order:
 10. `rounds/<current_round>/metric_snapshot.json`
 11. `rounds/<current_round>/benchmark_summary.json`
 12. `rounds/<current_round>/config_snapshot.json`
-13. `rounds/<current_round>/artifact_index.json`
+13. `rounds/<current_round>/historical_baseline_summary.json`
+14. `rounds/<current_round>/artifact_index.json`
 
 Only after that should GPT draft `next_gpt_decision.json`.

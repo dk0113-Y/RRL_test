@@ -2,11 +2,11 @@
   "schema_version": "formal_train_artifacts/v1",
   "artifact_type": "config_snapshot",
   "experiment_mode": "formal_train",
-  "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
-  "run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\sched_turn005_revisit010_entry8_20260410_234142",
-  "generated_at": "2026-04-13T20:18:49+08:00",
+  "source_of_truth_repo": "dk0113-Y/DRL-path-finding",
+  "run_dir": "outputs/sched_turn005_revisit010_entry8_20260410_234142",
+  "generated_at": "2026-04-13T21:10:42+08:00",
   "run_mode": "historical_backfill",
-  "git_commit_sha": "832dee8042424a2009fe2fff2f5137b6efbc15c5",
+  "git_commit_sha": "77abe585e060c615ec9621e6954e462420708825",
   "git_branch": "main",
   "full_train_config": null,
   "default_main_baseline": {
@@ -70,22 +70,6 @@
     }
   },
   "runtime_only_fields": {},
-  "evaluation_contract": {
-    "best_checkpoint_rule": {
-      "primary_metric": "eval_success_rate",
-      "tie_breaker": "eval_mean_coverage",
-      "source": "training/checkpointing.py"
-    },
-    "final_probe_rule": {
-      "source": "best_checkpoint_if_available_else_online_last",
-      "csv_file": "logs/final_probe.csv"
-    }
-  },
-  "insufficient_evidence_flags": [
-    "backfilled_from_historical_run",
-    "complete_train_config_not_recoverable_without_checkpoint_loader",
-    "train_config_unavailable"
-  ],
   "observed_run_contract": {
     "final_env_steps": 300000,
     "train_steps_header": [
@@ -213,5 +197,22 @@
       "eval_mean_turn_penalty_weight_sum",
       "eval_mean_timeout_flag"
     ]
-  }
+  },
+  "evaluation_contract": {
+    "best_checkpoint_rule": {
+      "primary_metric": "eval_success_rate",
+      "tie_breaker": "eval_mean_coverage",
+      "source": "training/checkpointing.py"
+    },
+    "final_probe_rule": {
+      "source": "best_checkpoint_if_available_else_online_last",
+      "csv_file": "logs/final_probe.csv"
+    }
+  },
+  "insufficient_evidence_flags": [
+    "backfilled_from_historical_run",
+    "complete_train_config_not_recoverable_without_checkpoint_loader",
+    "train_config_unavailable"
+  ],
+  "local_execution_repo_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1"
 }

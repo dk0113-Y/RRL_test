@@ -2,8 +2,8 @@
   "schema_version": "formal_train_artifacts/v1",
   "artifact_type": "artifact_index",
   "experiment_mode": "formal_train",
-  "run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\sched_turn005_revisit010_entry8_20260410_234142",
-  "generated_at": "2026-04-13T20:18:49+08:00",
+  "run_dir": "outputs/sched_turn005_revisit010_entry8_20260410_234142",
+  "generated_at": "2026-04-13T21:10:42+08:00",
   "csv": [
     {
       "path": "logs/train_steps.csv",

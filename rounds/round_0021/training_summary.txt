@@ -1,5 +1,5 @@
 Training Summary
-run_dir: C:\Users\Dk\Desktop\SCI\代码1\outputs\4.9_30万轮基线
+run_dir: outputs/4.9_30万轮基线
 run_mode: historical_backfill
 total_runtime_sec: None
 total_runtime_hms: None

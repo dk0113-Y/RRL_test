@@ -2,9 +2,10 @@
 
 ## 1. Formal Train Context
 - Round id: `round_0023`
-- Source of truth repo: `C:\Users\Dk\Desktop\SCI\代码1`
-- Target run directory: `C:\Users\Dk\Desktop\SCI\代码1\outputs\sched_turn003_revisit010_entry8_20260411_014043`
-- Baseline run directory: `C:\Users\Dk\Desktop\SCI\代码1\outputs\sched_turn005_revisit010_entry8_20260410_234142`
+- Source of truth repo: `dk0113-Y/DRL-path-finding`
+- Local execution repo path: `C:\Users\Dk\Desktop\SCI\代码1`
+- Target run directory: `outputs/sched_turn003_revisit010_entry8_20260411_014043`
+- Baseline run directory: `outputs/sched_turn005_revisit010_entry8_20260410_234142`
 - Comparability status: `bootstrap_comparable`
 - Decision zone: `manual_review_required`
 
@@ -15,6 +16,7 @@
 - `automation_rounds/round_0023/artifact_index.json`
 - `automation_rounds/round_0023/comparability_report.json`
 - `automation_rounds/round_0023/round_summary.json`
+- `automation_rounds/round_0023/historical_baseline_summary.json`
 
 ## 3. Required Judgement Order
 1. Check comparability first. If comparability failed or evidence is insufficient, do not claim formal improvement.

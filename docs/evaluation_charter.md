@@ -7,6 +7,7 @@ Formal evaluation has three layers.
 - Completeness gate
   - Required artifact family must exist
   - Missing required JSON or CSV means the round cannot support a formal verdict
+  - Historical threshold context should be read from `historical_baseline_summary.json` when it is present
 - Primary task metrics
   - Use best_eval, last_eval, and final_probe together
   - Primary metrics: `success_rate`, `coverage`, `reward`
@@ -42,3 +43,4 @@ The current exchange protocol also carries:
 - `stop_window_state`
 - `manual_review_reasons`
 - `insufficient_evidence_flags`
+- `historical_calibration`

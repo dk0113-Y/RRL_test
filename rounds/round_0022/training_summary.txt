@@ -1,5 +1,5 @@
 Training Summary
-run_dir: C:\Users\Dk\Desktop\SCI\代码1\outputs\sched_turn005_revisit010_entry8_20260410_234142
+run_dir: outputs/sched_turn005_revisit010_entry8_20260410_234142
 run_mode: historical_backfill
 total_runtime_sec: None
 total_runtime_hms: None

@@ -6,7 +6,8 @@
   "current_round_id": "round_0023",
   "current_round_manifest": "rounds/round_0023/index_manifest.json",
   "experiment_mode": "formal_train",
-  "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
+  "source_of_truth_repo": "dk0113-Y/DRL-path-finding",
+  "local_execution_repo_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
   "evaluation_mode": "formal_artifact_review",
   "decision_zone": "manual_review_required",
   "stop_window_state": {
@@ -54,5 +55,5 @@
   ],
   "expected_output_file": "next_gpt_decision.json",
   "last_exchange_commit_sha": "",
-  "updated_at": "2026-04-13T20:22:42+08:00"
+  "updated_at": "2026-04-13T21:14:23+08:00"
 }

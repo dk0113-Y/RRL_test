@@ -28,8 +28,15 @@ This map describes the formal artifact contract emitted by the real training rep
   - Runtime and timing summary when available, with explicit insufficiency flags when not
 - `logs/config_snapshot.json`
   - Full config for new formal runs, or partial bootstrap metadata for old runs
+  - Includes `observed_run_contract.final_env_steps`
+  - Includes `observed_run_contract.train_steps_header`
+  - Includes `observed_run_contract.eval_metrics_header`
+  - Includes `observed_run_contract.final_probe_header`
 - `logs/artifact_index.json`
   - Existence map for required and optional artifacts
+- `historical_baseline_summary.json`
+  - Published in the exchange round bundle when available
+  - Explains bootstrap historical thresholds and whether calibration is still insufficient
 
 ## Optional Artifacts
 
@@ -39,3 +46,11 @@ This map describes the formal artifact contract emitted by the real training rep
   - Optional and switch-controlled
 - `logs/training_summary.txt`
   - Human-readable support summary
+
+## Exchange-Facing Identity
+
+- `source_of_truth_repo`
+  - Public repo identity such as `dk0113-Y/DRL-path-finding`
+- `local_execution_repo_path`
+  - Local controller execution path
+  - Published separately so exchange JSON does not rely on a workstation-specific absolute path as the sole truth identifier

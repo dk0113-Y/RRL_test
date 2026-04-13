@@ -3,17 +3,19 @@
 ## 1. Current Round Basics
 - Round id: `round_0023`
 - Experiment mode: `formal_train`
-- Source of truth repo: `C:\Users\Dk\Desktop\SCI\代码1`
+- Source of truth repo: `dk0113-Y/DRL-path-finding`
+- Local execution repo path: `C:\Users\Dk\Desktop\SCI\代码1`
 - Round state status: `success`
-- Run directory: `C:\Users\Dk\Desktop\SCI\代码1\outputs\sched_turn003_revisit010_entry8_20260411_014043`
+- Run directory: `outputs/sched_turn003_revisit010_entry8_20260411_014043`
 - Target program: `train_q_agent.py`
 
 ## 2. Comparability
 - Comparability status: `bootstrap_comparable`
 - Comparability group: `formal_mainline_v1__bf21a9e8fbc5`
 - Baseline round id: `round_0022`
-- Baseline commit sha: `832dee8042424a2009fe2fff2f5137b6efbc15c5`
-- Checks: `{'baseline_available': True, 'same_comparability_group': True, 'same_eval_metrics_header': True, 'same_final_probe_header': True, 'same_final_env_steps': True, 'target_has_full_config_snapshot': False, 'baseline_has_full_config_snapshot': False}`
+- Baseline commit sha: `77abe585e060c615ec9621e6954e462420708825`
+- Checks: `{'baseline_available': True, 'same_comparability_group': True, 'same_train_steps_header': True, 'same_eval_metrics_header': True, 'same_final_probe_header': True, 'same_final_env_steps': True, 'target_has_full_config_snapshot': False, 'baseline_has_full_config_snapshot': False}`
+- Historical calibration: `available=True, insufficient_history_for_calibration=True`
 
 ## 3. Metric Verdict Layer
 - Primary verdict: `regression`
@@ -38,6 +40,7 @@
 ## 6. Manual Review / Evidence Gaps
 - manual_review_reasons: comparability_only_bootstrap_confirmed, runtime_summary_missing
 - insufficient_evidence_flags: backfilled_from_historical_run, train_config_unavailable_in_backfill_context, timing_summary_unavailable, total_runtime_unavailable, complete_train_config_not_recoverable_without_checkpoint_loader, train_config_unavailable, bootstrap_thresholds_required, historical_thresholds_bootstrap_only
+- historical_baseline_summary: `path=historical_baseline_summary.json, run_count_total=19, insufficient_history_for_calibration=True`
 
 ## 7. What GPT Should Output
 - Read `docs/reading_order.md`, `docs/current_mainline.md`, `docs/evaluation_charter.md`, and `docs/output_contract.md` before drafting the next decision.

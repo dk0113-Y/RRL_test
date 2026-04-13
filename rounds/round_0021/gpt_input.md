@@ -3,9 +3,10 @@
 ## 1. Current Round Basics
 - Round id: `round_0021`
 - Experiment mode: `formal_train`
-- Source of truth repo: `C:\Users\Dk\Desktop\SCI\代码1`
+- Source of truth repo: `dk0113-Y/DRL-path-finding`
+- Local execution repo path: `C:\Users\Dk\Desktop\SCI\代码1`
 - Round state status: `success`
-- Run directory: `C:\Users\Dk\Desktop\SCI\代码1\outputs\4.9_30万轮基线`
+- Run directory: `outputs/4.9_30万轮基线`
 - Target program: `train_q_agent.py`
 
 ## 2. Comparability
@@ -13,7 +14,8 @@
 - Comparability group: `formal_mainline_v1__bf21a9e8fbc5`
 - Baseline round id: `UNSET`
 - Baseline commit sha: `UNSET`
-- Checks: `{'baseline_available': False, 'same_comparability_group': False, 'same_eval_metrics_header': False, 'same_final_probe_header': False, 'same_final_env_steps': False, 'target_has_full_config_snapshot': False, 'baseline_has_full_config_snapshot': False}`
+- Checks: `{'baseline_available': False, 'same_comparability_group': False, 'same_train_steps_header': False, 'same_eval_metrics_header': False, 'same_final_probe_header': False, 'same_final_env_steps': False, 'target_has_full_config_snapshot': False, 'baseline_has_full_config_snapshot': False}`
+- Historical calibration: `available=True, insufficient_history_for_calibration=True`
 
 ## 3. Metric Verdict Layer
 - Primary verdict: `insufficient_evidence`
@@ -38,6 +40,7 @@
 ## 6. Manual Review / Evidence Gaps
 - manual_review_reasons: runtime_summary_missing
 - insufficient_evidence_flags: backfilled_from_historical_run, train_config_unavailable_in_backfill_context, timing_summary_unavailable, total_runtime_unavailable, complete_train_config_not_recoverable_without_checkpoint_loader, train_config_unavailable, historical_thresholds_bootstrap_only
+- historical_baseline_summary: `path=historical_baseline_summary.json, run_count_total=19, insufficient_history_for_calibration=True`
 
 ## 7. What GPT Should Output
 - Read `docs/reading_order.md`, `docs/current_mainline.md`, `docs/evaluation_charter.md`, and `docs/output_contract.md` before drafting the next decision.

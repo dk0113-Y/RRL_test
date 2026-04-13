@@ -14,7 +14,7 @@ Required reading order:
 5. Read `docs/stopping_policy.md`
 6. Read `docs/output_contract.md`
 
-After the docs, read `CURRENT_ROUND.json`, then `rounds/round_0023/index_manifest.json`, then the structured round files (`metric_snapshot.json`, `benchmark_summary.json`, `config_snapshot.json`, `artifact_index.json`, `comparability_report.json`, `round_summary.json`).
+After the docs, read `CURRENT_ROUND.json`, then `rounds/round_0023/index_manifest.json`, then the structured round files (`metric_snapshot.json`, `benchmark_summary.json`, `config_snapshot.json`, `artifact_index.json`, `historical_baseline_summary.json`, `comparability_report.json`, `round_summary.json`).
 
 Formal judgement rules:
 - Treat the real training repository artifacts as the only source of truth.

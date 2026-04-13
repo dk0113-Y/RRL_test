@@ -2,20 +2,28 @@
   "schema_version": "formal_exchange/v2",
   "artifact_type": "comparability_report",
   "round_id": "round_0023",
-  "generated_at": "2026-04-13T20:19:03+08:00",
+  "generated_at": "2026-04-13T21:13:07+08:00",
   "experiment_mode": "formal_train",
-  "source_of_truth_repo": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
+  "source_of_truth_repo": "dk0113-Y/DRL-path-finding",
+  "local_execution_repo_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
   "evaluation_mode": "formal_artifact_review",
-  "target_run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\sched_turn003_revisit010_entry8_20260411_014043",
+  "target_run_dir": "outputs/sched_turn003_revisit010_entry8_20260411_014043",
   "baseline_round_id": "round_0022",
-  "baseline_run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\sched_turn005_revisit010_entry8_20260410_234142",
-  "baseline_commit_sha": "832dee8042424a2009fe2fff2f5137b6efbc15c5",
+  "baseline_run_dir": "outputs/sched_turn005_revisit010_entry8_20260410_234142",
+  "baseline_commit_sha": "77abe585e060c615ec9621e6954e462420708825",
+  "historical_baseline_summary_path": "historical_baseline_summary.json",
+  "historical_calibration": {
+    "available": true,
+    "insufficient_history_for_calibration": true,
+    "run_count_total": 19
+  },
   "comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
   "baseline_comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
   "comparability_status": "bootstrap_comparable",
   "checks": {
     "baseline_available": true,
     "same_comparability_group": true,
+    "same_train_steps_header": true,
     "same_eval_metrics_header": true,
     "same_final_probe_header": true,
     "same_final_env_steps": true,
@@ -97,6 +105,7 @@
     "bootstrap_thresholds_required"
   ],
   "notes": [
-    "Observed contracts match, but one or both runs only have bootstrap/backfilled config metadata."
+    "Observed contracts match, but one or both runs only have bootstrap/backfilled config metadata.",
+    "Historical baseline calibration is bootstrap-only."
   ]
 }

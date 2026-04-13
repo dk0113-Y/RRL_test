@@ -4,13 +4,15 @@
 
 ## Long-Term Goal
 
-The project goal is to improve the real exploration agent in `../代码1` without losing comparability, stability, or wall-clock discipline. Formal conclusions must come from the real training artifacts produced by that repository.
+The project goal is to improve the real exploration agent in `dk0113-Y/DRL-path-finding` without losing comparability, stability, or wall-clock discipline. Formal conclusions must come from the real training artifacts produced by that repository.
 
 ## Source Of Truth
 
-- Formal training source of truth: `../代码1`
+- Formal training source of truth repo identity: `dk0113-Y/DRL-path-finding`
+- Local execution repo path is tracked separately as `local_execution_repo_path`
 - Real training entry: `train_q_agent.py`
 - Real formal artifacts: `train_steps.csv`, `train_episodes.csv`, `eval_metrics.csv`, `final_probe.csv`, `best.pt`, `last.pt`, `metric_snapshot.json`, `benchmark_summary.json`, `config_snapshot.json`, `artifact_index.json`
+- Historical calibration evidence artifact: `historical_baseline_summary.json`
 - Best checkpoint rule: `eval_success_rate`, tie-break by `eval_mean_coverage`
 - Final probe rule: probe `best.pt` if available, otherwise probe the online last checkpoint
 
@@ -28,6 +30,7 @@ It is not allowed to redefine formal semantics from old rehearsal notes or synth
 ## Current Evidence Status
 
 - Formal artifact generation is now wired into the real training repo.
-- Historical runs under `../代码1/outputs/` were scanned and backfilled into the formal artifact shape.
+- Historical runs under the real training repo `outputs/` tree were scanned and backfilled into the formal artifact shape.
+- The current exchange round bundle publishes `historical_baseline_summary.json` so GPT can inspect why historical calibration is still bootstrap-only.
 - Historical threshold calibration is still bootstrap-only because old runs do not contain complete `config_snapshot.json` payloads with full train configs.
 - Any strong stop or promotion claim must therefore stay gated by comparability and may still require manual review.

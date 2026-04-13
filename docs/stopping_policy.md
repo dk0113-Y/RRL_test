@@ -28,5 +28,7 @@ Stopping is protocol-level, not a prose-only judgement.
 ## Plateau And Bootstrap Status
 
 - Historical calibration is currently bootstrap-only because older runs lack full config snapshots
+- The bootstrap basis is published as `historical_baseline_summary.json` in the current round bundle
 - A plateau claim is therefore provisional unless later rounds provide stronger exact comparability metadata
 - If a round is not comparable, it must not be treated as part of the same stopping window
+- `source_of_truth_repo` in exchange JSON is the repo identity, while `local_execution_repo_path` is only execution context

@@ -3,8 +3,9 @@
 ## 1. Formal Round
 - Round id: `round_0021`
 - Experiment mode: `formal_train`
-- Source of truth repo: `C:\Users\Dk\Desktop\SCI\代码1`
-- Target run: `C:\Users\Dk\Desktop\SCI\代码1\outputs\4.9_30万轮基线`
+- Source of truth repo: `dk0113-Y/DRL-path-finding`
+- Local execution repo path: `C:\Users\Dk\Desktop\SCI\代码1`
+- Target run: `outputs/4.9_30万轮基线`
 - Baseline round id: `UNSET`
 - Baseline commit sha: `UNSET`
 - Comparability group: `formal_mainline_v1__bf21a9e8fbc5`
@@ -15,6 +16,7 @@
 - Stop action: `pause_for_manual_review`
 - Manual review reasons: runtime_summary_missing
 - Insufficient evidence flags: backfilled_from_historical_run, train_config_unavailable_in_backfill_context, timing_summary_unavailable, total_runtime_unavailable, complete_train_config_not_recoverable_without_checkpoint_loader, train_config_unavailable, historical_thresholds_bootstrap_only
+- Historical calibration: `available=True, insufficient_history_for_calibration=True`
 
 ## 3. Verdicts
 - Primary verdict: `insufficient_evidence`

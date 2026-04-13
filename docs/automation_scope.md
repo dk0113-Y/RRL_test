@@ -5,7 +5,8 @@ The system is dual-mode, but the default research track is now `formal_train`.
 ## Modes
 
 - `formal_train`
-  - Source of truth is `../代码1`
+  - Source of truth repo identity is `dk0113-Y/DRL-path-finding`
+  - Local execution path is tracked separately as `local_execution_repo_path`
   - Decisions are based on real artifacts and comparability checks
   - This is the default mode for current research continuity
 - `synthetic_rehearsal`
@@ -17,6 +18,7 @@ The system is dual-mode, but the default research track is now `formal_train`.
 For a formal round:
 
 1. `../代码1` runs real training and emits formal JSON summaries
+   - Exchange-facing JSON keeps the repo identity in `source_of_truth_repo`
 2. `codex_ui_bridge_demo` builds a round bundle and comparability report
 3. The bundle is published here under `rounds/round_xxxx/`
 4. GPT reads docs, then `CURRENT_ROUND.json`, then the round manifest and structured files
