@@ -178,5 +178,8 @@
     "Formal round verdicts are gated by comparability before any improvement claim is considered valid.",
     "Primary judgement combines best_eval, last_eval, and final_probe with emphasis on final_probe stability and success behavior.",
     "Current thresholds are bootstrap-only whenever historical_baseline_summary.json reports insufficient calibration history."
-  ]
+  ],
+  "exchange_anchor_commit_sha": "f69bbb6424d721571cd35a3732e78485f6159963",
+  "last_exchange_commit_sha": "f69bbb6424d721571cd35a3732e78485f6159963",
+  "exchange_anchor_definition": "published_bundle_commit_reachable_from_current_head"
 }

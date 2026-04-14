@@ -57,8 +57,8 @@
     "docs/tuning_policy.md"
   ],
   "expected_output_file": "next_gpt_decision.json",
-  "exchange_anchor_commit_sha": null,
-  "last_exchange_commit_sha": null,
+  "exchange_anchor_commit_sha": "f69bbb6424d721571cd35a3732e78485f6159963",
+  "last_exchange_commit_sha": "f69bbb6424d721571cd35a3732e78485f6159963",
   "exchange_anchor_definition": "published_bundle_commit_reachable_from_current_head",
   "notes": [
     "Read `exchange_anchor_commit_sha` as the published bundle anchor commit.",
