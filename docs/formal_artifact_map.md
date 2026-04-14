@@ -1,5 +1,7 @@
 # Formal Artifact Map
 
+Use `docs/gpt_index_guide.md` for the evidence-layer reading order; this file only defines artifact roles.
+
 This map describes the formal artifact contract emitted by the real training repo.
 
 ## Required CSV

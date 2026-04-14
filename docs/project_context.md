@@ -1,5 +1,7 @@
 # Project Context
 
+Read `docs/gpt_index_guide.md` first if you need the file-role map and evidence hierarchy.
+
 `RRL_test` is the public exchange surface for a real reinforcement-learning research loop, not a rehearsal-first demo repo.
 
 ## Long-Term Goal

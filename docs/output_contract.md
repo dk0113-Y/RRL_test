@@ -1,5 +1,7 @@
 # Output Contract
 
+Read `docs/gpt_index_guide.md` and the current round evidence before using this output contract to draft a verdict.
+
 GPT must emit one and only one JSON payload wrapped by the markers below.
 
 DECISION_JSON_BEGIN

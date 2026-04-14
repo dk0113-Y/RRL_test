@@ -25,6 +25,7 @@
     ]
   },
   "recommended_entry_docs": [
+    "docs/gpt_index_guide.md",
     "docs/reading_order.md",
     "docs/project_context.md",
     "docs/current_mainline.md",
@@ -33,6 +34,7 @@
     "docs/output_contract.md"
   ],
   "stable_context_files": [
+    "docs/gpt_index_guide.md",
     "docs/project_context.md",
     "docs/automation_scope.md",
     "docs/reading_order.md",
@@ -50,8 +52,9 @@
   "notes": [
     "This exchange repository is in a clean waiting state.",
     "Publish a new formal round before expecting any round bundle under rounds/.",
+    "Read docs/gpt_index_guide.md before using any summary-layer file as evidence.",
     "`exchange_anchor_commit_sha` records the published bundle commit, not the later CURRENT_ROUND pointer-update commit.",
     "`last_exchange_commit_sha` is a deprecated compatibility alias for the same anchor when a round is published."
   ],
-  "updated_at": "2026-04-13T22:25:04.4623095+08:00"
+  "updated_at": "2026-04-14T08:52:23+08:00"
 }
