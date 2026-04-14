@@ -24,7 +24,7 @@ The following changes must be treated as comparability-breaking until proven oth
 - Changing the emitted metric schema in `eval_metrics.csv` or `final_probe.csv`
 - Changing the best-checkpoint criterion
 - Changing final probe evaluation from `best.pt if available else online last`
-- Changing total env steps or other fields that move a run into a different comparability group
+- Changing total env steps, total train episodes, budget mode, fixed train episode seed settings, or other fields that move a run into a different comparability group
 
 ## Current Calibration Status
 
