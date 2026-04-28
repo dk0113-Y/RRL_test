@@ -4,6 +4,6 @@
   "current_phase": "dry_run_no_train",
   "status": "published",
   "baseline_run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814",
-  "next_expected_action": "review_dry_run_round_bundle",
+  "next_expected_action": "design_numbered_formal_train_proposal_path",
   "decision_required_from_gpt": false
 }
