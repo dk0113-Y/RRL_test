@@ -22,6 +22,12 @@ Legacy unnumbered protocol documents were removed. The numbered `00` to `10` set
 
 Current active baseline is `round_0001`. Its type is `baseline_registration`, its role is `engineering_speed_baseline_candidate`, and it must not be treated as method-performance improvement evidence.
 
+`RRL_test/rounds/` is reserved for public exchange evidence such as baseline registration and explicitly approved formal tuning or training rounds.
+
+Routine dry-run, controller validation, decision-consumption tests, and local controller-action previews should remain in the private/control repository unless explicitly approved for publication.
+
+Current real training count after cleanup is zero new formal training runs.
+
 ## Next Expected Work
 
-Next expected work is to review `DRL_automatic` control flow and validate the dry-run / no-train path before any real automated training is launched.
+Next expected work is to design the first explicitly approved formal tuning plan from the `round_0001` baseline before any real automated training is launched.

@@ -33,6 +33,8 @@ Location constraints:
 - `CURRENT_ROUND.json` is pointer authority
 - active-round structured JSON is fact authority for exchange-facing control
 - output files must not silently overwrite prior round evidence
+- controller-action previews and decision-consumption dry-runs should remain local or private unless explicitly approved for publication
+- `controller_action.json` must not be written into `RRL_test` by dry-run paths
 
 Prohibited sources and targets:
 - global `outbox/`
@@ -349,6 +351,7 @@ Controller-action guard rules:
 - if action is `pause_for_manual_review`, `reject_round`, or `analyze_only`, controller must not launch formal training
 - if action is `run_next_round`, controller must still run preflight validation
 - `controller_action.json` must not bypass tuning policy, frozen-field guards, comparability guards, or preflight
+- local controller-action previews must not be treated as publishable public evidence by default
 
 ## `codex_instruction.md` Contract
 

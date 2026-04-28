@@ -1,9 +1,0 @@
-{
-  "round_id": "round_0002",
-  "comparability_status": "not_applicable",
-  "comparability_group": "dry_run_no_train",
-  "reason": "dry-run validates controller path and does not create formal performance evidence",
-  "same_group_claim_allowed": false,
-  "formal_improvement_claim_allowed": false,
-  "manual_review_required": false
-}

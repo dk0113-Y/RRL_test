@@ -43,6 +43,8 @@ Core round identity rules:
 - each round must live under `rounds/round_xxxx/`
 - when active, each round must be discoverable through `CURRENT_ROUND.json`
 - each round bundle must be self-contained enough for a fresh GPT reader to understand purpose, evidence condition, and decision status
+- public `RRL_test` round numbering must not be consumed by routine controller-validation dry-runs by default
+- creating a new public round requires explicit user approval
 
 Interpretation rule:
 - a round is not always equivalent to one newly launched training run
@@ -92,6 +94,7 @@ Rules:
 - missing training artifacts are expected only when explicitly marked as dry-run
 - dry-run output cannot be treated as formal training evidence
 - dry-run does not produce formal winner claims
+- dry-run rounds may exist as local or private controller artifacts unless explicitly promoted to public exchange evidence
 
 ### `formal_train_result`
 
@@ -136,6 +139,7 @@ Round ID and path rules:
   - `CURRENT_ROUND.json.current_round_path`
 - backup directories are reference-only and must not override active round selection
 - global outbox is not used for current protocol decisions
+- routine dry-run controller-validation artifacts must remain local or private unless explicitly approved for public publication
 
 Minimum round bundle requirements (or explicit replacement marker with reason):
 - `index_manifest.json`

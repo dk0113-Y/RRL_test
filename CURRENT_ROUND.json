@@ -1,9 +1,9 @@
 {
-  "current_round_id": "round_0002",
-  "current_round_path": "rounds/round_0002",
-  "current_phase": "dry_run_no_train",
+  "current_round_id": "round_0001",
+  "current_round_path": "rounds/round_0001",
+  "current_phase": "baseline_registration",
   "status": "published",
   "baseline_run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814",
-  "next_expected_action": "design_numbered_formal_train_proposal_path",
+  "next_expected_action": "design_first_formal_tuning_plan_from_baseline",
   "decision_required_from_gpt": false
 }

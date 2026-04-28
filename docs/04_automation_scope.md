@@ -97,6 +97,9 @@ Rules:
 - should be completed before real automated training
 - may not generate formal performance claims
 - missing training artifacts are expected only when explicitly marked as dry-run outputs
+- dry-run or no-train validation may be executed in `DRL_automatic` staging or private review paths
+- it must not be published as a public `RRL_test` round unless the user explicitly approves it
+- dry-run evidence is not formal training evidence
 
 ### `formal_train`
 
@@ -140,7 +143,7 @@ Automation is allowed to:
 - invoke training only when mode and protocol permit
 - collect and summarize artifacts
 - register checkpoint metadata and hashes without copying checkpoint binaries
-- publish round bundles into `RRL_test`
+- publish explicitly approved public evidence bundles into `RRL_test`
 - generate `config_diff.json`
 - generate `artifact_digest.json`
 - generate `comparability_report.json`
