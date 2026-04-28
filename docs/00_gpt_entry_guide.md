@@ -107,44 +107,55 @@ Required-evidence guardrails for the new protocol:
 - if such files exist in historical or backup material, treat them as legacy/reference only
 - legacy files must not override the required evidence set for current active rounds
 
-## Evidence Priority
+## Evidence Authority And Priority
 
-Use this exact evidence priority stack.
+This repository uses a dual-authority model plus a pointer authority.
 
-Tier 0:
-- `CURRENT_ROUND.json`
+Pointer authority and protocol authority are not the same as round fact authority. Keep them separated to avoid stale-doc or stale-backup contamination.
 
-Tier 1:
-- protocol docs under `docs/`
+Pointer authority:
+- `CURRENT_ROUND.json` is the pointer authority.
+- It decides whether an active round exists and which round directory is current.
+- Backup directories, historical snapshots, and legacy files must not override it.
 
-Tier 2:
-- `rounds/<current_round>/index_manifest.json`
+Protocol authority:
+- `docs/` files are the protocol authority.
+- They define roles, schemas, scope boundaries, comparability rules, tuning boundaries, evaluation rules, stopping rules, and output contracts.
+- Protocol docs do not override active round factual evidence.
+- If a docs file still contains legacy terms during migration, preserve the newer entry-guide constraints and flag the stale protocol text.
 
-Tier 3:
-- structured round JSON evidence:
+Round fact authority:
+- `rounds/<current_round>/` structured JSON files are the fact authority for the active round.
+- Fact-authority files include:
+- `index_manifest.json`
 - `round_summary.json`
 - `comparability_report.json`
 - `config_diff.json`
 - `artifact_digest.json`
-- `baseline_registration.json` (when applicable)
+- `baseline_registration.json` when applicable
+- `gpt_decision.json` or `gpt_decision_placeholder.json`
+- These files define what actually exists, what was copied, what is missing, what the current baseline identity is, and what the active round claims or does not claim.
 
-Tier 4:
-- lightweight copied logs and summaries:
+Supporting evidence:
+- lightweight logs and summaries support round facts:
 - `artifacts/metadata/csv_summaries.json`
 - `artifacts/logs/*.csv`
+- human-readable prose is auxiliary only.
+- backup directories and historical notes are reference-only.
 
-Tier 5:
-- human-readable auxiliary text (if present)
+Conflict handling rules:
+- If `CURRENT_ROUND.json` and a backup directory disagree, trust `CURRENT_ROUND.json`.
+- If docs and active round JSON disagree about an experiment fact, trust active round structured JSON and mark the docs as stale or incomplete.
+- If docs and active round JSON disagree about a protocol rule, follow the newest numbered docs and flag the round bundle for protocol review.
+- If `round_summary.json` conflicts with `artifact_digest.json`, inspect the lower-level artifact digest and copied logs before making a claim.
+- If human-readable prose conflicts with structured JSON, trust structured JSON.
+- If evidence is missing, record missingness explicitly instead of inventing values.
 
-Tier 6:
-- backup directories, historical notes, and legacy files
-- reference only
-- must not override active round files
-
-Interpretation rules:
-- higher tier always dominates lower tier if conflict exists
-- if Tier 3 structured files conflict with Tier 5 prose, trust Tier 3
-- if Tier 0 points to a different round than a backup index claims, trust Tier 0
+Intent-preservation rules:
+- legacy files are reference-only.
+- the current active round always dominates backups.
+- missing evidence must be stated explicitly.
+- old `metric_snapshot.json`, `benchmark_summary.json`, and `artifact_index.json` must not become required evidence in the new protocol.
 
 ## Round Phase Handling
 
