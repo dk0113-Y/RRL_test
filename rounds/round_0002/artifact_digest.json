@@ -1,0 +1,10 @@
+{
+  "round_id": "round_0002",
+  "source_run_dir": null,
+  "dry_run": true,
+  "artifacts": [],
+  "missing_expected_files": [],
+  "copied_files": [],
+  "skipped_large_or_binary_files": [],
+  "note": "training artifacts are intentionally absent in dry_run_no_train mode"
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "output_contract_v1",
+  "round_id": "round_0002",
+  "decision_status": "not_requested",
+  "reason": "No formal GPT decision is required for dry_run_no_train protocol validation.",
+  "next_decision_stage": "after dry-run bundle validation",
+  "created_at": "2026-04-28T18:57:45+08:00"
+}

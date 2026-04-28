@@ -1,0 +1,40 @@
+{
+  "round_id": "round_0002",
+  "round_type": "dry_run_no_train",
+  "operating_mode": "dry_run_no_train",
+  "generated_at": "2026-04-28T18:57:45+08:00",
+  "files": [
+    {
+      "file": "index_manifest.json",
+      "role": "index_manifest",
+      "required": true
+    },
+    {
+      "file": "round_summary.json",
+      "role": "round_summary",
+      "required": true
+    },
+    {
+      "file": "artifact_digest.json",
+      "role": "artifact_digest",
+      "required": true
+    },
+    {
+      "file": "config_diff.json",
+      "role": "config_diff",
+      "required": true
+    },
+    {
+      "file": "comparability_report.json",
+      "role": "comparability_report",
+      "required": true
+    },
+    {
+      "file": "gpt_decision_placeholder.json",
+      "role": "gpt_decision_placeholder",
+      "required": true
+    }
+  ],
+  "protocol_version": "numbered_protocol_v1",
+  "generated_by": "codex_ui_bridge_demo"
+}

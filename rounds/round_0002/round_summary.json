@@ -1,0 +1,36 @@
+{
+  "round_id": "round_0002",
+  "round_type": "dry_run_no_train",
+  "operating_mode": "dry_run_no_train",
+  "baseline_round_id": "round_0001",
+  "baseline_run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814",
+  "baseline_role": "engineering_speed_baseline_candidate",
+  "purpose": "dry-run controller/protocol validation without training",
+  "formal_protocol": "formal_posthoc_trainselect_v1",
+  "method_mainline": [
+    "Dynamic Cumulative Belief Map",
+    "Shared Semantic Layer",
+    "Dual-State Input / Dual-Branch Encoding",
+    "Semantic Dueling Decision Head"
+  ],
+  "formal_input_keys": [
+    "advantage_canvas",
+    "value_block_features",
+    "value_entry_features",
+    "value_block_mask",
+    "value_entry_mask"
+  ],
+  "claim_boundary": [
+    "protocol_review_only",
+    "analysis_only"
+  ],
+  "evidence_condition": [
+    "no formal training evidence",
+    "no method-performance claim"
+  ],
+  "training_launched": false,
+  "checkpoint_copied": false,
+  "outbox_used": false,
+  "next_gpt_decision_used": false,
+  "decision_required_from_gpt": false
+}

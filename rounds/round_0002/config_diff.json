@@ -1,0 +1,11 @@
+{
+  "baseline_round_id": "round_0001",
+  "candidate_round_id": "round_0002",
+  "changed_fields": [],
+  "field_categories": [],
+  "preflight_status": "passed",
+  "unknown_fields_present": false,
+  "frozen_field_violations": [],
+  "manual_review_required": false,
+  "comparability_impact": "dry_run_no_train_not_formal_comparison"
+}
