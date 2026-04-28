@@ -262,11 +262,11 @@ Comparability recording rule:
 - old value
 - new value
 - field category:
-- `allowed_tuning`
-- `frozen`
-- `manual_review`
-- `comparability_group_changing`
-- `unknown`
+  - `allowed_tuning`
+  - `frozen`
+  - `manual_review`
+  - `comparability_group_changing`
+  - `unknown`
 - expected comparability impact
 - reason for change
 - manual-review requirement flag

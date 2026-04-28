@@ -261,12 +261,12 @@ Efficiency rules:
 - runtime improvement can support engineering baseline claims
 - efficiency should be evaluated under comparable runtime toggles, hardware context when available, and comparable budget context
 - current baseline runtime toggles are:
-- AMP false
-- inference AMP false
-- `torch.compile` false
-- `channels_last` false
-- TF32 true
-- `cudnn_benchmark` true
+  - AMP false
+  - inference AMP false
+  - `torch.compile` false
+  - `channels_last` false
+  - TF32 true
+  - `cudnn_benchmark` true
 - runtime-toggle changes may require separate efficiency A/B grouping
 - efficiency improvement must not be presented as method innovation
 - efficiency regression may matter even when performance improves, depending on objective and compute budget
@@ -307,8 +307,8 @@ Vocabulary rules:
 - these are evaluation verdicts, not controller actions
 - actions are defined in `09_stopping_policy.md` and represented through `10_output_contract.md`
 - combined labels are allowed when justified, such as:
-- `neutral_or_mixed` + `efficiency_improvement_only`
-- `weak_improvement` + `stability_risk`
+  - `neutral_or_mixed` + `efficiency_improvement_only`
+  - `weak_improvement` + `stability_risk`
 
 ## Round-Type-Specific Evaluation
 

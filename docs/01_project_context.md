@@ -49,7 +49,7 @@ Current operating facts:
 - current work priority is protocol design alignment in the exchange repository and subsequent control-flow review in `DRL_automatic`
 
 Immediate next action at project level:
-- finish numbered docs migration and then review `DRL_automatic`
+- review `DRL_automatic` control flow and validate dry-run / no-train publication behavior
 
 Execution constraints for this stage:
 - do not launch new formal training before protocol and dry-run validation are completed
@@ -140,11 +140,11 @@ Automation facts:
 Exchange facts:
 - source: current active round under `RRL_test/rounds/<current_round>/`
 - especially structured JSON files such as:
-- `round_summary.json`
-- `artifact_digest.json`
-- `config_diff.json`
-- `comparability_report.json`
-- `baseline_registration.json`
+  - `round_summary.json`
+  - `artifact_digest.json`
+  - `config_diff.json`
+  - `comparability_report.json`
+  - `baseline_registration.json`
 - meaning: what is publicly registered for the active round bundle
 
 Decision facts:
@@ -191,16 +191,15 @@ Numbered protocol scope map:
 - `09_stopping_policy.md`: stop, continue, branch, and review criteria
 - `10_output_contract.md`: GPT decision schema and controller-consumable outputs
 
-Until migration is complete, legacy file names may coexist. In case of overlap, apply numbered-doc intent and constraints, and flag stale legacy wording for cleanup.
+Legacy unnumbered protocol wording may still appear in historical or backup material. In case of overlap, apply numbered-doc intent and constraints, and treat stale legacy wording as reference-only.
 
 ## Recommended Immediate Work
 
 Recommended immediate work sequence:
-1. finish numbered docs migration;
-2. align old docs with the new numbered protocol structure;
-3. review `DRL_automatic` control flow and exchange publishing logic;
-4. verify dry-run / no-train generation of a future `round_0002` proposal;
-5. only after protocol and dry-run validation should real automated training be launched.
+1. review `DRL_automatic` control flow and exchange publishing logic;
+2. verify dry-run / no-train generation of a future `round_0002` proposal;
+3. confirm preflight and publication guards behave as documented;
+4. only after protocol and dry-run validation should real automated training be launched.
 
 Execution note:
 - protocol consistency and dry-run traceability must be verified before real automated training

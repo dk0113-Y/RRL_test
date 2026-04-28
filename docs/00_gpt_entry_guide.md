@@ -80,14 +80,14 @@ Target numbered structure (some files may not exist yet):
 11. `docs/10_output_contract.md`
 
 Migration note:
-- the repository may still contain legacy file names such as `project_context.md`, `current_mainline.md`, `gpt_index_guide.md`, and `reading_order.md`
-- migration to numbered docs is incremental
-- this file is the entry for the numbered system, but migration is not yet complete
+- the numbered `00` to `10` protocol set is the current authoritative documentation set
+- legacy unnumbered protocol documents may still appear only in historical or backup material
+- numbered-doc references should be treated as the current default protocol paths
 
-Operational reading rule during migration:
+Operational reading rule:
 - read this guide first
-- then read the best-available equivalent for each numbered topic
-- treat naming mismatch as migration state, not as protocol contradiction
+- then read the numbered protocol document for each topic
+- treat legacy naming in historical material as reference-only, not as an active protocol contradiction
 
 ## Current Round Evidence Reading Order
 
@@ -127,19 +127,19 @@ Protocol authority:
 Round fact authority:
 - `rounds/<current_round>/` structured JSON files are the fact authority for the active round.
 - Fact-authority files include:
-- `index_manifest.json`
-- `round_summary.json`
-- `comparability_report.json`
-- `config_diff.json`
-- `artifact_digest.json`
-- `baseline_registration.json` when applicable
-- `gpt_decision.json` or `gpt_decision_placeholder.json`
+  - `index_manifest.json`
+  - `round_summary.json`
+  - `comparability_report.json`
+  - `config_diff.json`
+  - `artifact_digest.json`
+  - `baseline_registration.json` when applicable
+  - `gpt_decision.json` or `gpt_decision_placeholder.json`
 - These files define what actually exists, what was copied, what is missing, what the current baseline identity is, and what the active round claims or does not claim.
 
 Supporting evidence:
 - lightweight logs and summaries support round facts:
-- `artifacts/metadata/csv_summaries.json`
-- `artifacts/logs/*.csv`
+  - `artifacts/metadata/csv_summaries.json`
+  - `artifacts/logs/*.csv`
 - human-readable prose is auxiliary only.
 - backup directories and historical notes are reference-only.
 
@@ -244,4 +244,4 @@ After this entry guide, continue to the detailed protocol docs:
 - stopping policy: `docs/09_stopping_policy.md`
 - output schema: `docs/10_output_contract.md`
 
-Until migration is complete, use the best existing equivalents in `docs/` while preserving the constraints defined in this entry guide.
+Use the numbered protocol set in `docs/` as the active authority set, and treat any surviving legacy naming in historical material as reference-only.

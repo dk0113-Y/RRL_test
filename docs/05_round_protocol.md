@@ -132,8 +132,8 @@ Round ID and path rules:
 - round IDs should be sequential: `round_0001`, `round_0002`, ...
 - each round must use one canonical directory: `rounds/round_xxxx/`
 - active round is identified by:
-- `CURRENT_ROUND.json.current_round_id`
-- `CURRENT_ROUND.json.current_round_path`
+  - `CURRENT_ROUND.json.current_round_id`
+  - `CURRENT_ROUND.json.current_round_path`
 - backup directories are reference-only and must not override active round selection
 - global outbox is not used for current protocol decisions
 
@@ -362,8 +362,8 @@ Allowed transition expectations:
 - `planned` may transition to `preflight_passed` or `preflight_failed`
 - `preflight_failed` must not transition to `running`
 - `preflight_passed` may transition to:
-- `running` for `formal_train_result`
-- `published` for some `dry_run_no_train` or `protocol_review` bundles after non-training checks
+  - `running` for `formal_train_result`
+  - `published` for some `dry_run_no_train` or `protocol_review` bundles after non-training checks
 - `running` may transition to artifact collection path or `failed`
 - failed runs must preserve failure evidence
 - `published` may transition to `review_requested` or `decision_recorded` depending on `decision_required_from_gpt`

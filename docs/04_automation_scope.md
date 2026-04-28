@@ -42,23 +42,23 @@ Current context constraints:
 Current formal anchors to preserve:
 - formal protocol is `formal_posthoc_trainselect_v1`
 - method mainline remains:
-- Dynamic Cumulative Belief Map
-- Shared Semantic Layer
-- Dual-State Input / Dual-Branch Encoding
-- Semantic Dueling Decision Head
+  - Dynamic Cumulative Belief Map
+  - Shared Semantic Layer
+  - Dual-State Input / Dual-Branch Encoding
+  - Semantic Dueling Decision Head
 - formal input keys remain:
-- `advantage_canvas`
-- `value_block_features`
-- `value_entry_features`
-- `value_block_mask`
-- `value_entry_mask`
+  - `advantage_canvas`
+  - `value_block_features`
+  - `value_entry_features`
+  - `value_block_mask`
+  - `value_entry_mask`
 - runtime baseline toggles remain:
-- AMP false
-- inference AMP false
-- `torch.compile` false
-- `channels_last` false
-- TF32 true
-- `cudnn_benchmark` true
+  - AMP false
+  - inference AMP false
+  - `torch.compile` false
+  - `channels_last` false
+  - TF32 true
+  - `cudnn_benchmark` true
 
 This automation system is explicitly not:
 - unrestricted AutoML

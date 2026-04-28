@@ -191,7 +191,7 @@ Traceability rule:
 Current status:
 - `round_0001` is a baseline registration round.
 - It registers run identity:
-- `value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814`
+  - `value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814`
 - Its artifact map is valid baseline-registration evidence, not a full template for all future formal training bundles.
 
 Known copied lightweight logs:
