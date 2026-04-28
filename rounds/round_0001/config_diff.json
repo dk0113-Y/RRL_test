@@ -1,0 +1,5 @@
+{
+  "round_id": "round_0001",
+  "status": "baseline_only_no_delta",
+  "notes": "This round registers an existing run as baseline candidate; no new training config delta introduced in exchange repo."
+}

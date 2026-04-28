@@ -1,95 +1,66 @@
 {
-  "schema_version": "2.0",
   "round_id": "round_0001",
-  "project_name": "DRL-path-finding formal_train exchange",
-  "exchange_state": "round_published",
-  "experiment_mode": "formal_train",
-  "source_of_truth_repo": "dk0113-Y/DRL-path-finding",
-  "local_execution_repo_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
-  "evaluation_mode": "formal_artifact_review",
-  "baseline_round_id": "round_hist_ref",
-  "baseline_commit_sha": "11f198a74d66f6984eaf0e5742bd2761273a4547",
-  "comparability_group": "formal_mainline_v1__bf21a9e8fbc5",
-  "decision_zone": "manual_review_required",
-  "stop_window_state": {
-    "window_basis": "bootstrap_thresholds",
-    "comparability_status": "bootstrap_comparable",
-    "plateau_detected": false,
-    "hard_stop_triggered": false,
-    "manual_review_required": true,
-    "insufficient_evidence": true,
-    "recommended_action": "pause_for_manual_review",
-    "decision_zone": "manual_review_required",
-    "reasons": [
-      "historical_thresholds_are_bootstrap_only",
-      "net_regression_detected",
-      "comparability_only_bootstrap_confirmed",
-      "runtime_summary_missing",
-      "backfilled_from_historical_run",
-      "train_config_unavailable_in_backfill_context",
-      "timing_summary_unavailable",
-      "total_runtime_unavailable",
-      "complete_train_config_not_recoverable_without_checkpoint_loader",
-      "train_config_unavailable",
-      "bootstrap_thresholds_required",
-      "historical_thresholds_bootstrap_only"
-    ]
-  },
-  "stable_context_files": [
-    "docs/gpt_index_guide.md",
-    "docs/project_context.md",
-    "docs/automation_scope.md",
-    "docs/reading_order.md",
-    "docs/current_mainline.md",
-    "docs/evaluation_charter.md",
-    "docs/stopping_policy.md",
-    "docs/output_contract.md",
-    "docs/formal_artifact_map.md",
-    "docs/tuning_policy.md"
-  ],
-  "recommended_entry_docs": [
-    "docs/gpt_index_guide.md",
-    "docs/reading_order.md",
-    "docs/project_context.md",
-    "docs/current_mainline.md",
-    "docs/evaluation_charter.md",
-    "docs/stopping_policy.md",
-    "docs/output_contract.md"
-  ],
-  "round_files": [
-    "rounds/round_0001/gpt_decision.json",
-    "rounds/round_0001/codex_request.md",
-    "rounds/round_0001/codex_report.md",
-    "rounds/round_0001/round_state.json",
-    "rounds/round_0001/gpt_input.md",
-    "rounds/round_0001/metric_snapshot.json",
-    "rounds/round_0001/benchmark_summary.json",
-    "rounds/round_0001/config_snapshot.json",
-    "rounds/round_0001/artifact_index.json",
-    "rounds/round_0001/historical_baseline_summary.json",
-    "rounds/round_0001/comparability_report.json",
-    "rounds/round_0001/round_summary.json",
-    "rounds/round_0001/training_summary.txt"
-  ],
-  "artifact_hashes": {
-    "gpt_decision.json": "aef0cefaeec38eb8f462ab102c445538cd2cc970b6ba3f30325ee5fbb545f3e1",
-    "codex_request.md": "757fd2b3b7b2c928b05c2f7ed78b964d9547a0c055af3d1bd45b57f647c08f85",
-    "codex_report.md": "05c386e82525e98e694b2ac666cd9b5d205bb9014340694a399f674b4b29d76b",
-    "round_state.json": "9a2a8454447c17fe9421fe18137891f9113a75d2bf625d970f46bd4062eb4444",
-    "gpt_input.md": "3043c8021574a87dc5c9f528af444d03133c89ebdd9807395b523d937a2658f6",
-    "metric_snapshot.json": "f4654c13d0a604157759d1a93b10913eb2b4b745971d36726190fb02258d0b87",
-    "benchmark_summary.json": "c8d4d675640b3fce87644cb91a809b7a5db67aa8e671b04582f17c615a51b572",
-    "config_snapshot.json": "7572474d16c573654b9ec76c454d640a88d661abdf33ee1826055839f2b89249",
-    "artifact_index.json": "5d40d77cd245a4347f89a2c57750151ab49a1423730afb56a892db8775c79be2",
-    "historical_baseline_summary.json": "abd87c69f5c5a81171a868ca057a4b1cb7589ef37addcf50b49756315461bbcf",
-    "comparability_report.json": "98038f761730304e22f3ee9ed8df783d25d8dcc1d0d4236c53bf855ae6f4b026",
-    "round_summary.json": "6e69394edc8564b6ed568ff0b7a04256f9955ecd49ee10f765ec61c7ec14c16b",
-    "training_summary.txt": "095ad5cd2eb3e3d25ec4a5ff6bc0adfe457096f7ce1b55bab3363dbf8e1a55d1"
-  },
-  "expected_output_file": "next_gpt_decision.json",
-  "notes": "Imported historical four-run formal_train analysis centered on `sched_turn003_revisit010_entry8_20260411_014043`, with `sched_turn005_revisit010_entry8_20260410_234142` as the primary baseline and two additional secondary compare runs.",
-  "updated_at": "2026-04-14T09:20:11+08:00",
-  "exchange_anchor_commit_sha": "f69bbb6424d721571cd35a3732e78485f6159963",
-  "last_exchange_commit_sha": "f69bbb6424d721571cd35a3732e78485f6159963",
-  "exchange_anchor_definition": "published_bundle_commit_reachable_from_current_head"
+  "generated_at": "2026-04-28T15:48:56+08:00",
+  "files": [
+    {
+      "file": "index_manifest.json",
+      "role": "round file index",
+      "required": true,
+      "generated_at": "2026-04-28T15:48:56+08:00"
+    },
+    {
+      "file": "round_summary.json",
+      "role": "round semantic summary",
+      "required": true,
+      "generated_at": "2026-04-28T15:48:56+08:00"
+    },
+    {
+      "file": "baseline_registration.json",
+      "role": "baseline registration details",
+      "required": true,
+      "generated_at": "2026-04-28T15:48:56+08:00"
+    },
+    {
+      "file": "artifact_digest.json",
+      "role": "artifact scan and digest",
+      "required": true,
+      "generated_at": "2026-04-28T15:48:56+08:00"
+    },
+    {
+      "file": "config_diff.json",
+      "role": "config delta/placeholder",
+      "required": true,
+      "generated_at": "2026-04-28T15:48:56+08:00"
+    },
+    {
+      "file": "comparability_report.json",
+      "role": "comparability declaration",
+      "required": true,
+      "generated_at": "2026-04-28T15:48:56+08:00"
+    },
+    {
+      "file": "gpt_decision_placeholder.json",
+      "role": "GPT decision placeholder",
+      "required": true,
+      "generated_at": "2026-04-28T15:48:56+08:00"
+    },
+    {
+      "file": "artifacts/logs",
+      "role": "copied log artifacts",
+      "required": false,
+      "generated_at": "2026-04-28T15:48:56+08:00"
+    },
+    {
+      "file": "artifacts/metadata/csv_summaries.json",
+      "role": "CSV summaries",
+      "required": false,
+      "generated_at": "2026-04-28T15:48:56+08:00"
+    },
+    {
+      "file": "artifacts/digests",
+      "role": "extra digest space",
+      "required": false,
+      "generated_at": "2026-04-28T15:48:56+08:00"
+    }
+  ]
 }

@@ -1,0 +1,11 @@
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.zip
+*.tar
+*.tar.gz
+outputs/
+checkpoints/
+__pycache__/
+*.pyc

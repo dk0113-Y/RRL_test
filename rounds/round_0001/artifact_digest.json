@@ -1,0 +1,120 @@
+{
+  "source_run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814",
+  "scanned_at": "2026-04-28T15:48:56+08:00",
+  "artifacts": [
+    {
+      "relative_path": "checkpoints/best.pt",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\checkpoints\\best.pt",
+      "exists": true,
+      "size_bytes": 4739934,
+      "sha256": "8f69c1baeb74676db6c62343d89f1f7f11e360cf39a3a80e56670d0c31db0990",
+      "copied_to_exchange": false,
+      "reason_if_not_copied": "checkpoint_not_allowed"
+    },
+    {
+      "relative_path": "checkpoints/last.pt",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\checkpoints\\last.pt",
+      "exists": true,
+      "size_bytes": 14173678,
+      "sha256": "dc903a62aa260521729747cbfca89eecabd52f9e338268b7c68b9a9f4da9d761",
+      "copied_to_exchange": false,
+      "reason_if_not_copied": "checkpoint_not_allowed"
+    },
+    {
+      "relative_path": "logs/config_snapshot.json",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\logs\\config_snapshot.json",
+      "exists": true,
+      "size_bytes": 19999,
+      "sha256": "76597710e606ab70702350bedf92008f688726059a082185a55e12f7e7835ef2",
+      "copied_to_exchange": false,
+      "reason_if_not_copied": "registered_by_digest"
+    },
+    {
+      "relative_path": "logs/eval_metrics.csv",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\logs\\eval_metrics.csv",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "copied_to_exchange": false,
+      "reason_if_not_copied": "missing"
+    },
+    {
+      "relative_path": "logs/final_probe.csv",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\logs\\final_probe.csv",
+      "exists": true,
+      "size_bytes": 4756,
+      "sha256": "77e188d0bde4671f51ed66bb064b96fb0d41846344156fd583d9ceffa6760c09",
+      "copied_to_exchange": true,
+      "reason_if_not_copied": null
+    },
+    {
+      "relative_path": "logs/posthoc_candidate_selection.csv",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\logs\\posthoc_candidate_selection.csv",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "copied_to_exchange": false,
+      "reason_if_not_copied": "missing"
+    },
+    {
+      "relative_path": "logs/posthoc_selection_summary.json",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\logs\\posthoc_selection_summary.json",
+      "exists": true,
+      "size_bytes": 16056,
+      "sha256": "a9097b1c98df5d4f7e1e98a1c689924cdd3a9b03785281bb1d89a98173973260",
+      "copied_to_exchange": false,
+      "reason_if_not_copied": "registered_by_digest"
+    },
+    {
+      "relative_path": "logs/profile*.csv",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\logs\\profile*.csv",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "copied_to_exchange": false,
+      "reason_if_not_copied": "missing"
+    },
+    {
+      "relative_path": "logs/timing*.csv",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\logs\\timing*.csv",
+      "exists": false,
+      "size_bytes": null,
+      "sha256": null,
+      "copied_to_exchange": false,
+      "reason_if_not_copied": "missing"
+    },
+    {
+      "relative_path": "logs/train_episodes.csv",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\logs\\train_episodes.csv",
+      "exists": true,
+      "size_bytes": 688192,
+      "sha256": "12eb85ef401c9827b48b471cfe3850c904243c55bc6b541e5ded84c2fda117fc",
+      "copied_to_exchange": true,
+      "reason_if_not_copied": null
+    },
+    {
+      "relative_path": "logs/train_steps.csv",
+      "absolute_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814\\logs\\train_steps.csv",
+      "exists": true,
+      "size_bytes": 932014,
+      "sha256": "4f692999a03f1c3eee494ca812a3c94024f55a26b93cb27c51417ff40fa5ac55",
+      "copied_to_exchange": true,
+      "reason_if_not_copied": null
+    }
+  ],
+  "missing_expected_files": [
+    "logs/eval_metrics.csv",
+    "logs/posthoc_candidate_selection.csv",
+    "logs/profile*.csv",
+    "logs/timing*.csv"
+  ],
+  "copied_files": [
+    "rounds/round_0001/artifacts/logs/final_probe.csv",
+    "rounds/round_0001/artifacts/logs/train_episodes.csv",
+    "rounds/round_0001/artifacts/logs/train_steps.csv"
+  ],
+  "skipped_large_or_binary_files": [
+    "checkpoints/best.pt",
+    "checkpoints/last.pt"
+  ]
+}

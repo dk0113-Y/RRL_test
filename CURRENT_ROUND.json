@@ -1,70 +1,9 @@
 {
-  "schema_version": "2.0",
-  "project_name": "DRL-path-finding formal_train exchange",
-  "exchange_repo_url": "https://github.com/dk0113-Y/RRL_test",
-  "branch": "main",
-  "exchange_state": "round_published",
   "current_round_id": "round_0001",
-  "current_round_manifest": "rounds/round_0001/index_manifest.json",
-  "experiment_mode": "formal_train",
-  "source_of_truth_repo": "dk0113-Y/DRL-path-finding",
-  "local_execution_repo_path": "C:\\Users\\Dk\\Desktop\\SCI\\代码1",
-  "evaluation_mode": "formal_artifact_review",
-  "decision_zone": "manual_review_required",
-  "stop_window_state": {
-    "window_basis": "bootstrap_thresholds",
-    "comparability_status": "bootstrap_comparable",
-    "plateau_detected": false,
-    "hard_stop_triggered": false,
-    "manual_review_required": true,
-    "insufficient_evidence": true,
-    "recommended_action": "pause_for_manual_review",
-    "decision_zone": "manual_review_required",
-    "reasons": [
-      "historical_thresholds_are_bootstrap_only",
-      "net_regression_detected",
-      "comparability_only_bootstrap_confirmed",
-      "runtime_summary_missing",
-      "backfilled_from_historical_run",
-      "train_config_unavailable_in_backfill_context",
-      "timing_summary_unavailable",
-      "total_runtime_unavailable",
-      "complete_train_config_not_recoverable_without_checkpoint_loader",
-      "train_config_unavailable",
-      "bootstrap_thresholds_required",
-      "historical_thresholds_bootstrap_only"
-    ]
-  },
-  "recommended_entry_docs": [
-    "docs/gpt_index_guide.md",
-    "docs/reading_order.md",
-    "docs/project_context.md",
-    "docs/current_mainline.md",
-    "docs/evaluation_charter.md",
-    "docs/stopping_policy.md",
-    "docs/output_contract.md"
-  ],
-  "stable_context_files": [
-    "docs/gpt_index_guide.md",
-    "docs/project_context.md",
-    "docs/automation_scope.md",
-    "docs/reading_order.md",
-    "docs/current_mainline.md",
-    "docs/evaluation_charter.md",
-    "docs/stopping_policy.md",
-    "docs/output_contract.md",
-    "docs/formal_artifact_map.md",
-    "docs/tuning_policy.md"
-  ],
-  "expected_output_file": "next_gpt_decision.json",
-  "exchange_anchor_commit_sha": "f69bbb6424d721571cd35a3732e78485f6159963",
-  "last_exchange_commit_sha": "f69bbb6424d721571cd35a3732e78485f6159963",
-  "exchange_anchor_definition": "published_bundle_commit_reachable_from_current_head",
-  "notes": [
-    "Read `exchange_anchor_commit_sha` as the published bundle anchor commit.",
-    "That anchor commit is the first commit that contains the published round bundle.",
-    "The final pushed HEAD may be a later CURRENT_ROUND pointer-update commit.",
-    "`last_exchange_commit_sha` is kept only as a deprecated compatibility alias."
-  ],
-  "updated_at": "2026-04-14T09:20:11+08:00"
+  "current_round_path": "rounds/round_0001",
+  "current_phase": "baseline_registration",
+  "status": "registered",
+  "baseline_run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814",
+  "next_expected_action": "review_automation_control_repository",
+  "decision_required_from_gpt": false
 }

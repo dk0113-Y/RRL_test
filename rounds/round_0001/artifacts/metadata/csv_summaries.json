@@ -1,0 +1,1244 @@
+{
+  "logs/final_probe.csv": {
+    "row_count": 3,
+    "columns": [
+      "tag",
+      "source",
+      "budget_mode",
+      "env_steps",
+      "episode_idx",
+      "train_episode_idx",
+      "completed_train_episodes",
+      "learner_steps",
+      "checkpoint_path",
+      "seed_base",
+      "selection_rank",
+      "eval_episodes",
+      "eval_mean_reward",
+      "eval_mean_coverage",
+      "eval_success_rate",
+      "eval_mean_episode_length",
+      "eval_mean_repeat_visit_ratio",
+      "eval_mean_accessible_block_count",
+      "eval_mean_total_accessible_unknown_area",
+      "eval_mean_total_frontier_cluster_count",
+      "eval_mean_mean_block_area",
+      "eval_mean_local_frontier_coverage",
+      "eval_mean_local_frontier_block_area_mean",
+      "eval_mean_value_total_block_count_before_cap",
+      "eval_mean_value_packed_block_count",
+      "eval_mean_value_truncated_block_count",
+      "eval_mean_value_block_cap_hit_flag",
+      "eval_mean_value_total_entry_count_before_cap",
+      "eval_mean_value_packed_entry_count",
+      "eval_mean_value_truncated_entry_count",
+      "eval_mean_value_entry_cap_hit_block_count",
+      "eval_mean_value_entry_cap_hit_flag",
+      "eval_mean_value_max_frontier_clusters_per_block",
+      "eval_mean_value_mean_frontier_clusters_per_block",
+      "eval_mean_info_reward_sum",
+      "eval_mean_step_penalty_sum",
+      "eval_mean_recent_revisit_penalty_sum",
+      "eval_mean_turn_penalty_sum",
+      "eval_mean_timeout_penalty_sum",
+      "eval_mean_terminal_bonus_sum",
+      "eval_mean_delta_empty_sum",
+      "eval_mean_delta_obstacle_sum",
+      "eval_mean_empty_info_gain_sum",
+      "eval_mean_obstacle_info_gain_sum",
+      "eval_mean_weighted_obstacle_info_gain_sum",
+      "eval_mean_weighted_info_gain_sum",
+      "eval_mean_empty_info_reward_sum",
+      "eval_mean_obstacle_info_reward_sum",
+      "eval_mean_obstacle_info_contribution_ratio",
+      "eval_mean_recent_revisit_trigger_count",
+      "eval_mean_stall_trigger_count",
+      "eval_mean_zero_info_step_count",
+      "eval_mean_turn_ge_90_count",
+      "eval_mean_turn_135_count",
+      "eval_mean_turn_180_count",
+      "eval_mean_turn_penalty_weight_sum",
+      "eval_mean_timeout_flag",
+      "posthoc_selection_rank",
+      "posthoc_selection_score",
+      "posthoc_window_start_env_steps",
+      "posthoc_window_end_env_steps",
+      "posthoc_window_row_count",
+      "formal_winner",
+      "final_probe_rank"
+    ],
+    "last_row_values": {
+      "tag": "final_probe",
+      "source": "posthoc_candidate_final_probe",
+      "budget_mode": "env_steps",
+      "env_steps": "500000",
+      "episode_idx": "1011",
+      "train_episode_idx": "1005",
+      "completed_train_episodes": "1005",
+      "learner_steps": "62000",
+      "checkpoint_path": "checkpoints/ckpt_step_500000.pt",
+      "seed_base": "20261323",
+      "selection_rank": "1",
+      "eval_episodes": "100",
+      "eval_mean_reward": "117.88825988769531",
+      "eval_mean_coverage": "0.8795599341392517",
+      "eval_success_rate": "0.5699999928474426",
+      "eval_mean_episode_length": "435.8699951171875",
+      "eval_mean_repeat_visit_ratio": "0.3106342554092407",
+      "eval_mean_accessible_block_count": "5.107128620147705",
+      "eval_mean_total_accessible_unknown_area": "441.67608642578125",
+      "eval_mean_total_frontier_cluster_count": "10.552032470703125",
+      "eval_mean_mean_block_area": "108.9842300415039",
+      "eval_mean_local_frontier_coverage": "0.026257863268256187",
+      "eval_mean_local_frontier_block_area_mean": "0.413187175989151",
+      "eval_mean_value_total_block_count_before_cap": "5.107128620147705",
+      "eval_mean_value_packed_block_count": "5.107128620147705",
+      "eval_mean_value_truncated_block_count": "0.0",
+      "eval_mean_value_block_cap_hit_flag": "0.0",
+      "eval_mean_value_total_entry_count_before_cap": "10.552032470703125",
+      "eval_mean_value_packed_entry_count": "10.485830307006836",
+      "eval_mean_value_truncated_entry_count": "0.06620228290557861",
+      "eval_mean_value_entry_cap_hit_block_count": "0.0373821035027504",
+      "eval_mean_value_entry_cap_hit_flag": "0.0373821035027504",
+      "eval_mean_value_max_frontier_clusters_per_block": "4.513667106628418",
+      "eval_mean_value_mean_frontier_clusters_per_block": "2.3564553260803223",
+      "eval_mean_info_reward_sum": "135.08480834960938",
+      "eval_mean_step_penalty_sum": "-8.717399597167969",
+      "eval_mean_recent_revisit_penalty_sum": "-9.835999488830566",
+      "eval_mean_turn_penalty_sum": "-6.6031670570373535",
+      "eval_mean_timeout_penalty_sum": "-3.440000057220459",
+      "eval_mean_terminal_bonus_sum": "11.399999618530273",
+      "eval_mean_delta_empty_sum": "1338.93994140625",
+      "eval_mean_delta_obstacle_sum": "302.6600036621094",
+      "eval_mean_empty_info_gain_sum": "42.61978530883789",
+      "eval_mean_obstacle_info_gain_sum": "9.633967399597168",
+      "eval_mean_weighted_obstacle_info_gain_sum": "2.408491849899292",
+      "eval_mean_weighted_info_gain_sum": "45.028282165527344",
+      "eval_mean_empty_info_reward_sum": "127.8593521118164",
+      "eval_mean_obstacle_info_reward_sum": "7.225475311279297",
+      "eval_mean_obstacle_info_contribution_ratio": "0.053263645619153976",
+      "eval_mean_recent_revisit_trigger_count": "98.36000061035156",
+      "eval_mean_stall_trigger_count": "226.5399932861328",
+      "eval_mean_zero_info_step_count": "276.44000244140625",
+      "eval_mean_turn_ge_90_count": "201.41000366210938",
+      "eval_mean_turn_135_count": "46.36000061035156",
+      "eval_mean_turn_180_count": "74.20999908447266",
+      "eval_mean_turn_penalty_weight_sum": "132.06333923339844",
+      "eval_mean_timeout_flag": "0.4300000071525574",
+      "posthoc_selection_rank": "1",
+      "posthoc_selection_score": "1.235322272324509",
+      "posthoc_window_start_env_steps": "460000",
+      "posthoc_window_end_env_steps": "500000",
+      "posthoc_window_row_count": "81",
+      "formal_winner": "False",
+      "final_probe_rank": "3"
+    },
+    "common_numeric_metrics": {},
+    "numeric_metrics_all": {
+      "env_steps": {
+        "min": 460000.0,
+        "max": 500000.0,
+        "mean": 480000.0
+      },
+      "episode_idx": {
+        "min": 1011.0,
+        "max": 1011.0,
+        "mean": 1011.0
+      },
+      "train_episode_idx": {
+        "min": 905.0,
+        "max": 1005.0,
+        "mean": 955.6666666666666
+      },
+      "completed_train_episodes": {
+        "min": 1005.0,
+        "max": 1005.0,
+        "mean": 1005.0
+      },
+      "learner_steps": {
+        "min": 57000.0,
+        "max": 62000.0,
+        "mean": 59500.0
+      },
+      "seed_base": {
+        "min": 20261323.0,
+        "max": 20261323.0,
+        "mean": 20261323.0
+      },
+      "selection_rank": {
+        "min": 1.0,
+        "max": 3.0,
+        "mean": 2.0
+      },
+      "eval_episodes": {
+        "min": 100.0,
+        "max": 100.0,
+        "mean": 100.0
+      },
+      "eval_mean_reward": {
+        "min": 117.88825988769531,
+        "max": 135.20213317871094,
+        "mean": 128.18761698404947
+      },
+      "eval_mean_coverage": {
+        "min": 0.8795599341392517,
+        "max": 0.925402045249939,
+        "mean": 0.9065036773681641
+      },
+      "eval_success_rate": {
+        "min": 0.5699999928474426,
+        "max": 0.7300000190734863,
+        "mean": 0.6733333468437195
+      },
+      "eval_mean_episode_length": {
+        "min": 397.6600036621094,
+        "max": 435.8699951171875,
+        "mean": 412.7366638183594
+      },
+      "eval_mean_repeat_visit_ratio": {
+        "min": 0.2307060807943344,
+        "max": 0.3106342554092407,
+        "mean": 0.2611275563637416
+      },
+      "eval_mean_accessible_block_count": {
+        "min": 5.107128620147705,
+        "max": 5.215920448303223,
+        "mean": 5.1614580154418945
+      },
+      "eval_mean_total_accessible_unknown_area": {
+        "min": 441.67608642578125,
+        "max": 457.1343994140625,
+        "mean": 451.0177307128906
+      },
+      "eval_mean_total_frontier_cluster_count": {
+        "min": 10.552032470703125,
+        "max": 10.868380546569824,
+        "mean": 10.69156265258789
+      },
+      "eval_mean_mean_block_area": {
+        "min": 108.9842300415039,
+        "max": 111.3742446899414,
+        "mean": 110.24303690592448
+      },
+      "eval_mean_local_frontier_coverage": {
+        "min": 0.026257863268256187,
+        "max": 0.027488326653838158,
+        "mean": 0.026853660121560097
+      },
+      "eval_mean_local_frontier_block_area_mean": {
+        "min": 0.40755587816238403,
+        "max": 0.4316639006137848,
+        "mean": 0.41746898492177326
+      },
+      "eval_mean_value_total_block_count_before_cap": {
+        "min": 5.107128620147705,
+        "max": 5.215920448303223,
+        "mean": 5.1614580154418945
+      },
+      "eval_mean_value_packed_block_count": {
+        "min": 5.107128620147705,
+        "max": 5.215920448303223,
+        "mean": 5.1614580154418945
+      },
+      "eval_mean_value_truncated_block_count": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "eval_mean_value_block_cap_hit_flag": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "eval_mean_value_total_entry_count_before_cap": {
+        "min": 10.552032470703125,
+        "max": 10.868380546569824,
+        "mean": 10.69156265258789
+      },
+      "eval_mean_value_packed_entry_count": {
+        "min": 10.485830307006836,
+        "max": 10.777778625488281,
+        "mean": 10.616445859273275
+      },
+      "eval_mean_value_truncated_entry_count": {
+        "min": 0.06620228290557861,
+        "max": 0.0906020998954773,
+        "mean": 0.07511698951323827
+      },
+      "eval_mean_value_entry_cap_hit_block_count": {
+        "min": 0.03327518701553345,
+        "max": 0.04560355842113495,
+        "mean": 0.038753616313139595
+      },
+      "eval_mean_value_entry_cap_hit_flag": {
+        "min": 0.03327518701553345,
+        "max": 0.04560355842113495,
+        "mean": 0.038753616313139595
+      },
+      "eval_mean_value_max_frontier_clusters_per_block": {
+        "min": 4.420228958129883,
+        "max": 4.553095817565918,
+        "mean": 4.495663960774739
+      },
+      "eval_mean_value_mean_frontier_clusters_per_block": {
+        "min": 2.322575092315674,
+        "max": 2.414987325668335,
+        "mean": 2.364672581354777
+      },
+      "eval_mean_info_reward_sum": {
+        "min": 135.08480834960938,
+        "max": 143.0730438232422,
+        "mean": 139.8034464518229
+      },
+      "eval_mean_step_penalty_sum": {
+        "min": -8.717399597167969,
+        "max": -7.953200817108154,
+        "mean": -8.254733562469482
+      },
+      "eval_mean_recent_revisit_penalty_sum": {
+        "min": -9.835999488830566,
+        "max": -6.889999866485596,
+        "mean": -8.492666403452555
+      },
+      "eval_mean_turn_penalty_sum": {
+        "min": -6.6031670570373535,
+        "max": -5.047333240509033,
+        "mean": -5.72177791595459
+      },
+      "eval_mean_timeout_penalty_sum": {
+        "min": -3.440000057220459,
+        "max": -2.1600000858306885,
+        "mean": -2.6133333841959634
+      },
+      "eval_mean_terminal_bonus_sum": {
+        "min": 11.399999618530273,
+        "max": 14.600000381469727,
+        "mean": 13.466666539510092
+      },
+      "eval_mean_delta_empty_sum": {
+        "min": 1338.93994140625,
+        "max": 1417.1800537109375,
+        "mean": 1385.2333170572917
+      },
+      "eval_mean_delta_obstacle_sum": {
+        "min": 302.6600036621094,
+        "max": 324.30999755859375,
+        "mean": 315.14000447591144
+      },
+      "eval_mean_empty_info_gain_sum": {
+        "min": 42.61978530883789,
+        "max": 45.11024475097656,
+        "mean": 44.09334818522135
+      },
+      "eval_mean_obstacle_info_gain_sum": {
+        "min": 9.633967399597168,
+        "max": 10.323107719421387,
+        "mean": 10.031217575073242
+      },
+      "eval_mean_weighted_obstacle_info_gain_sum": {
+        "min": 2.408491849899292,
+        "max": 2.5807769298553467,
+        "mean": 2.5078043937683105
+      },
+      "eval_mean_weighted_info_gain_sum": {
+        "min": 45.028282165527344,
+        "max": 47.691017150878906,
+        "mean": 46.60115432739258
+      },
+      "eval_mean_empty_info_reward_sum": {
+        "min": 127.8593521118164,
+        "max": 135.3307342529297,
+        "mean": 132.28004201253256
+      },
+      "eval_mean_obstacle_info_reward_sum": {
+        "min": 7.225475311279297,
+        "max": 7.742330551147461,
+        "mean": 7.523413181304932
+      },
+      "eval_mean_obstacle_info_contribution_ratio": {
+        "min": 0.053263645619153976,
+        "max": 0.054060373455286026,
+        "mean": 0.05370675275723139
+      },
+      "eval_mean_recent_revisit_trigger_count": {
+        "min": 68.9000015258789,
+        "max": 98.36000061035156,
+        "mean": 84.92666625976562
+      },
+      "eval_mean_stall_trigger_count": {
+        "min": 176.55999755859375,
+        "max": 226.5399932861328,
+        "mean": 195.65333048502603
+      },
+      "eval_mean_zero_info_step_count": {
+        "min": 232.13999938964844,
+        "max": 276.44000244140625,
+        "mean": 247.40333557128906
+      },
+      "eval_mean_turn_ge_90_count": {
+        "min": 159.72999572753906,
+        "max": 201.41000366210938,
+        "mean": 175.6499989827474
+      },
+      "eval_mean_turn_135_count": {
+        "min": 28.020000457763672,
+        "max": 46.36000061035156,
+        "mean": 35.52333323160807
+      },
+      "eval_mean_turn_180_count": {
+        "min": 55.459999084472656,
+        "max": 74.20999908447266,
+        "mean": 66.06666564941406
+      },
+      "eval_mean_turn_penalty_weight_sum": {
+        "min": 100.94667053222656,
+        "max": 132.06333923339844,
+        "mean": 114.43556213378906
+      },
+      "eval_mean_timeout_flag": {
+        "min": 0.27000001072883606,
+        "max": 0.4300000071525574,
+        "mean": 0.3266666730244954
+      },
+      "posthoc_selection_rank": {
+        "min": 1.0,
+        "max": 3.0,
+        "mean": 2.0
+      },
+      "posthoc_selection_score": {
+        "min": 0.9430126329142432,
+        "max": 1.235322272324509,
+        "mean": 1.1107622274099718
+      },
+      "posthoc_window_start_env_steps": {
+        "min": 420000.0,
+        "max": 460000.0,
+        "mean": 440000.0
+      },
+      "posthoc_window_end_env_steps": {
+        "min": 460000.0,
+        "max": 500000.0,
+        "mean": 480000.0
+      },
+      "posthoc_window_row_count": {
+        "min": 81.0,
+        "max": 81.0,
+        "mean": 81.0
+      },
+      "final_probe_rank": {
+        "min": 1.0,
+        "max": 3.0,
+        "mean": 2.0
+      }
+    }
+  },
+  "logs/train_episodes.csv": {
+    "row_count": 1011,
+    "columns": [
+      "phase",
+      "budget_mode",
+      "env_steps",
+      "episode_idx",
+      "train_episode_idx",
+      "phase_episode_idx",
+      "completed_train_episodes",
+      "episode_seed",
+      "map_fingerprint",
+      "epsilon",
+      "episode_reward",
+      "episode_length",
+      "final_coverage",
+      "success",
+      "repeat_visit_ratio",
+      "done_reason",
+      "accessible_block_count",
+      "total_accessible_unknown_area",
+      "total_frontier_cluster_count",
+      "mean_block_area",
+      "local_frontier_coverage",
+      "local_frontier_block_area_mean",
+      "value_total_block_count_before_cap",
+      "value_packed_block_count",
+      "value_truncated_block_count",
+      "value_block_cap_hit_flag",
+      "value_total_entry_count_before_cap",
+      "value_packed_entry_count",
+      "value_truncated_entry_count",
+      "value_entry_cap_hit_block_count",
+      "value_entry_cap_hit_flag",
+      "value_max_frontier_clusters_per_block",
+      "value_mean_frontier_clusters_per_block",
+      "info_reward_sum",
+      "step_penalty_sum",
+      "recent_revisit_penalty_sum",
+      "turn_penalty_sum",
+      "timeout_penalty_sum",
+      "terminal_bonus_sum",
+      "delta_empty_sum",
+      "delta_obstacle_sum",
+      "empty_info_gain_sum",
+      "obstacle_info_gain_sum",
+      "weighted_obstacle_info_gain_sum",
+      "weighted_info_gain_sum",
+      "empty_info_reward_sum",
+      "obstacle_info_reward_sum",
+      "obstacle_info_contribution_ratio",
+      "recent_revisit_trigger_count",
+      "stall_trigger_count",
+      "zero_info_step_count",
+      "turn_ge_90_count",
+      "turn_135_count",
+      "turn_180_count",
+      "turn_penalty_weight_sum",
+      "timeout_flag"
+    ],
+    "last_row_values": {
+      "phase": "train",
+      "budget_mode": "env_steps",
+      "env_steps": "499838",
+      "episode_idx": "1011",
+      "train_episode_idx": "1011",
+      "phase_episode_idx": "1005",
+      "completed_train_episodes": "1005",
+      "episode_seed": "20260333",
+      "map_fingerprint": "b85b0635a41b5580",
+      "epsilon": "0.05",
+      "episode_reward": "59.031793305755826",
+      "episode_length": "600",
+      "final_coverage": "0.7348",
+      "success": "0",
+      "repeat_visit_ratio": "0.6089850249584027",
+      "done_reason": "max_episode_steps",
+      "accessible_block_count": "8.408333333333333",
+      "total_accessible_unknown_area": "503.6716666666667",
+      "total_frontier_cluster_count": "15.291666666666666",
+      "mean_block_area": "66.78215289802833",
+      "local_frontier_coverage": "0.01501889644746788",
+      "local_frontier_block_area_mean": "0.14099003127155205",
+      "value_total_block_count_before_cap": "8.408333333333333",
+      "value_packed_block_count": "8.408333333333333",
+      "value_truncated_block_count": "0.0",
+      "value_block_cap_hit_flag": "0.0",
+      "value_total_entry_count_before_cap": "15.291666666666666",
+      "value_packed_entry_count": "15.291666666666666",
+      "value_truncated_entry_count": "0.0",
+      "value_entry_cap_hit_block_count": "0.0",
+      "value_entry_cap_hit_flag": "0.0",
+      "value_max_frontier_clusters_per_block": "3.256666666666667",
+      "value_mean_frontier_clusters_per_block": "1.9435547739298025",
+      "info_reward_sum": "109.14845997242189",
+      "step_penalty_sum": "-11.999999999999833",
+      "recent_revisit_penalty_sum": "-19.60000000000001",
+      "turn_penalty_sum": "-10.516666666666676",
+      "timeout_penalty_sum": "-8.0",
+      "terminal_bonus_sum": "0.0",
+      "delta_empty_sum": "1085.0",
+      "delta_obstacle_sum": "232.0",
+      "empty_info_gain_sum": "34.536622650941304",
+      "obstacle_info_gain_sum": "7.384789359463949",
+      "weighted_obstacle_info_gain_sum": "1.8461973398659872",
+      "weighted_info_gain_sum": "36.382819990807256",
+      "empty_info_reward_sum": "103.60986795282389",
+      "obstacle_info_reward_sum": "5.538592019597952",
+      "obstacle_info_contribution_ratio": "0.05074365704286958",
+      "recent_revisit_trigger_count": "196.0",
+      "stall_trigger_count": "411.0",
+      "zero_info_step_count": "474.0",
+      "turn_ge_90_count": "326.0",
+      "turn_135_count": "119.0",
+      "turn_180_count": "93.0",
+      "turn_penalty_weight_sum": "210.3333333333332",
+      "timeout_flag": "1.0"
+    },
+    "common_numeric_metrics": {
+      "success": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.44510385756676557
+      },
+      "repeat_visit_ratio": {
+        "min": 0.012578616352201259,
+        "max": 0.826955074875208,
+        "mean": 0.31686523108414955
+      }
+    },
+    "numeric_metrics_all": {
+      "env_steps": {
+        "min": 600.0,
+        "max": 499838.0,
+        "mean": 270415.91988130566
+      },
+      "episode_idx": {
+        "min": 1.0,
+        "max": 1011.0,
+        "mean": 506.0
+      },
+      "train_episode_idx": {
+        "min": 1.0,
+        "max": 1011.0,
+        "mean": 506.0
+      },
+      "phase_episode_idx": {
+        "min": 1.0,
+        "max": 1005.0,
+        "mean": 500.03560830860533
+      },
+      "completed_train_episodes": {
+        "min": 0.0,
+        "max": 1005.0,
+        "mean": 500.0148367952522
+      },
+      "episode_seed": {
+        "min": 20259323.0,
+        "max": 20260333.0,
+        "mean": 20259828.0
+      },
+      "map_fingerprint": {
+        "min": Infinity,
+        "max": Infinity,
+        "mean": Infinity
+      },
+      "epsilon": {
+        "min": 0.05,
+        "max": 1.0,
+        "mean": 0.24079163534454337
+      },
+      "episode_reward": {
+        "min": -29.888539464104383,
+        "max": 175.3336054049658,
+        "mean": 108.2494524433959
+      },
+      "episode_length": {
+        "min": 154.0,
+        "max": 600.0,
+        "mean": 494.39960435212663
+      },
+      "final_coverage": {
+        "min": 0.2227,
+        "max": 0.9634,
+        "mean": 0.8466865479723046
+      },
+      "success": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.44510385756676557
+      },
+      "repeat_visit_ratio": {
+        "min": 0.012578616352201259,
+        "max": 0.826955074875208,
+        "mean": 0.31686523108414955
+      },
+      "accessible_block_count": {
+        "min": 1.015,
+        "max": 11.77,
+        "mean": 4.543880974079858
+      },
+      "total_accessible_unknown_area": {
+        "min": 195.00833333333333,
+        "max": 850.9633333333334,
+        "mean": 456.3643228848496
+      },
+      "total_frontier_cluster_count": {
+        "min": 3.465,
+        "max": 19.202898550724637,
+        "mean": 10.300782457982953
+      },
+      "mean_block_area": {
+        "min": 39.2624546009546,
+        "max": 623.2202777777777,
+        "mean": 142.41990074622365
+      },
+      "local_frontier_coverage": {
+        "min": 0.004962207105064245,
+        "max": 0.05355057554356896,
+        "mean": 0.02439893866733302
+      },
+      "local_frontier_block_area_mean": {
+        "min": 0.1240977359120734,
+        "max": 0.9856867871681849,
+        "mean": 0.4258398950871003
+      },
+      "value_total_block_count_before_cap": {
+        "min": 1.015,
+        "max": 11.77,
+        "mean": 4.543880974079858
+      },
+      "value_packed_block_count": {
+        "min": 1.015,
+        "max": 11.77,
+        "mean": 4.543880974079858
+      },
+      "value_truncated_block_count": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "value_block_cap_hit_flag": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "value_total_entry_count_before_cap": {
+        "min": 3.465,
+        "max": 19.202898550724637,
+        "mean": 10.300782457982953
+      },
+      "value_packed_entry_count": {
+        "min": 3.465,
+        "max": 19.202898550724637,
+        "mean": 10.17283267998503
+      },
+      "value_truncated_entry_count": {
+        "min": 0.0,
+        "max": 3.7116666666666664,
+        "mean": 0.12794977799792429
+      },
+      "value_entry_cap_hit_block_count": {
+        "min": 0.0,
+        "max": 0.9883333333333333,
+        "mean": 0.06923106555184648
+      },
+      "value_entry_cap_hit_flag": {
+        "min": 0.0,
+        "max": 0.9883333333333333,
+        "mean": 0.06923106555184648
+      },
+      "value_max_frontier_clusters_per_block": {
+        "min": 1.905,
+        "max": 11.666666666666666,
+        "mean": 4.966761737109184
+      },
+      "value_mean_frontier_clusters_per_block": {
+        "min": 1.3122817460317446,
+        "max": 8.836388888888889,
+        "mean": 2.843328757705528
+      },
+      "info_reward_sum": {
+        "min": 26.045706436988667,
+        "max": 165.75191548305443,
+        "mean": 130.29502778134497
+      },
+      "step_penalty_sum": {
+        "min": -11.999999999999833,
+        "max": -3.0800000000000023,
+        "mean": -9.88799208704241
+      },
+      "recent_revisit_penalty_sum": {
+        "min": -47.0000000000004,
+        "max": -0.2,
+        "mean": -9.55262116716122
+      },
+      "turn_penalty_sum": {
+        "min": -23.383333333333532,
+        "max": -0.9000000000000005,
+        "mean": -7.0678700956149045
+      },
+      "timeout_penalty_sum": {
+        "min": -8.0,
+        "max": 0.0,
+        "mean": -4.439169139465875
+      },
+      "terminal_bonus_sum": {
+        "min": 0.0,
+        "max": 20.0,
+        "mean": 8.90207715133531
+      },
+      "delta_empty_sum": {
+        "min": 256.0,
+        "max": 1649.0,
+        "mean": 1292.082096933729
+      },
+      "delta_obstacle_sum": {
+        "min": 67.0,
+        "max": 415.0,
+        "mean": 289.45697329376856
+      },
+      "empty_info_gain_sum": {
+        "min": 8.148733086305045,
+        "max": 52.48930023170709,
+        "mean": 41.12825052150889
+      },
+      "obstacle_info_gain_sum": {
+        "min": 2.132676237431396,
+        "max": 13.209860276627325,
+        "mean": 9.213701622424404
+      },
+      "weighted_obstacle_info_gain_sum": {
+        "min": 0.533169059357849,
+        "max": 3.302465069156831,
+        "mean": 2.303425405606101
+      },
+      "weighted_info_gain_sum": {
+        "min": 8.681902145662894,
+        "max": 55.25063849435142,
+        "mean": 43.43167592711498
+      },
+      "empty_info_reward_sum": {
+        "min": 24.44619925891511,
+        "max": 157.46790069512136,
+        "mean": 123.38475156452671
+      },
+      "obstacle_info_reward_sum": {
+        "min": 1.5995071780735488,
+        "max": 9.907395207470467,
+        "mean": 6.910276216818292
+      },
+      "obstacle_info_contribution_ratio": {
+        "min": 0.029940119760479063,
+        "max": 0.07963185274109641,
+        "mean": 0.0527648621175638
+      },
+      "recent_revisit_trigger_count": {
+        "min": 2.0,
+        "max": 470.0,
+        "mean": 95.52621167161226
+      },
+      "stall_trigger_count": {
+        "min": 0.0,
+        "max": 503.0,
+        "mean": 224.24530168150346
+      },
+      "zero_info_step_count": {
+        "min": 8.0,
+        "max": 542.0,
+        "mean": 325.21463897131554
+      },
+      "turn_ge_90_count": {
+        "min": 40.0,
+        "max": 523.0,
+        "mean": 242.92680514342234
+      },
+      "turn_135_count": {
+        "min": 5.0,
+        "max": 178.0,
+        "mean": 82.61325420375866
+      },
+      "turn_180_count": {
+        "min": 1.0,
+        "max": 422.0,
+        "mean": 49.26607319485658
+      },
+      "turn_penalty_weight_sum": {
+        "min": 17.999999999999993,
+        "max": 467.6666666666665,
+        "mean": 141.35740191229803
+      },
+      "timeout_flag": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.5548961424332344
+      }
+    }
+  },
+  "logs/train_steps.csv": {
+    "row_count": 992,
+    "columns": [
+      "budget_mode",
+      "env_steps",
+      "episode_idx",
+      "train_episode_idx",
+      "completed_train_episodes",
+      "replay_size",
+      "epsilon",
+      "loss",
+      "q_mean",
+      "target_q_mean",
+      "td_abs_mean",
+      "grad_norm",
+      "learner_steps",
+      "recent_mean_reward",
+      "recent_mean_coverage",
+      "recent_success_rate",
+      "recent_mean_episode_length",
+      "recent_mean_repeat_visit_ratio",
+      "recent_accessible_block_count",
+      "recent_total_accessible_unknown_area",
+      "recent_total_frontier_cluster_count",
+      "recent_mean_block_area",
+      "recent_local_frontier_coverage",
+      "recent_local_frontier_block_area_mean",
+      "recent_value_total_block_count_before_cap",
+      "recent_value_packed_block_count",
+      "recent_value_truncated_block_count",
+      "recent_value_block_cap_hit_flag",
+      "recent_value_total_entry_count_before_cap",
+      "recent_value_packed_entry_count",
+      "recent_value_truncated_entry_count",
+      "recent_value_entry_cap_hit_block_count",
+      "recent_value_entry_cap_hit_flag",
+      "recent_value_max_frontier_clusters_per_block",
+      "recent_value_mean_frontier_clusters_per_block",
+      "recent_info_reward_sum",
+      "recent_step_penalty_sum",
+      "recent_recent_revisit_penalty_sum",
+      "recent_turn_penalty_sum",
+      "recent_timeout_penalty_sum",
+      "recent_terminal_bonus_sum",
+      "recent_delta_empty_sum",
+      "recent_delta_obstacle_sum",
+      "recent_empty_info_gain_sum",
+      "recent_obstacle_info_gain_sum",
+      "recent_weighted_obstacle_info_gain_sum",
+      "recent_weighted_info_gain_sum",
+      "recent_empty_info_reward_sum",
+      "recent_obstacle_info_reward_sum",
+      "recent_obstacle_info_contribution_ratio",
+      "recent_recent_revisit_trigger_count",
+      "recent_stall_trigger_count",
+      "recent_zero_info_step_count",
+      "recent_turn_ge_90_count",
+      "recent_turn_135_count",
+      "recent_turn_180_count",
+      "recent_turn_penalty_weight_sum",
+      "recent_timeout_flag"
+    ],
+    "last_row_values": {
+      "budget_mode": "env_steps",
+      "env_steps": "500000",
+      "episode_idx": "1011",
+      "train_episode_idx": "1011",
+      "completed_train_episodes": "1005",
+      "replay_size": "100000",
+      "epsilon": "0.05",
+      "loss": "4.079303741455078",
+      "q_mean": "25.038251876831055",
+      "target_q_mean": "24.929704666137695",
+      "td_abs_mean": "4.497012138366699",
+      "grad_norm": "31.433950424194336",
+      "learner_steps": "62000",
+      "recent_mean_reward": "138.5414581298828",
+      "recent_mean_coverage": "0.9241050481796265",
+      "recent_success_rate": "0.7200000286102295",
+      "recent_mean_episode_length": "400.42999267578125",
+      "recent_mean_repeat_visit_ratio": "0.22384916245937347",
+      "recent_accessible_block_count": "5.070724010467529",
+      "recent_total_accessible_unknown_area": "455.5296630859375",
+      "recent_total_frontier_cluster_count": "10.470778465270996",
+      "recent_mean_block_area": "123.84403991699219",
+      "recent_local_frontier_coverage": "0.025942234322428703",
+      "recent_local_frontier_block_area_mean": "0.4162304997444153",
+      "recent_value_total_block_count_before_cap": "5.070724010467529",
+      "recent_value_packed_block_count": "5.070724010467529",
+      "recent_value_truncated_block_count": "0.0",
+      "recent_value_block_cap_hit_flag": "0.0",
+      "recent_value_total_entry_count_before_cap": "10.470778465270996",
+      "recent_value_packed_entry_count": "10.3928861618042",
+      "recent_value_truncated_entry_count": "0.07789390534162521",
+      "recent_value_entry_cap_hit_block_count": "0.045668069273233414",
+      "recent_value_entry_cap_hit_flag": "0.045668069273233414",
+      "recent_value_max_frontier_clusters_per_block": "4.631119728088379",
+      "recent_value_mean_frontier_clusters_per_block": "2.494321346282959",
+      "recent_info_reward_sum": "143.9663848876953",
+      "recent_step_penalty_sum": "-8.008601188659668",
+      "recent_recent_revisit_penalty_sum": "-5.244999885559082",
+      "recent_turn_penalty_sum": "-4.331333160400391",
+      "recent_timeout_penalty_sum": "-2.240000009536743",
+      "recent_terminal_bonus_sum": "14.399999618530273",
+      "recent_delta_empty_sum": "1425.0699462890625",
+      "recent_delta_obstacle_sum": "330.1700134277344",
+      "recent_empty_info_gain_sum": "45.361385345458984",
+      "recent_obstacle_info_gain_sum": "10.509637832641602",
+      "recent_weighted_obstacle_info_gain_sum": "2.6274094581604004",
+      "recent_weighted_info_gain_sum": "47.98880386352539",
+      "recent_empty_info_reward_sum": "136.08416748046875",
+      "recent_obstacle_info_reward_sum": "7.882227897644043",
+      "recent_obstacle_info_contribution_ratio": "0.05466650798916817",
+      "recent_recent_revisit_trigger_count": "52.45000076293945",
+      "recent_stall_trigger_count": "166.5800018310547",
+      "recent_zero_info_step_count": "226.5800018310547",
+      "recent_turn_ge_90_count": "155.5",
+      "recent_turn_135_count": "40.099998474121094",
+      "recent_turn_180_count": "32.13999938964844",
+      "recent_turn_penalty_weight_sum": "86.62667083740234",
+      "recent_timeout_flag": "0.2800000011920929"
+    },
+    "common_numeric_metrics": {},
+    "numeric_metrics_all": {
+      "env_steps": {
+        "min": 4512.0,
+        "max": 500000.0,
+        "mean": 252256.0
+      },
+      "episode_idx": {
+        "min": 7.0,
+        "max": 1011.0,
+        "mean": 468.4758064516129
+      },
+      "train_episode_idx": {
+        "min": 7.0,
+        "max": 1011.0,
+        "mean": 468.4758064516129
+      },
+      "completed_train_episodes": {
+        "min": 1.0,
+        "max": 1005.0,
+        "mean": 462.4758064516129
+      },
+      "replay_size": {
+        "min": 4510.0,
+        "max": 100000.0,
+        "mean": 90758.86693548386
+      },
+      "epsilon": {
+        "min": 0.05,
+        "max": 0.9822033333333333,
+        "mean": 0.27178924731182796
+      },
+      "loss": {
+        "min": 0.04171949625015259,
+        "max": 4.079303741455078,
+        "mean": 1.5683642356138257
+      },
+      "q_mean": {
+        "min": -0.09786204993724823,
+        "max": 29.152795791625977,
+        "mean": 9.368716577716706
+      },
+      "target_q_mean": {
+        "min": -0.04625251889228821,
+        "max": 28.577686309814453,
+        "mean": 9.584827331788537
+      },
+      "td_abs_mean": {
+        "min": 0.2180636078119278,
+        "max": 4.497012138366699,
+        "mean": 1.9070376076345001
+      },
+      "grad_norm": {
+        "min": 0.7357466220855713,
+        "max": 46.2180061340332,
+        "mean": 19.65888041594336
+      },
+      "learner_steps": {
+        "min": 64.0,
+        "max": 62000.0,
+        "mean": 31032.0
+      },
+      "recent_mean_reward": {
+        "min": 4.850733757019043,
+        "max": 144.2611541748047,
+        "mean": 96.82671889374333
+      },
+      "recent_mean_coverage": {
+        "min": 0.425173282623291,
+        "max": 0.9405759572982788,
+        "mean": 0.8067595070949004
+      },
+      "recent_success_rate": {
+        "min": 0.0,
+        "max": 0.7699999809265137,
+        "mean": 0.37485887155297304
+      },
+      "recent_mean_episode_length": {
+        "min": 389.44000244140625,
+        "max": 600.0,
+        "mean": 513.5855539383426
+      },
+      "recent_mean_repeat_visit_ratio": {
+        "min": 0.19053208827972412,
+        "max": 0.6435108184814453,
+        "mean": 0.3502612975275805
+      },
+      "recent_accessible_block_count": {
+        "min": 2.0298333168029785,
+        "max": 5.406796932220459,
+        "mean": 4.274006510694181
+      },
+      "recent_total_accessible_unknown_area": {
+        "min": 414.6112365722656,
+        "max": 494.1585693359375,
+        "mean": 455.8387608066682
+      },
+      "recent_total_frontier_cluster_count": {
+        "min": 7.924073219299316,
+        "max": 11.423775672912598,
+        "mean": 10.081164329763382
+      },
+      "recent_mean_block_area": {
+        "min": 108.71369934082031,
+        "max": 275.0304870605469,
+        "mean": 154.28080935632028
+      },
+      "recent_local_frontier_coverage": {
+        "min": 0.022156380116939545,
+        "max": 0.02939022146165371,
+        "mean": 0.02449801745411429
+      },
+      "recent_local_frontier_block_area_mean": {
+        "min": 0.36210596561431885,
+        "max": 0.6791223287582397,
+        "mean": 0.44538011041379744
+      },
+      "recent_value_total_block_count_before_cap": {
+        "min": 2.0298333168029785,
+        "max": 5.406796932220459,
+        "mean": 4.274006510694181
+      },
+      "recent_value_packed_block_count": {
+        "min": 2.0298333168029785,
+        "max": 5.406796932220459,
+        "mean": 4.274006510694181
+      },
+      "recent_value_truncated_block_count": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "recent_value_block_cap_hit_flag": {
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0
+      },
+      "recent_value_total_entry_count_before_cap": {
+        "min": 7.924073219299316,
+        "max": 11.423775672912598,
+        "mean": 10.081164329763382
+      },
+      "recent_value_packed_entry_count": {
+        "min": 7.6696295738220215,
+        "max": 11.303511619567871,
+        "mean": 9.932468788277719
+      },
+      "recent_value_truncated_entry_count": {
+        "min": 0.04114526882767677,
+        "max": 0.4075000286102295,
+        "mean": 0.1486955866623189
+      },
+      "recent_value_entry_cap_hit_block_count": {
+        "min": 0.02566985785961151,
+        "max": 0.2290000170469284,
+        "mean": 0.08041361807056913
+      },
+      "recent_value_entry_cap_hit_flag": {
+        "min": 0.02566985785961151,
+        "max": 0.2290000170469284,
+        "mean": 0.08041361807056913
+      },
+      "recent_value_max_frontier_clusters_per_block": {
+        "min": 4.438270092010498,
+        "max": 6.58841609954834,
+        "mean": 5.106146965296038
+      },
+      "recent_value_mean_frontier_clusters_per_block": {
+        "min": 2.3645968437194824,
+        "max": 5.114144325256348,
+        "mean": 3.0273205243772074
+      },
+      "recent_info_reward_sum": {
+        "min": 57.30851364135742,
+        "max": 146.890625,
+        "mean": 123.3523668050766
+      },
+      "recent_step_penalty_sum": {
+        "min": -12.0,
+        "max": -7.788799285888672,
+        "mean": -10.271711052906129
+      },
+      "recent_recent_revisit_penalty_sum": {
+        "min": -20.872726440429688,
+        "max": -3.8289999961853027,
+        "mean": -10.968738358107306
+      },
+      "recent_turn_penalty_sum": {
+        "min": -11.895455360412598,
+        "max": -3.7823333740234375,
+        "mean": -7.781246571050536
+      },
+      "recent_timeout_penalty_sum": {
+        "min": -8.0,
+        "max": -1.840000033378601,
+        "mean": -5.001129041275671
+      },
+      "recent_terminal_bonus_sum": {
+        "min": 0.0,
+        "max": 15.399999618530273,
+        "mean": 7.497177418832097
+      },
+      "recent_delta_empty_sum": {
+        "min": 574.2666625976562,
+        "max": 1454.6400146484375,
+        "mean": 1223.9622825499505
+      },
+      "recent_delta_obstacle_sum": {
+        "min": 100.45454406738281,
+        "max": 337.4599914550781,
+        "mean": 271.12272334098816
+      },
+      "recent_empty_info_gain_sum": {
+        "min": 18.279476165771484,
+        "max": 46.30262756347656,
+        "mean": 38.95992967197972
+      },
+      "recent_obstacle_info_gain_sum": {
+        "min": 3.1975677013397217,
+        "max": 10.741684913635254,
+        "mean": 8.630104330758895
+      },
+      "recent_weighted_obstacle_info_gain_sum": {
+        "min": 0.7993919253349304,
+        "max": 2.6854212284088135,
+        "mean": 2.157526082689724
+      },
+      "recent_weighted_info_gain_sum": {
+        "min": 19.10283851623535,
+        "max": 48.96354675292969,
+        "mean": 41.1174556901378
+      },
+      "recent_empty_info_reward_sum": {
+        "min": 54.83842468261719,
+        "max": 138.90789794921875,
+        "mean": 116.8797885448702
+      },
+      "recent_obstacle_info_reward_sum": {
+        "min": 2.3981757164001465,
+        "max": 8.05626392364502,
+        "mean": 6.472578221271115
+      },
+      "recent_obstacle_info_contribution_ratio": {
+        "min": 0.04131319001317024,
+        "max": 0.055123329162597656,
+        "mean": 0.05201975385763592
+      },
+      "recent_recent_revisit_trigger_count": {
+        "min": 38.290000915527344,
+        "max": 208.72727966308594,
+        "mean": 109.68738353252411
+      },
+      "recent_stall_trigger_count": {
+        "min": 151.77000427246094,
+        "max": 330.4166564941406,
+        "mean": 236.69193587764616
+      },
+      "recent_zero_info_step_count": {
+        "min": 211.88999938964844,
+        "max": 498.5384521484375,
+        "mean": 349.4140223533876
+      },
+      "recent_turn_ge_90_count": {
+        "min": 140.52000427246094,
+        "max": 390.18182373046875,
+        "mean": 265.1484031369609
+      },
+      "recent_turn_135_count": {
+        "min": 36.119998931884766,
+        "max": 162.1666717529297,
+        "mean": 93.80311270298496
+      },
+      "recent_turn_180_count": {
+        "min": 23.690000534057617,
+        "max": 80.875,
+        "mean": 53.96163873903213
+      },
+      "recent_turn_penalty_weight_sum": {
+        "min": 75.64666748046875,
+        "max": 237.90908813476562,
+        "mean": 155.6249309432122
+      },
+      "recent_timeout_flag": {
+        "min": 0.23000000417232513,
+        "max": 1.0,
+        "mean": 0.6251411301594588
+      }
+    }
+  }
+}
