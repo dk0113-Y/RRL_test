@@ -51,8 +51,8 @@
       "generated_at": "2026-04-29T16:18:20.461458+08:00"
     },
     {
-      "file": "gpt_decision_placeholder.json",
-      "role": "decision placeholder",
+      "file": "no_controller_decision_note.json",
+      "role": "decision boundary note (no gpt/controller decision file published)",
       "required": true,
       "generated_at": "2026-04-29T16:18:20.461458+08:00"
     }

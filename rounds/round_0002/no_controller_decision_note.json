@@ -1,0 +1,8 @@
+{
+  "round_id": "round_0002",
+  "decision_file_policy": "no gpt_decision or controller_action files are published in this round bundle",
+  "status": "not_requested",
+  "reason": "Public registration completed after human confirmation; no gpt_decision.json generated in this task.",
+  "next_expected_action": "decide_next_axis_or_automation_level1_hardening",
+  "created_at": "2026-04-29T16:18:20.461458+08:00"
+}
