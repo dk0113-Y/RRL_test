@@ -11,6 +11,6 @@
     "epsilon_decay_steps": 320000
   },
   "formal_protocol": "formal_posthoc_trainselect_v1",
-  "next_expected_action": "decide_next_axis_or_automation_level1_hardening",
+  "next_expected_action": "automation_level1_hardening_completed_decide_next_research_axis",
   "decision_required_from_gpt": true
 }
