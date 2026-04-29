@@ -1,0 +1,55 @@
+{
+  "round_id": "round_0002",
+  "round_type": "formal_train_result",
+  "registration_label": "accepted schedule-level formal tuning result",
+  "status": "published",
+  "parent_round_id": "round_0001",
+  "baseline_round_id": "round_0001",
+  "baseline_run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814",
+  "run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
+  "source_run_dir": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
+  "proposal_dir": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\proposals\\first_formal_tuning_round_0001_epsilon_decay320k",
+  "private_result_report": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\reports\\first_formal_tuning_epsilon_decay320k_result_analysis_20260429_160907.md",
+  "prior_diagnostic_report": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\reports\\first_formal_tuning_epsilon_decay360k_result_analysis_20260429_120117.md",
+  "formal_protocol": "formal_posthoc_trainselect_v1",
+  "accepted_configuration": {
+    "epsilon_decay_steps": 320000
+  },
+  "baseline_configuration": {
+    "epsilon_decay_steps": 240000
+  },
+  "diagnostic_only_configuration": {
+    "epsilon_decay_steps": 360000
+  },
+  "run_status": "completed",
+  "comparability": "comparable",
+  "only_effective_tuning_axis_confirmed": true,
+  "accepted_tuning_candidate": true,
+  "proposal_criteria_assessment": "success",
+  "drift_improved_vs_baseline": "yes",
+  "peak_performance_recovered_vs_decay360k": "yes",
+  "drift_vs_decay360k": "worse",
+  "main_diagnosis_label": "accepted_tuning_candidate",
+  "public_registration_label": "accepted schedule-level formal tuning result",
+  "recommended_next_status": "epsilon schedule axis can be closed for now",
+  "next_research_direction": [
+    "posthoc selection diagnostics",
+    "automation Level 1 hardening"
+  ],
+  "winner_checkpoint_step": 480000,
+  "last_checkpoint_step": 500000,
+  "winner_equals_last": false,
+  "three_point_axis_conclusion": "epsilon_decay320k is an accepted schedule-level tuning candidate that improves final-probe peak performance and reduces late-stage winner-vs-last drift relative to the round_0001 baseline.",
+  "claim_boundary": [
+    "first formal tuning result, not architecture-level method improvement",
+    "only epsilon_decay_steps changed across comparable runs",
+    "checkpoint binaries intentionally excluded from exchange repo"
+  ],
+  "known_residual_risks": [
+    "decay320k final-probe winner is 480k while last is 500k",
+    "decay320k still has nonzero winner-vs-last drift, though substantially smaller than baseline",
+    "posthoc train-side winner does not equal final-probe winner",
+    "final-probe winner is train-side rank 3, not top-2",
+    "posthoc_final_probe_topk=3 remains necessary; do not simplify to top-1 or top-2"
+  ]
+}

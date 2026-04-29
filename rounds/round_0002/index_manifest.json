@@ -1,0 +1,60 @@
+{
+  "round_id": "round_0002",
+  "generated_at": "2026-04-29T16:18:20.461458+08:00",
+  "files": [
+    {
+      "file": "index_manifest.json",
+      "role": "round file index",
+      "required": true,
+      "generated_at": "2026-04-29T16:18:20.461458+08:00"
+    },
+    {
+      "file": "round_summary.json",
+      "role": "round semantic summary",
+      "required": true,
+      "generated_at": "2026-04-29T16:18:20.461458+08:00"
+    },
+    {
+      "file": "round_summary.md",
+      "role": "public narrative summary",
+      "required": true,
+      "generated_at": "2026-04-29T16:18:20.461458+08:00"
+    },
+    {
+      "file": "metrics_summary.json",
+      "role": "public-safe metrics and deltas",
+      "required": true,
+      "generated_at": "2026-04-29T16:18:20.461458+08:00"
+    },
+    {
+      "file": "interpretation_boundary.md",
+      "role": "claim boundary and restrictions",
+      "required": true,
+      "generated_at": "2026-04-29T16:18:20.461458+08:00"
+    },
+    {
+      "file": "artifact_digest.json",
+      "role": "artifact scan and digest",
+      "required": true,
+      "generated_at": "2026-04-29T16:18:20.461458+08:00"
+    },
+    {
+      "file": "config_diff.json",
+      "role": "config delta and axis status",
+      "required": true,
+      "generated_at": "2026-04-29T16:18:20.461458+08:00"
+    },
+    {
+      "file": "comparability_report.json",
+      "role": "comparability declaration",
+      "required": true,
+      "generated_at": "2026-04-29T16:18:20.461458+08:00"
+    },
+    {
+      "file": "gpt_decision_placeholder.json",
+      "role": "decision placeholder",
+      "required": true,
+      "generated_at": "2026-04-29T16:18:20.461458+08:00"
+    }
+  ]
+}

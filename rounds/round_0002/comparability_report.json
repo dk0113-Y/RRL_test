@@ -1,0 +1,20 @@
+{
+  "round_id": "round_0002",
+  "comparability_status": "comparable",
+  "baseline_round_id": "round_0001",
+  "parent_round_id": "round_0001",
+  "only_effective_tuning_axis_confirmed": true,
+  "only_effective_tuning_axis": "epsilon_decay_steps=320000",
+  "same_group_claim_allowed": true,
+  "formal_improvement_claim_allowed": false,
+  "claim_boundary": "schedule-level tuning result only; no architecture/reward/state-schema method change claim",
+  "not_comparable_if_changed": [
+    "reward semantics",
+    "network architecture",
+    "formal protocol",
+    "held-out final probe definition",
+    "environment distribution",
+    "state tensor schema",
+    "major runtime mode"
+  ]
+}

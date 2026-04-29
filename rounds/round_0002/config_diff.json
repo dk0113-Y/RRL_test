@@ -1,0 +1,19 @@
+{
+  "round_id": "round_0002",
+  "change_type": "accepted_formal_tuning_result_registration",
+  "parent_round_id": "round_0001",
+  "only_effective_tuning_axis": "epsilon_decay_steps",
+  "baseline_value": 240000,
+  "accepted_value": 320000,
+  "diagnostic_rejected_value": 360000,
+  "frozen_field_violations": [],
+  "manual_review_required": false,
+  "unknown_fields_present": false,
+  "comparability_impact": "same_budget_schedule_tuning",
+  "notes": [
+    "total_env_steps unchanged at 500000",
+    "epsilon_start unchanged at 1.0",
+    "epsilon_end unchanged at 0.05",
+    "formal_protocol, reward semantics, architecture, state schema, environment distribution, posthoc logic, final probe protocol unchanged"
+  ]
+}

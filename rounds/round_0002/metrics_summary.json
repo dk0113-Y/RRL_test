@@ -1,0 +1,94 @@
+{
+  "round_id": "round_0002",
+  "baseline_reference": {
+    "round_id": "round_0001",
+    "formal_winner_step": 480000,
+    "winner_metrics": {
+      "reward": 131.472458,
+      "coverage": 0.914549,
+      "success": 0.73,
+      "length": 397.660004,
+      "RVR": 0.242042
+    },
+    "last_step": 500000,
+    "last_metrics": {
+      "reward": 117.88826,
+      "coverage": 0.87956,
+      "success": 0.57,
+      "length": 435.869995,
+      "RVR": 0.310634
+    },
+    "last_minus_winner": {
+      "reward": -13.584198,
+      "coverage": -0.034989,
+      "success": -0.16,
+      "length": 38.209991,
+      "RVR": 0.068592
+    }
+  },
+  "diagnostic_decay360k": {
+    "run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay360k_end005_20260428_205513",
+    "winner_step": 500000,
+    "winner_metrics": {
+      "reward": 125.676727,
+      "coverage": 0.901223,
+      "success": 0.64,
+      "length": 428.01001,
+      "RVR": 0.280817
+    },
+    "last_step": 500000,
+    "last_metrics": {
+      "reward": 125.676727,
+      "coverage": 0.901223,
+      "success": 0.64,
+      "length": 428.01001,
+      "RVR": 0.280817
+    },
+    "diagnosis": "stability-performance trade-off",
+    "criteria": "failure",
+    "public_status": "diagnostic evidence only, not accepted configuration"
+  },
+  "accepted_decay320k": {
+    "run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
+    "winner_step": 480000,
+    "winner_metrics": {
+      "reward": 141.042191,
+      "coverage": 0.9255,
+      "success": 0.8,
+      "length": 388.320007,
+      "RVR": 0.184088
+    },
+    "last_step": 500000,
+    "last_metrics": {
+      "reward": 136.166809,
+      "coverage": 0.912461,
+      "success": 0.74,
+      "length": 398.519989,
+      "RVR": 0.187611
+    },
+    "winner_minus_baseline_winner": {
+      "reward": 9.569733,
+      "coverage": 0.010951,
+      "success": 0.07,
+      "length": -9.339996,
+      "RVR": -0.057955
+    },
+    "last_minus_winner": {
+      "reward": -4.875381,
+      "coverage": -0.013039,
+      "success": -0.06,
+      "length": 10.199982,
+      "RVR": 0.003523
+    }
+  },
+  "key_judgments": {
+    "run_status": "completed",
+    "comparability": "comparable",
+    "only_effective_tuning_axis_confirmed": "yes",
+    "accepted_tuning_candidate": "yes",
+    "proposal_criteria_assessment": "success",
+    "drift_improved_vs_baseline": "yes",
+    "peak_performance_recovered_vs_decay360k": "yes",
+    "drift_vs_decay360k": "worse"
+  }
+}
