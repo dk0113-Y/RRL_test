@@ -1,6 +1,0 @@
-{
-  "round_id": "round_0001",
-  "decision_status": "not_requested",
-  "reason": "round_0001 registers the current engineering speed baseline candidate before automated tuning starts.",
-  "next_decision_stage": "after DRL_automatic control flow and exchange protocol are reviewed"
-}

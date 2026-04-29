@@ -1,0 +1,8 @@
+{
+  "round_id": "round_0001",
+  "note_type": "no_controller_decision_note",
+  "controller_decision_published": false,
+  "controller_action_published": false,
+  "reason": "round_0001 registers the engineering speed baseline candidate before formal tuning starts.",
+  "boundary": "This file is a public boundary note and must not be consumed as a gpt_decision or controller_action artifact."
+}
