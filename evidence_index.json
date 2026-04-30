@@ -1,0 +1,7 @@
+{
+  "schema_version": "evidence_index_v1",
+  "purpose": "lightweight index of reviewed formal/diagnostic tuning runs that do not necessarily become accepted public rounds",
+  "current_reference_round": "round_0002",
+  "current_reference_run": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
+  "entries": []
+}
