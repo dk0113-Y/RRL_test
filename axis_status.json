@@ -1,0 +1,24 @@
+{
+  "schema_version": "axis_status_v1",
+  "current_reference_round": "round_0002",
+  "current_reference_run": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
+  "axes": {
+    "late_exploration_floor": {
+      "status": "frozen_for_now",
+      "evidence": [
+        "epsilon_end=0.03 failed_candidate",
+        "epsilon_end=0.04 failed_candidate"
+      ],
+      "reference_policy": "epsilon_end=0.05",
+      "next_allowed_action": "do not continue this axis unless explicitly reopened by GPT/human"
+    },
+    "reward_revisit_penalty": {
+      "status": "frozen_for_now",
+      "evidence": [
+        "0.10 -> 0.12 failed_candidate"
+      ],
+      "reference_policy": "reward_revisit_penalty=0.10",
+      "next_allowed_action": "do not continue this axis unless explicitly reopened by GPT/human"
+    }
+  }
+}
