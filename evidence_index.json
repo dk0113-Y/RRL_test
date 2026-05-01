@@ -55,6 +55,42 @@
       "private_report_path": "C:/Users/Dk/Desktop/SCI/codex_ui_bridge_demo/reports/fast_formal_latefloor_epsend003_result_analysis_20260430_214204.md",
       "public_round_created": false,
       "created_at": "2026-04-30T21:42:04"
+    },
+    {
+      "run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end004_latefloor_20260430_215217",
+      "axis": "late_exploration_floor",
+      "change": "epsilon_end: 0.05 -> 0.04",
+      "mode": "fast_nondeterministic",
+      "automation_level": "Level 2-A restricted auto-launch",
+      "status": "completed",
+      "comparability": "comparable",
+      "decision_label": "failed_candidate",
+      "reference_round": "round_0002",
+      "reference_run": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
+      "prior_axis_candidate": "epsilon_end=0.03",
+      "winner_step": 500000,
+      "last_step": 500000,
+      "winner_delta_vs_reference": {
+        "reward": -13.617294311523438,
+        "coverage": -0.025572001934051514,
+        "success": -0.06000000238418579,
+        "length": 25.970001220703125,
+        "RVR": 0.07423722743988037
+      },
+      "winner_delta_vs_epsend003": {
+        "reward": -12.49371337890625,
+        "coverage": -0.024830996990203857,
+        "success": -0.039999961853027344,
+        "length": 21.5,
+        "RVR": 0.05799223482608795
+      },
+      "rvr_length_objective": "worse",
+      "drift_vs_reference": "improved",
+      "topk3_still_required": true,
+      "private_report_path": "C:/Users/Dk/Desktop/SCI/codex_ui_bridge_demo/reports/fast_formal_latefloor_epsend004_result_analysis_20260501_122448.md",
+      "launch_record_path": "C:/Users/Dk/Desktop/SCI/codex_ui_bridge_demo/launch_records/fast_formal_latefloor_epsend004_20260430_215215.md",
+      "public_round_created": false,
+      "created_at": "2026-05-01T12:24:48"
     }
   ]
 }
