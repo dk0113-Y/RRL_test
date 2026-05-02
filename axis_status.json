@@ -29,6 +29,15 @@
       "reference_policy": "target_update_interval=1000",
       "next_allowed_action": "do not continue this axis unless explicitly reopened by GPT/human",
       "reason": "2000 improved drift/length but worsened RVR; 1500 failed broadly on reward/coverage/success/length/RVR/drift."
+    },
+    "optimizer_learning_rate_stability": {
+      "status": "frozen_for_now",
+      "evidence": [
+        "learning_rate=0.000075 failed_candidate"
+      ],
+      "reference_policy": "learning_rate=0.0001",
+      "next_allowed_action": "do not continue this axis unless explicitly reopened by GPT/human",
+      "reason": "Lowering learning rate to 7.5e-5 caused major reward/coverage/success/length/RVR degradation and did not reduce late optimization instability signals."
     }
   }
 }
