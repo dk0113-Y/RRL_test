@@ -157,6 +157,36 @@
       "level2b_task_draft_path": "C:/Users/Dk/Desktop/SCI/codex_ui_bridge_demo/automation_state/level2b_runner_outputs/runner_task_value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_targetsync1500_20260501_223804_696362.md",
       "public_round_created": false,
       "created_at": "2026-05-01T22:48:41"
+    },
+    {
+      "run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_lr7p5e5_20260502_115937",
+      "axis": "optimizer_learning_rate_stability",
+      "change": "learning_rate: 0.0001 -> 0.000075",
+      "mode": "fast_nondeterministic",
+      "automation_level": "Level 2-A launch + Level 2-B watcher/reconciliation queue-triggered handoff",
+      "status": "completed",
+      "comparability": "comparable",
+      "decision_label": "failed_candidate",
+      "reference_round": "round_0002",
+      "reference_run": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
+      "winner_step": 460000,
+      "last_step": 500000,
+      "winner_delta_vs_reference": {
+        "reward": -15.633140563964844,
+        "coverage": -0.024666011333465576,
+        "success": -0.12000000476837158,
+        "length": 56.57000732421875,
+        "RVR": 0.08650010824203491
+      },
+      "rvr_length_objective": "worse",
+      "drift_vs_reference": "improved",
+      "topk3_still_required": true,
+      "private_report_path": "C:/Users/Dk/Desktop/SCI/codex_ui_bridge_demo/reports/fast_formal_lr7p5e5_result_analysis_20260502_161120.md",
+      "launch_record_path": "C:/Users/Dk/Desktop/SCI/codex_ui_bridge_demo/launch_records/fast_formal_lr7p5e5_20260502_115935.md",
+      "level2b_task_draft_path": "C:/Users/Dk/Desktop/SCI/codex_ui_bridge_demo/automation_state/level2b_runner_outputs/runner_task_value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_lr7p5e5_20260502_155711_150103.md",
+      "watcher_reconciliation": "watcher_failed_but_recovered",
+      "public_round_created": false,
+      "created_at": "2026-05-02T16:11:20"
     }
   ]
 }
