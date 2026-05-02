@@ -19,6 +19,16 @@
       ],
       "reference_policy": "reward_revisit_penalty=0.10",
       "next_allowed_action": "do not continue this axis unless explicitly reopened by GPT/human"
+    },
+    "target_network_sync_cadence_stability": {
+      "status": "frozen_for_now",
+      "evidence": [
+        "target_update_interval=2000 mixed_continuation_not_accepted",
+        "target_update_interval=1500 failed_candidate"
+      ],
+      "reference_policy": "target_update_interval=1000",
+      "next_allowed_action": "do not continue this axis unless explicitly reopened by GPT/human",
+      "reason": "2000 improved drift/length but worsened RVR; 1500 failed broadly on reward/coverage/success/length/RVR/drift."
     }
   }
 }
