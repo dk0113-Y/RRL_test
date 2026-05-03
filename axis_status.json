@@ -38,6 +38,15 @@
       "reference_policy": "learning_rate=0.0001",
       "next_allowed_action": "do not continue this axis unless explicitly reopened by GPT/human",
       "reason": "Lowering learning rate to 7.5e-5 caused major reward/coverage/success/length/RVR degradation and did not reduce late optimization instability signals."
+    },
+    "optimizer_batch_size_stability": {
+      "status": "frozen_for_now",
+      "evidence": [
+        "batch_size=160 failed_candidate"
+      ],
+      "reference_policy": "batch_size=128",
+      "next_allowed_action": "do not continue this axis unless explicitly reopened by GPT/human",
+      "reason": "batch_size=160 caused major reward/coverage/success/length/RVR degradation and did not improve late optimization stability signals."
     }
   }
 }
