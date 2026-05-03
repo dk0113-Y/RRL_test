@@ -1,8 +1,8 @@
 {
   "schema_version": "evidence_index_v1",
   "purpose": "lightweight index of reviewed formal/diagnostic tuning runs that do not necessarily become accepted public rounds",
-  "current_reference_round": "round_0002",
-  "current_reference_run": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
+  "current_reference_round": "round_0003",
+  "current_reference_run": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay8000_rerun",
   "entries": [
     {
       "run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_penalty_mild_20260430_131942",
@@ -229,7 +229,7 @@
       "automation_level": "Level 2-A launch + fixed Level 2-B watcher + auto-runner queue consumption",
       "status": "completed",
       "comparability": "comparable",
-      "decision_label": "accepted_candidate_pending_human_review",
+      "decision_label": "accepted_reference",
       "reference_round": "round_0002",
       "reference_run": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
       "winner_step": 500000,
@@ -250,8 +250,10 @@
       "fixed_watcher_auto_queue": true,
       "auto_runner_consumed_queue": true,
       "previous_invalid_launch": "minreplay8000 initial launch config_incompatible; not valid tuning evidence",
-      "public_round_created": false,
-      "created_at": "2026-05-03T19:17:34"
+      "public_round_created": true,
+      "created_at": "2026-05-03T19:17:34",
+      "public_round_id": "round_0003",
+      "current_reference_after_registration": true
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "candidate_winner": {
+    "step": 500000,
+    "reward": 141.2176055908203,
+    "coverage": 0.9290460348129272,
+    "success": 0.8100000023841858,
+    "length": 375.2900085449219,
+    "RVR": 0.1896981745958328
+  },
+  "delta_vs_round_0002_winner": {
+    "reward": 0.175415,
+    "coverage": 0.003546,
+    "success": 0.01,
+    "length": -13.029999,
+    "RVR": 0.005611
+  },
+  "winner_step": 500000,
+  "last_step": 500000,
+  "winner_equals_last": true,
+  "rvr_length_objective": "mixed",
+  "drift_vs_round_0002": "improved",
+  "topk3_still_required": true
+}

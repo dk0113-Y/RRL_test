@@ -1,16 +1,21 @@
 {
-  "current_round_id": "round_0002",
-  "current_round_path": "rounds/round_0002",
+  "current_round_id": "round_0003",
+  "current_round_path": "rounds/round_0003",
   "current_phase": "formal_result_registered",
   "status": "published",
   "baseline_run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay240k_end005_20260422_210814",
   "baseline_round_id": "round_0001",
-  "parent_round_id": "round_0001",
-  "run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
+  "parent_round_id": "round_0002",
+  "run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay8000_rerun",
   "accepted_configuration": {
-    "epsilon_decay_steps": 320000
+    "epsilon_decay_steps": 320000,
+    "min_replay_size": 8000
   },
   "formal_protocol": "formal_posthoc_trainselect_v1",
   "next_expected_action": "automation_level1_hardening_completed_decide_next_research_axis",
-  "decision_required_from_gpt": true
+  "decision_required_from_gpt": true,
+  "registration_note": "human-reviewed public registration from accepted minreplay8000_rerun",
+  "previous_round_id": "round_0002",
+  "previous_round_path": "rounds/round_0002",
+  "previous_run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557"
 }

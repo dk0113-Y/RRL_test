@@ -1,7 +1,7 @@
 {
   "schema_version": "axis_status_v1",
-  "current_reference_round": "round_0002",
-  "current_reference_run": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_20260429_122557",
+  "current_reference_round": "round_0003",
+  "current_reference_run": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay8000_rerun",
   "axes": {
     "late_exploration_floor": {
       "status": "frozen_for_now",
@@ -47,6 +47,15 @@
       "reference_policy": "batch_size=128",
       "next_allowed_action": "do not continue this axis unless explicitly reopened by GPT/human",
       "reason": "batch_size=160 caused major reward/coverage/success/length/RVR degradation and did not improve late optimization stability signals."
+    },
+    "replay_warmup_stability": {
+      "status": "accepted_reference",
+      "evidence": [
+        "min_replay_size=8000 accepted_reference"
+      ],
+      "reference_policy": "min_replay_size=8000",
+      "previous_reference_policy": "min_replay_size=4000",
+      "reason": "completed comparable run passed proposal criteria with small reward/coverage/success gains, shorter length, improved drift, and only slight non-material RVR increase."
     }
   }
 }

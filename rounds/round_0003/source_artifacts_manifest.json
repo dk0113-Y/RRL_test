@@ -1,0 +1,22 @@
+{
+  "result_analysis_report": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\reports\\fast_formal_minreplay8000_rerun_result_analysis_20260503_191734.md",
+  "decision_input": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\decision_inputs\\minreplay8000_rerun_decision_input_20260503_191734.md",
+  "launch_record": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\launch_records\\fast_formal_minreplay8000_rerun_20260503_152017.md",
+  "completion_reconciliation": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\reports\\level2b_minreplay8000_rerun_completion_reconciliation_20260503_190656.md",
+  "queue_path": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\automation_state\\level2b_handoffs\\queue\\queue_value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay8000_rerun_20260503_184656.json",
+  "task_draft_path": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\automation_state\\level2b_runner_outputs\\runner_task_value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay8000_rerun_20260503_184744_392893.md",
+  "output_directory": "C:\\Users\\Dk\\Desktop\\SCI\\代码1\\outputs\\value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay8000_rerun_20260503_152048",
+  "checkpoint_best": {
+    "exists": true,
+    "size": 4755422,
+    "mtime": "2026-05-03T18:43:42",
+    "sha256": "24f3eb8aea8a3370217f867c3999349b7cde130a787d153b3979578185cbd45d"
+  },
+  "checkpoint_last": {
+    "exists": true,
+    "size": 14173678,
+    "mtime": "2026-05-03T18:13:39",
+    "sha256": "236a1ed62cbd47589be97e29a6741defa7dc4e52a6217db12654180a05c3bead"
+  },
+  "checkpoint_binaries_copied": false
+}

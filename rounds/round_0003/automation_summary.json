@@ -1,0 +1,8 @@
+{
+  "automation_level": "Level 2-A launch + fixed Level 2-B watcher + auto-runner queue consumption",
+  "fixed_watcher_auto_queue": true,
+  "auto_runner_consumed_queue": true,
+  "post_run_analysis_manual": true,
+  "public_registration_human_reviewed": true,
+  "no_auto_controller_action": true
+}
