@@ -218,6 +218,38 @@
       "reconciliation_report_rendering_defect": true,
       "public_round_created": false,
       "created_at": "2026-05-03T12:12:24"
+    },
+    {
+      "run_name": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay8000_updates1_20260503_201157",
+      "axis": "update_cadence_density_stability",
+      "change": "learner_updates_per_iter: 2 -> 1",
+      "mode": "fast_nondeterministic",
+      "automation_level": "Level 2-A launch + fixed Level 2-B watcher + auto-runner queue consumption + Level 2-C dispatch package",
+      "status": "completed",
+      "comparability": "comparable",
+      "decision_label": "mixed",
+      "reference_round": "round_0003",
+      "reference_run": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay8000_rerun",
+      "winner_step": 440000,
+      "last_step": 500000,
+      "winner_delta_vs_reference": {
+        "reward": 5.3543701171875,
+        "coverage": 0.009569942951202393,
+        "success": -0.030000030994415283,
+        "length": -8.71002197265625,
+        "RVR": -0.019095808267593384
+      },
+      "rvr_length_objective": "improved",
+      "drift_vs_reference": "worse",
+      "topk3_still_required": true,
+      "private_report_path": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\reports\\fast_formal_updates1_round0003_result_analysis_20260504_192720.md",
+      "dispatch_package_path": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\automation_state\\level2c_dispatch_packages\\pkg_req_updates1_round0003_level2c_dispatch_20260503_20260504_190428_690653",
+      "level2c_dispatch_generated": true,
+      "public_round_created": false,
+      "created_at": "2026-05-04T19:27:20",
+      "decision_input_path": "C:\\Users\\Dk\\Desktop\\SCI\\codex_ui_bridge_demo\\decision_inputs\\updates1_round0003_decision_input_20260504_192720.md",
+      "only_effective_change_confirmed": true,
+      "proposal_criteria": "mixed"
     }
   ],
   "records": [
