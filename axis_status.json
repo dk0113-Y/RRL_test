@@ -48,6 +48,16 @@
       "next_allowed_action": "do not continue this axis unless explicitly reopened by GPT/human",
       "reason": "batch_size=160 caused major reward/coverage/success/length/RVR degradation and did not improve late optimization stability signals."
     },
+    "update_cadence_density_stability": {
+      "status": "mixed_continuation_not_accepted",
+      "evidence": [
+        "learner_updates_per_iter=1 mixed_candidate"
+      ],
+      "reference_policy": "learner_updates_per_iter=2",
+      "tested_policy": "learner_updates_per_iter=1",
+      "reason": "learner_updates_per_iter=1 improved peak reward/coverage/length/RVR and reduced optimization-pressure signals, but success was at the acceptance boundary and winner-vs-last drift worsened materially.",
+      "next_allowed_action": "only GPT/human-approved confirmation or follow-up audit; do not public-register without additional evidence."
+    },
     "replay_warmup_stability": {
       "status": "accepted_reference",
       "evidence": [
