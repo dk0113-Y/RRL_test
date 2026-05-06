@@ -1,0 +1,324 @@
+{
+  "schema_version": "1.0",
+  "task_type": "single_round_evidence_report_task",
+  "report_type": "formal_round_evidence_report",
+  "skill": "formal-round-evidence-report",
+  "generated_by": "codex",
+  "generated_at": "2026-05-06T17:44:36+08:00",
+  "destination_mode": "exchange_published_report",
+  "run_id": "value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay12000_confirm_20260506_114441_20260506_114445",
+  "target_exchange_repo": "RRL_test",
+  "target_report_dir_repo_relative": "reports/formal_evidence/value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay12000_confirm_20260506_114441_20260506_114445",
+  "written_files": [
+    "reports/formal_evidence/value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay12000_confirm_20260506_114441_20260506_114445/codex_evidence_report.md",
+    "reports/formal_evidence/value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay12000_confirm_20260506_114441_20260506_114445/codex_execution_report.json"
+  ],
+  "source_artifacts_inspected": [
+    "logs/metric_snapshot.json",
+    "logs/benchmark_summary.json",
+    "logs/config_snapshot.json",
+    "logs/artifact_index.json",
+    "logs/posthoc_selection_summary.json",
+    "logs/final_probe_summary.json",
+    "logs/best_vs_last_gap_summary.json",
+    "logs/formal_selection_manifest.json",
+    "logs/train_steps.csv",
+    "logs/train_episodes.csv",
+    "logs/posthoc_candidate_scores.csv",
+    "logs/final_probe.csv",
+    "logs/training_summary.txt",
+    "checkpoints/best.pt metadata only",
+    "checkpoints/last.pt metadata only",
+    "checkpoints/ckpt_step_460000.pt metadata only",
+    "checkpoints/ckpt_step_480000.pt metadata only",
+    "checkpoints/ckpt_step_500000.pt metadata only"
+  ],
+  "parsed_artifacts": [
+    "logs/metric_snapshot.json",
+    "logs/benchmark_summary.json",
+    "logs/config_snapshot.json",
+    "logs/artifact_index.json",
+    "logs/posthoc_selection_summary.json",
+    "logs/final_probe_summary.json",
+    "logs/best_vs_last_gap_summary.json",
+    "logs/formal_selection_manifest.json",
+    "logs/train_steps.csv",
+    "logs/train_episodes.csv",
+    "logs/posthoc_candidate_scores.csv",
+    "logs/final_probe.csv"
+  ],
+  "missing_artifacts": [
+    {
+      "path": "logs/model_select_eval.csv",
+      "required": false,
+      "source": "artifact_index.json",
+      "note": "Optional legacy model-selection CSV marked missing by artifact index."
+    },
+    {
+      "path": "logs/best_recheck_eval.csv",
+      "required": false,
+      "source": "artifact_index.json",
+      "note": "Optional legacy model-selection CSV marked missing by artifact index."
+    },
+    {
+      "path": "logs/eval_metrics.csv",
+      "required": false,
+      "source": "artifact_index.json",
+      "note": "Optional legacy diagnostic CSV marked missing by artifact index."
+    },
+    {
+      "path": "timing_summary.collector",
+      "required": false,
+      "source": "benchmark_summary.json",
+      "note": "Null because detailed timing switches were disabled."
+    },
+    {
+      "path": "control_plane_bundle/comparability_report.json",
+      "required": false,
+      "source": "task inputs",
+      "note": "No control-plane round bundle path was provided for this run-scoped source evidence report."
+    }
+  ],
+  "artifact_presence_summary": {
+    "required_structured_artifacts_present": true,
+    "required_csv_artifacts_present": true,
+    "required_checkpoint_metadata_present": true,
+    "checkpoint_binaries_copied": false,
+    "model_weights_copied": false,
+    "full_csv_logs_copied": false,
+    "full_raw_logs_copied": false
+  },
+  "run_identity_facts": {
+    "experiment_mode": "formal_train",
+    "formal_protocol_revision": "formal_posthoc_trainselect_v1",
+    "budget_mode": "env_steps",
+    "total_env_steps": 500000,
+    "training_source_commit_sha": "43c4cd7da0ef61f08ee2a66a58324f73df4a8fa3",
+    "training_source_branch": "main",
+    "run_mode": "cli"
+  },
+  "config_and_contract_facts": {
+    "rows": 40,
+    "cols": 60,
+    "obs_size": 6,
+    "scan_radius": 10,
+    "obstacle_ratio": 0.2,
+    "warmup_steps": 4000,
+    "collect_steps_per_iter": 16,
+    "learner_updates_per_iter": 2,
+    "replay_capacity": 100000,
+    "batch_size": 128,
+    "min_replay_size": 12000,
+    "gamma": 0.99,
+    "n_step": 3,
+    "learning_rate": 0.0001,
+    "target_update_interval": 1000,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.05,
+    "epsilon_decay_steps": 320000,
+    "final_greedy_episodes": 100,
+    "fixed_train_episode_seed_base": 20259323,
+    "fixed_final_probe_seed_base": 20261323,
+    "periodic_checkpoint_interval_env_steps": 20000,
+    "posthoc_candidate_start_env_steps": 200000,
+    "posthoc_final_probe_topk": 3,
+    "comparability_group": "formal_posthoc_trainselect_v1__a04764801e18",
+    "observed_run_contract_available": true,
+    "evaluation_contract_available": true
+  },
+  "checkpoint_selection_facts": {
+    "protocol_name": "formal_posthoc_trainselect_v1",
+    "candidate_start_step": 200000,
+    "candidate_end_step": 500000,
+    "checkpoint_interval": 20000,
+    "selected_candidate_steps": [
+      480000,
+      460000,
+      500000
+    ],
+    "final_probe_episode_count": 100,
+    "final_probe_seed_base": 20261323,
+    "winner_step": 460000,
+    "winner_checkpoint_path": "checkpoints/ckpt_step_460000.pt",
+    "best_pt_path": "checkpoints/best.pt",
+    "last_pt_path": "checkpoints/last.pt",
+    "top_train_side_candidates": [
+      {
+        "selection_rank": 1,
+        "candidate_step": 480000,
+        "window_start_env_steps": 440000,
+        "window_end_env_steps": 480000,
+        "reward": 135.637171,
+        "coverage": 0.927109,
+        "success_rate": 0.650741,
+        "episode_length": 440.203457,
+        "repeat_visit_ratio": 0.223375,
+        "selection_score": 1.097158
+      },
+      {
+        "selection_rank": 2,
+        "candidate_step": 460000,
+        "window_start_env_steps": 420000,
+        "window_end_env_steps": 460000,
+        "reward": 133.549723,
+        "coverage": 0.921892,
+        "success_rate": 0.637901,
+        "episode_length": 445.90642,
+        "repeat_visit_ratio": 0.24008,
+        "selection_score": 0.981857
+      },
+      {
+        "selection_rank": 3,
+        "candidate_step": 500000,
+        "window_start_env_steps": 460000,
+        "window_end_env_steps": 500000,
+        "reward": 131.152732,
+        "coverage": 0.917562,
+        "success_rate": 0.590741,
+        "episode_length": 448.000124,
+        "repeat_visit_ratio": 0.24542,
+        "selection_score": 0.858645
+      }
+    ]
+  },
+  "extracted_metric_facts": {
+    "final_probe_rows": [
+      {
+        "final_probe_rank": 1,
+        "candidate_step": 460000,
+        "source": "posthoc_final_winner",
+        "formal_winner": true,
+        "eval_episodes": 100,
+        "reward": 123.94706,
+        "coverage": 0.891101,
+        "success_rate": 0.64,
+        "episode_length": 427.450012,
+        "repeat_visit_ratio": 0.253678
+      },
+      {
+        "final_probe_rank": 2,
+        "candidate_step": 500000,
+        "source": "posthoc_candidate_final_probe",
+        "formal_winner": false,
+        "eval_episodes": 100,
+        "reward": 113.017677,
+        "coverage": 0.856415,
+        "success_rate": 0.61,
+        "episode_length": 442.549988,
+        "repeat_visit_ratio": 0.326926
+      },
+      {
+        "final_probe_rank": 3,
+        "candidate_step": 480000,
+        "source": "posthoc_candidate_final_probe",
+        "formal_winner": false,
+        "eval_episodes": 100,
+        "reward": 122.082718,
+        "coverage": 0.886499,
+        "success_rate": 0.5,
+        "episode_length": 448.890015,
+        "repeat_visit_ratio": 0.292244
+      }
+    ],
+    "recent_train_at_500000": {
+      "reward": 125.423492,
+      "coverage": 0.899773,
+      "success_rate": 0.57,
+      "episode_length": 450.730011,
+      "repeat_visit_ratio": 0.288113,
+      "learner_steps": 61002,
+      "replay_size": 100000,
+      "epsilon": 0.05
+    },
+    "training_dynamics": {
+      "growth_rate_reward": 0.123885,
+      "growth_rate_coverage": 0.000292,
+      "growth_rate_success_rate": 0.000552,
+      "growth_rate_repeat_visit_ratio": -0.000578,
+      "threshold_reach_steps_success_050": 313008,
+      "threshold_reach_steps_coverage_090": 271008,
+      "threshold_reach_steps_reward_custom": null,
+      "late_stage_variance_reward": 50.651858,
+      "late_stage_variance_coverage": 0.00027,
+      "late_stage_variance_success_rate": 0.003753,
+      "late_stage_variance_repeat_visit_ratio": 0.001179
+    },
+    "best_vs_last_diagnostic": {
+      "reward_best_minus_last": 10.929382,
+      "coverage_best_minus_last": 0.034686,
+      "success_rate_best_minus_last": 0.03,
+      "episode_length_best_minus_last": -15.099976,
+      "repeat_visit_ratio_best_minus_last": -0.073247
+    }
+  },
+  "runtime_facts": {
+    "total_runtime_sec": 14375.981678,
+    "total_runtime_hms": "03:59:36",
+    "total_train_episodes_completed": 951,
+    "best_checkpoint_env_steps": 460000,
+    "last_checkpoint_env_steps": 500000,
+    "model_selection_eval_count": 0,
+    "recheck_eval_count": 0,
+    "insufficient_evidence_flags": [],
+    "timing_summary_available": false
+  },
+  "exchange_publication_facts": {
+    "current_round_json_modified": false,
+    "active_round_pointer_updated": false,
+    "report_scope": "run_scoped_formal_evidence_report",
+    "target_report_dir_repo_relative": "reports/formal_evidence/value_bcchild_gated_statequery_effopt_formal_500k_decay320k_end005_minreplay12000_confirm_20260506_114441_20260506_114445"
+  },
+  "sanitization_checks": {
+    "private_absolute_paths_in_markdown": false,
+    "private_absolute_paths_in_json": false,
+    "target_exchange_repo_is_sanitized": true,
+    "written_files_are_repo_relative": true,
+    "checkpoint_contents_included": false,
+    "model_weight_contents_included": false,
+    "full_csv_rows_included": false,
+    "full_raw_logs_included": false,
+    "sensitive_command_history_included": false,
+    "tuning_recommendation_provided": false,
+    "method_performance_superiority_claim_provided": false
+  },
+  "git_status_before": "## main...origin/main",
+  "git_status_after": "## main...origin/main; untracked only: the two authorized report files",
+  "commit_hash": null,
+  "push_status": "pending_commit_and_push",
+  "commands_run": [
+    "Read required DRL_automatic workflow documents and formal-round evidence skill.",
+    "git status --short --branch in RRL_test before editing.",
+    "Inventory source run logs and checkpoints.",
+    "Parse JSON structured artifacts with ConvertFrom-Json.",
+    "Parse CSV artifacts with Import-Csv for concise aggregate facts only.",
+    "Create target report directory.",
+    "Write only the two authorized report files.",
+    "Parse codex_execution_report.json with ConvertFrom-Json.",
+    "Scan written files for private local path fragments with Select-String.",
+    "Run git status --porcelain=v1 -uall to verify only the two authorized files are untracked.",
+    "Run git diff --check."
+  ],
+  "validation_results": {
+    "json_parseability": "passed",
+    "markdown_private_path_scan": "passed",
+    "json_private_path_scan": "passed",
+    "git_status_scope_check": "passed; only the two authorized report files were untracked",
+    "git_diff_check": "passed",
+    "git_diff_check_cached": "passed after removing trailing blank line at EOF from Markdown report",
+    "push": "pending"
+  },
+  "evidence_status": "sufficient",
+  "limitations": [
+    "This report summarizes run-local evidence only and does not compare against stale historical rounds.",
+    "No control-plane round bundle path was provided; exchange bundle artifacts such as comparability_report.json, config_diff.json, and artifact_digest.json were not inspected.",
+    "Active exchange round pointer consistency was not evaluated because the task requested a run-scoped report and prohibited CURRENT_ROUND.json modification.",
+    "Detailed timing summaries are null because timing collection switches were disabled.",
+    "The final commit hash cannot be embedded in the committed execution report without a self-reference paradox; the pushed commit hash is reported in the final Codex response."
+  ],
+  "forbidden_artifact_findings": [],
+  "unverified_items": [
+    "Remote web rendering after push was not separately inspected.",
+    "No baseline or previous-run comparison was performed."
+  ],
+  "tuning_recommendation_provided": false
+}
